@@ -17,10 +17,25 @@ const inputChange = (event) =>{
   setUpdate({...volunteerupdate, [name]:value});
 }
 
+const handleUpdateimg=(event)=>{
+  const {name}=event.target
+  setUpdate({...volunteerupdate,[name]:event.target.files[0]})
+}
+
 const handleSubmit = (event)=>{
   event.preventDefault();
+
+  const formData = new FormData();
+  formData.append("Image", volunteerupdate.Image);
+  formData.append("Name", volunteerupdate.Name);
+  formData.append("Age", volunteerupdate.Age);
+  formData.append("Address", volunteerupdate.Address);
+  formData.append("Phone_no", volunteerupdate.Phone_no);
+  formData.append("Qualification", volunteerupdate.Qualification);
+
+
   axios
-  .put(`http://localhost:1111/api/volunteer/volunteerupdate/${id}`,volunteerupdate)
+  .put(`http://localhost:1111/api/volunteer/volunteerupdate/${id}`,formData)
   .then((data)=>{
     console.log(data)
     toast.error(data, {
@@ -65,23 +80,24 @@ console.log(id)
 
             <div className="file-vr">
               <div className="image-vr">
-                <input type="file" id="file-upload" name="image" hidden />
+                <input type="file" id="file-upload" name="Image" onChange={handleUpdateimg} hidden />
                 <label htmlFor="file-upload">
                   <img
-                    src="upload.png"
+                    src="/upload.png"
                     alt=""
                     id="pro"
                   />
                 </label>
               </div>
             </div>
-
+  <form action="" onSubmit={handleSubmit} encType="multipart/formdata">
+            {" "}
   <input type='text' name='Name' placeholder='    Name' value={volunteerupdate?.Name} className='i-vr'  onChange={inputChange}></input>
   <input type='number' name='Age' placeholder='    Age' value={volunteerupdate?.Age} className='i-vr1'  onChange={inputChange}></input>
   <input type='text' name='Address' placeholder='    Address' value={volunteerupdate?.Address} className='i-vr2'  onChange={inputChange}></input>
   <input type='text' name='Qualification' placeholder='    Qualification' value={volunteerupdate?.Qualification} className='i-vr3'  onChange={inputChange}></input>
   <input type='number' name='Phone_no' placeholder='    Phone_no' value={volunteerupdate?.Phone_no} className='i-vr4'  onChange={inputChange}></input>
-  
+  </form>
   <div>
     <Link to={'/vvol'}>
   <input type='button' value='Update' className='btn-vr' onClick={(event)=>handleSubmit(event) }

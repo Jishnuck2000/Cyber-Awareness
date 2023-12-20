@@ -198,7 +198,7 @@ const handleUpdate = (_id)=>{
     </svg>
   </div>   
 
-  <div className="card__avatar">
+  {/* <div className="card__avatar">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
       <circle r={60} fill="#ff8475" cy={64} cx={64} />
       <circle r={48} opacity=".4" fill="#f85565" cy={64} cx={64} />
@@ -295,7 +295,8 @@ const handleUpdate = (_id)=>{
         d="m65.07 78.93-.55.55a.73.73 0 0 1 -1 0l-.55-.55c-1.14-1.14-2.93-.93-4.27.47l-1.7 1.6h14l-1.66-1.6c-1.34-1.4-3.13-1.61-4.27-.47z"
       />
     </svg>
-  </div>
+  </div> */}
+<Image src={`/upload/${item.Image}`} className="man2"></Image>
   <div className="card__title">{item.Name}</div>
 
   <div className="card__subtitle">{item.Age}</div>

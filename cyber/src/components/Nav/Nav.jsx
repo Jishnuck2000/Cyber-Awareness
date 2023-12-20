@@ -21,7 +21,7 @@ function Nav() {
     <div>
       <nav className="container1">
 
-        <Image src="shield.png" className="cs"></Image>
+        <Image src="/shield.png" className="cs"></Image>
         <p className="p-nav">SHIELD</p>
 
         <div className="fullnav">

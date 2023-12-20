@@ -14,20 +14,27 @@ function VolunteerRegister() {
     const { name, value }   = event.target;
     setVolunteer({ ...volunteerregister, [name]: value });
   };
+  const handleImage=(event)=>{
+    const {name}=event.target
+    setVolunteer({...volunteerregister,[name]:event.target.files[0]})
+  }
+
   console.log(volunteerregister);
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // const formData = new FormData();
-    // formData.append("Image", volunteerregister.Image);
-    // formData.append("Name", volunteerregister.Name);
-    // formData.append("Age", volunteerregister.Age);
-    // formData.append("Address", volunteerregister.Address);
-    // formData.append("Phone_no", volunteerregister.Phone_no);
-    // formData.append("Qualification", volunteerregister.Qualification);
+    const formData = new FormData();
+    formData.append("Image", volunteerregister.Image);
+    formData.append("Name", volunteerregister.Name);
+    formData.append("Age", volunteerregister.Age);
+    formData.append("Address", volunteerregister.Address);
+    formData.append("Phone_no", volunteerregister.Phone_no);
+    formData.append("Qualification", volunteerregister.Qualification);
+    formData.append("email_id",volunteerregister.email_id);
+    formData.append("password",volunteerregister.password);
 
     axios
-      .post("http://localhost:1111/api/register/volunteerregister", volunteerregister
+      .post("http://localhost:1111/api/register/volunteerregister", formData
         // headers: {
         //   Authorization: `Bearer ${token}`,
         // },
@@ -62,7 +69,7 @@ function VolunteerRegister() {
 
           <div className="file-vr">
             <div className="image-vr">
-              <input type="file" id="file-upload" name="image" hidden />
+              <input type="file" id="file-upload" name="Image" onChange={handleImage}hidden />
               <label htmlFor="file-upload">
                 <img src="upload.png" alt="" id="pro" />
               </label>

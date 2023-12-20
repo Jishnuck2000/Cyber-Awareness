@@ -3,8 +3,27 @@ const volunteerroutes = express.Router();
 const volunteer = require("../models/volunteersschema");
 const checkauth = require("../middleware/checkauth");
 
-volunteerroutes.post("/volunteeradd", (req, res) => {
+
+const multer = require('multer');
+// const checkauth = require("../middleware/checkauth");
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, '../cyber/public/upload');
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    },
+});
+
+const upload = multer({ storage: storage });
+
+volunteerroutes.post("/volunteeradd",upload.single('Image'), (req, res) => {
   const Data = new volunteer({
+
+
+    Image:req.file?req.file.filename:null,
+
     Name: req.body.Name,
     Age: req.body.Age,
     Address: req.body.Address,
@@ -86,7 +105,7 @@ volunteerroutes.get('/viewvolunteer/:id',(req,res) =>{
 
 
 
-volunteerroutes.put("/volunteerupdate/:id", (req, res) => {
+volunteerroutes.put("/volunteerupdate/:id",upload.single('Image'), (req, res) => {
   // console.log(req.params.id)
 
   try {
@@ -97,7 +116,11 @@ volunteerroutes.put("/volunteerupdate/:id", (req, res) => {
       })
 
       .then((data) => {
-        // (data.Image = req.body.Image),
+        // (data.Image = req.file.Image),
+
+        
+        (data.Image=req.file?req.file.filename:null),
+
         (data.Name = req.body.Name),
           (data.Age = req.body.Age),
           (data.Address = req.body.Address),

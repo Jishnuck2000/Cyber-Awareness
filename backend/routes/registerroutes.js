@@ -83,7 +83,7 @@ registerroutes.post("/reg", async (req, res) => {
 
 
 // volunteer registration
-registerroutes.post("/volunteerregister", async (req, res) => {
+registerroutes.post("/volunteerregister",upload.single('Image'), async (req, res) => {
 
   try {
     const oldVolunteer = await loginDB.findOne({ email_id: req.body.email_id });
