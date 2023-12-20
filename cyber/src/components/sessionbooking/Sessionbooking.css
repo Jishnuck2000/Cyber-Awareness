@@ -1,0 +1,100 @@
+.sb-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/peakbg.jpg');
+    background-color: rgb(122, 148, 134);
+    min-height: 871px;
+    
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.sb-bg2{
+    height: 800px;
+    width: 700px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.sb-i1{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.sb-i2{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sb-i3{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sb-i4{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sb-i5{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sb-i6{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sb-i7{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sb-i8{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.sb-i9{
+    height: 30px;
+    width: 350px;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.btn-sb{
+    height: 30px;
+    width: 100px;
+    margin-top: 60px;
+    margin-left: 300px;
+    border-radius: 10px;
+    background-color: rgb(18, 42, 18);
+    color: aliceblue;
+    font-weight: 600;
+}
+.sessionb{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+}

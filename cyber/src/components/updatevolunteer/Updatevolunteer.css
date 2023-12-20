@@ -1,0 +1,14 @@
+.update-vbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 865px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-color: rgb(122, 148, 134);
+}

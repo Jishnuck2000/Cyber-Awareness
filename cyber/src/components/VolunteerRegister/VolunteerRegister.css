@@ -1,0 +1,132 @@
+.body-vr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/peakbg.jpg');
+    min-height: 865px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-color: rgb(122, 148, 134);
+
+}
+.bg-vr{
+    height: 800px;
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.p-vr{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+#pro{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.i-vr{
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.btn-vr{
+    height: 30px;
+    width: 67px;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 10px;
+    background-color: red;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 12px;
+ }
+.i-vr1{
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.i-vr2{
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.i-vr3{
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.i-vr4{
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.i-vr5{
+ 
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.i-vr6{
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.btn-vr1{
+   height: 30px;
+   width: 67px;
+   border-radius: 10px;
+   margin-left: 10px;
+   background-color: rgb(15, 15, 99);
+   color: aliceblue;
+   font-weight: 600;
+ }
+ .p-vr2{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 13px;
+ }
+ 
+ @media only screen and (max-width: 1920px) {
+
+  .body-vr{
+    width: 100%;
+    
+  }
+   
+
+ }

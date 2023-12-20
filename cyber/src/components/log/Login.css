@@ -1,0 +1,85 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/peakbg.jpg');
+    min-height: 871px;
+    
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+.team{
+   
+   margin-top: -500px;
+   height: 250px;
+   width: 250px;
+   margin-left: -50px;
+
+}
+.user{
+    height: 30px;
+    width: 30px;
+    margin-left: -375px;
+    margin-top: -100px;
+    
+}
+.n1{
+    height: 50px;
+    width: 400px;
+    margin-top: -100px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    
+    
+}
+.pass{
+    height: 30px;
+    width: 30px;
+    margin-left: -457px;
+    margin-top: 50px;
+    
+
+}
+
+.n2{
+    height: 50px;
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+.box{
+    margin-top: 150px;
+    margin-left: -370px;
+}
+.p11{
+    margin-top: 162px;
+    margin-left: 5px;
+}
+.p22{
+    margin-top: 162px;
+    margin-left: 80px;
+}
+.p22:hover{
+
+    color: red;
+
+}
+.btn1{
+    margin-top: 260px;
+    height: 35px;
+    width: 100px;
+    margin-left: -215px;
+    border-radius: 10px;
+    font-weight: 600;
+    
+}
+.btn1:hover{
+    background-color: green;
+}

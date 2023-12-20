@@ -1,0 +1,99 @@
+.body-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/peakbg.jpg');
+    min-height: 865px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-color: rgb(122, 148, 134);
+
+}
+.bg-c{
+    height: 700px;
+    width: 600px;
+    background-color: rgba(240, 248, 255, 0.712);
+    border-radius: 10px;
+    margin-left: -200px;
+
+}
+.p-c1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 40px;
+    color:rgb(33, 33, 119);
+}
+.i-c1{
+    height: 35px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.i-c2{
+    height: 35px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.i-c3{
+    height: 35px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.i-c4{
+    height: 35px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.i-c5{
+    height: 35px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.i-c6{
+    height: 35px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.btn-c{
+    margin-top:550px ;
+    margin-left: -340px;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(21, 21, 68);
+    color: aliceblue;
+    font-weight: 600;
+}
+.btn-c:hover{
+    background-color: green;
+}
+.csf{
+
+height: 40px;
+width: 40px;
+margin-left: 200px;
+margin-top: 600px;
+}
+.captainamarica{
+    height: 600px;
+    width:500px;
+    margin-left: 400px;
+}

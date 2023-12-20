@@ -1,0 +1,81 @@
+.bg-vc{
+    height: 600px;
+    width: 1710px;
+    background-color: rgba(22, 22, 74, 0.332);
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+  }
+  .p-vc{
+    font-size: 30px;
+    margin-left: 800px;
+    font-weight: 800;
+    color: rgb(13, 13, 57);
+    margin-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .p-vc1{
+    font-size: 20px;
+    font-weight: 800;
+    /* margin-left: 100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  .p-vc2{
+    font-size: 20px;
+    font-weight: 800;
+    /* margin-left: 100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+  }
+  .p-vc3{
+    font-size: 20px;
+    font-weight: 800;
+    /* margin-left: 100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+  }
+  .p-vc4{
+    font-size: 20px;
+    font-weight: 800;
+    /* margin-left: 100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+  }
+  .p-vc5{
+    font-size: 20px;
+    font-weight: 800;
+    /* margin-left: 100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+  }
+  .p-vc6{
+    font-size: 20px;
+    font-weight: 800;
+    /* margin-left: 100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+  }
+  
+ 
+  .tr-vc{
+    font-size: 15px;
+    font-weight: 600;
+    color:rgb(12, 97, 12);
+    
+     
+  }
+  tr td{
+    align-items: center;
+    text-align: center;
+  }
+  .table1{
+    background-color: rgba(11, 8, 69, 0.25);
+    border-radius: 10px;
+  }
+  

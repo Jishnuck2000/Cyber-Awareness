@@ -1,0 +1,122 @@
+.home-bg{
+    height: auto;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+.p-v{
+    font-size: 30px;
+    font-weight: 800;
+    color: aliceblue;
+    margin-top: -300px;
+    margin-left: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.p-v1{
+    font-size: 30px;
+    font-weight: 800;
+    color: aliceblue;
+    margin-left: 200px;
+    margin-top: -30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img-h{
+    width: 100%;
+}
+.btn-h{
+    height: 40px;
+    width: 300px;
+    margin-left: 200px;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    border-radius: 10px;
+    
+}
+.btn-h:hover{
+    background-color: green;
+}
+.p-v2{
+
+    margin-top: 180px;
+    font-size:25px ;
+    margin-left: 830px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(12, 12, 12);  
+}
+.poster1{
+    height: 300px;
+    width: 300px;
+    margin-left: 110px;
+
+}
+.poster2{
+    height: 300px;
+    width: 300px;
+    margin-left: 110px;
+    
+
+}
+.p-v3{
+    margin-top: 80px;
+    font-size:25px ;
+    margin-left: 830px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(12, 12, 12);  
+}
+.video1{
+    height:400px;
+    width: 400px;
+}
+
+.div2{
+    max-width: 100%;
+    height: 1920px;
+}
+.div2 table{
+/* background-color: red; */
+width: 100%;
+}
+
+
+.container2 {
+    width: 100%;
+    height: 200px;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  
+.div-p{
+    color: aliceblue;
+    text-align: center;
+    padding: 80px;
+}
+.div{
+    background-color:rgb(31, 18, 2);
+        background: url('/public/peakbg.jpg');
+
+    background-color: rgb(122, 148, 134);
+    width: 100%;
+
+    object-fit: cover;
+    
+}

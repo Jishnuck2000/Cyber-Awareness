@@ -1,0 +1,202 @@
+.a-d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    height: 500px;
+    width: 1920px;
+}
+.a-d2{
+    background-color: black ;
+    height: 290px;
+    width: 1920px;
+}
+.a-d4{
+    height: 75px;
+    width: 1920px;
+    background-color: rgb(113, 113, 113);
+}
+.a-d3{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    height: 400px;
+    width: 840px;
+    align-content: center;
+    border-radius: 10px;
+
+}
+.p-ab{
+    margin-top: -420px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(18, 18, 19);
+    display: flex;
+    justify-content:center;
+}
+.a-d1{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.p-ab3{
+    font-size: 15px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+.shield4{
+    height: 50px;
+    width: 50px;
+    margin-left: 330px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+}
+.a-shield{
+    height: 100px;
+    width: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.a-h2{
+    font-family: cursive;
+    margin-left: 50px;
+    color: aliceblue;
+    margin-top: -1px;
+}
+.a-h3{
+    margin-left: 800px;
+    margin-top: -200px;
+    font-size: 15px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h31{
+    margin-left: 800px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h32{
+    margin-left: 800px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h33{
+    margin-left: 800px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h34{
+    margin-left: 800px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h35{
+    margin-left: 800px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.a-h36{
+    margin-left: 1100px;
+    font-size: 15px;
+    margin-top: -170px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h37{
+    margin-left: 1100px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h38{
+    margin-left: 1100px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h39{
+    margin-left: 1100px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h310{
+    margin-left: 1100px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h311{
+    margin-left: 1100px;
+    font-size: 15px;
+    margin-top: -5px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a-h312{
+    margin-left: 1300px;
+    font-size: 18px;
+    margin-top: -170px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.face-ab{
+    height: 40px;
+    width: 40px;
+    margin-left: 1420px;
+}
+.face-ab1{
+    height: 40px;
+    width: 40px;
+}
+.face-ab2{
+    height: 40px;
+    width: 40px;
+}
+.face-ab3{
+    height: 40px;
+    width: 40px;
+}
+.face-ab4{
+    height: 40px;
+    width: 40px;
+}
+.face-ab5{
+    height: 40px;
+    width: 40px;
+}
+.p-abd1{
+    color: aliceblue;
+    text-align: center;
+    padding: 25px;
+}
+.allabout{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

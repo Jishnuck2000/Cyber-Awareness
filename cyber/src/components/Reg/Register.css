@@ -1,0 +1,122 @@
+.body-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/peakbg.jpg');
+    min-height: 871px;
+    
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+.bg{
+    background-color: rgba(13, 14, 14, 0.104);
+    height: 800px;
+    width: 700px;
+    border-radius: 30px;
+    margin-left: -300px;
+    
+}
+.p1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 260px;
+    margin-top: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.p2{
+    margin-top: -10px;
+    color: rgb(18, 49, 115);
+    margin-left: 100px;
+}
+.i1{
+    height: 35px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: 160px;
+    margin-top: 30px;
+    font-weight: 600;
+    
+}
+.i2{
+    height: 35px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: 160px;
+    margin-top: 30px;
+    font-weight: 600;
+
+    
+}
+.i3{
+    height: 35px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: 160px;
+    margin-top: 30px;
+    font-weight: 600;
+
+    
+}
+.i4{
+    height: 35px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: 160px;
+    margin-top: 30px;
+    font-weight: 600;
+
+    
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: -400px;
+    margin-top: 150px;
+    background-color: rgba(243, 10, 10, 0.944);
+    color: aliceblue;
+    font-weight: 800;
+}
+.btn:hover{
+
+    background-color: green;
+}
+.p3{
+    margin-top: 500px;
+    margin-left: -370px;
+}
+.face{
+    height: 30px;
+    width: 30px;
+    margin-top: 600px;
+    margin-left: 30px;
+    
+}
+.go{
+    height: 30px;
+    width: 30px;
+    margin-top: 600px;
+    margin-left: 20px;
+    
+}
+.tw{
+    height: 30px;
+    width: 30px;
+    margin-top: 600px;
+    margin-left: 20px;
+    
+}
+.p4{
+    margin-top: 300px;
+    margin-left: -165px;
+}
+.p5{
+    margin-top: 300px;
+    font-size: 17px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-left: 10px;
+}
