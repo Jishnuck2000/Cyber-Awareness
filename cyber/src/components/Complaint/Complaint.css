@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/public/peakbg.jpg');
+    background-image:linear-gradient(to bottom,grey,black);
+
+    /* background: url('/public/peakbg.jpg'); */
     min-height: 865px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -17,7 +19,8 @@
 .bg-c{
     height: 700px;
     width: 600px;
-    background-color: rgba(240, 248, 255, 0.712);
+    /* background-color: rgba(240, 248, 255, 0.712); */
+    background-image: radial-gradient(white,rgb(69, 32, 136),rgb(128, 12, 12),rgb(255, 255, 255),rgb(125, 19, 19));
     border-radius: 10px;
     margin-left: -200px;
 
@@ -28,7 +31,7 @@
     font-weight: 600;
     margin-left: 20px;
     margin-top: 40px;
-    color:rgb(33, 33, 119);
+    color: aliceblue ;
 }
 .i-c1{
     height: 35px;

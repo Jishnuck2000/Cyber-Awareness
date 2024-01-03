@@ -2,11 +2,11 @@
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
-    background: url('/public/peakbg.jpg');
+    /* background: url('/public/peakbg.jpg'); */
     min-height: 865px;
 
     /* background-color: rgb(0, 255, 119); */
-    background-color: rgb(122, 148, 134);
+    background-image:linear-gradient(to bottom,grey,black);
 height: auto;
     width: 100%;
     /* background-position: center; */
@@ -20,13 +20,18 @@ align-items: center;
     
 }
 .body-vvv{
-    width: 99%;
+    width: 95%;
+    margin-top: 20px;
     display: flex;
     row-gap: 30px;
-    /* background-color: red; */
+    background: url('/public/bg.jpg');
+
+    background-color: rgb(206, 199, 199);
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 10px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 

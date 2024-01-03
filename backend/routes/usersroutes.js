@@ -5,10 +5,13 @@ const sessionbooking = require("../models/sessionbookingschema");
 const checkauth = require("../middleware/checkauth");
 const Registerdata = require("../models/registerschema");
 const { default: mongoose } = require("mongoose");
+const addadminsession = require("../models/adminaddsessionschema")
+
+
 
 //add
 
-usersroutes.post("/addcomplaint", (req, res) => {
+usersroutes.post("/addcompliant", (req, res) => {
   const Data = new complaint({
     Name: req.body.Name,
     Age: req.body.Age,
@@ -33,8 +36,10 @@ usersroutes.post("/addcomplaint", (req, res) => {
         error: true,
         Errormessage: error,
         message: "complaint registration failed",
+        
       });
     });
+
 });
 
 //view
@@ -113,6 +118,8 @@ usersroutes.post("/addsession",checkauth, (req, res) => {
     District: req.body.District,
     State: req.body.State,
     Date: req.body.Date,
+    time:req.body.time,
+    about:req.body.about,
     Phone_no: req.body.Phone_no,
     Email: req.body.Email,
     login_id:req.userData.userId
@@ -141,8 +148,8 @@ usersroutes.get("/viewsession", checkauth, (req, res) => {
 usersroutes.get("/user-viewsession",checkauth, (req, res) => {
   const userId=req.userData.userId
   sessionbooking
-    .findOne({
-      login_id: userId,
+    .find({
+      login_id: req.userData.userId
     })
     .then((data) => {
       res.send(data);
@@ -248,5 +255,42 @@ usersroutes.get("/viewprofile", checkauth, (req, res) => {
       });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+usersroutes.get("/viewadminsessionform",(req, res) => {
+  addadminsession.find()
+  .then((data) => {
+    res.status(200).json({
+      success: true,
+      error: false,
+      data: data,
+      message: "fetched data successfully",
+    });
+  })
+  .catch((error) => {
+    res.status(400).json({
+      success: false,
+      error: true,
+      message: "failed fetching data",
+      Errormessage: error,
+    });
+  });
+
+})
+
+
+
+
+
+
 
 module.exports = usersroutes;

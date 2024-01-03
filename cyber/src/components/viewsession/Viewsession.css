@@ -5,7 +5,7 @@
     /* background: url('/public/bg.jpg'); */
     background-color: grey;
     min-height: 871px;
-    
+    flex-wrap: nowrap;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,13 +19,23 @@
     font-weight: 600;
 }
 .td-vs2{
-    font-size: 13px;
-    color:aliceblue;
+    font-size: 14px;
+    color:rgb(134, 11, 11);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .p-vs3{
     color: rgb(16, 93, 16);
     font-size: 15px;
-    margin-top: 300px;
+    margin-top: 450px;
     margin-left: -165px;
+}
+.vs-bg1{
+    background-color: rgba(255, 255, 255, 0.717);
+    height: auto;
+    width: 320px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
 }

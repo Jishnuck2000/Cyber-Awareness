@@ -35,7 +35,6 @@ registerroutes.post("/reg", async (req, res) => {
     // const { firstName, lastName, email, password, role } = req.body;
 
     const oldphone = await registerDB.findOne({ phone_no: req.body.phone_no });
-    const hashedPassword = await bcrypt.hash(req.body.password, 12);
     if (oldphone) {
       return res.status(400).json({
         success: false,
@@ -43,6 +42,7 @@ registerroutes.post("/reg", async (req, res) => {
         message: "Phone number already exists",
       });
     }
+    const hashedPassword = await bcrypt.hash(req.body.password, 12);
     let log = {
       email_id: req.body.email_id,
       password: hashedPassword,

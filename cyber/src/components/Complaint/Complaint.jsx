@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import "./Complaint.css";
 import Nav from "../Nav/Nav";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
+// import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+
 
 
 
@@ -19,20 +22,34 @@ function Complaint() {
   console.log(complaint);
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:1111/api/admin/add',complaint)
+    axios.post('http://localhost:1111/api/admin/addcomplaint',complaint)
     .then((data)=>{
-        console.log(data);
-        
+        console.log(data.data);
+        navigate('/dis')
     })
-    .catch((err)=>{
-        console.log(err);
-    })
+    .catch((err) => {
+      console.log(err);
+      // toast.error(err.response.data.message, {
+      //   position: "bottom-center",
+      //   autoClose: 5000,
+      //   hideProgressBar: false,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //   theme: "colored",
+      // });
+    });
   };
+  const navigate = useNavigate();
+
   
   return (
     <div>
       <Nav />
       <div className="body-c">
+      {/* <ToastContainer /> */}
+
         <div className="bg-c">
           <p className="p-c1">Register Your Complaint</p>
           <input
@@ -87,7 +104,7 @@ function Complaint() {
           onClick={(event) => handleSubmit(event)}
           className="btn-c"
         ></input>
-        <Link to={'/Dis'}>
+        <Link to={'/dis'}>
           
            <img src='file.png' className='csf' id="complaint-image" alt="" />
            </Link>

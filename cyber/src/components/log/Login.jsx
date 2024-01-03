@@ -59,7 +59,7 @@ function Login() {
           className="n1"
           onChange={inputChange}
         ></input>
-        {eye == false ? (
+        {eye !== false ? (
           <>
             <Image src="eye.png" className="pass" onClick={showPass}></Image>
           </>

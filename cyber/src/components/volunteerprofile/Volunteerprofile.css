@@ -1,0 +1,133 @@
+.body-vp{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: url('/public/peakbg.jpg'); */
+    min-height: 865px;
+
+    /* background-color: rgb(0, 255, 119); */
+    /* background-image:linear-gradient(to bottom,grey,black); */
+height: auto;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    /* display: flex; */
+justify-content:center;
+align-items: center;
+    flex-wrap:nowrap;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.card-vp {
+    
+    position: relative;
+    width: 390px;
+    color: white;
+    height: 560px;
+    background: #444;
+    border-radius: 14px;
+    
+  }
+  
+  .bgj {
+    position: absolute;
+    z-index: -1;
+    inset: -4px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .uwu {
+    filter: blur(8px);
+    transition: filter 0.3s;
+  }
+  
+  .bgj::before {
+    content: '';
+    position: absolute;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 50%;
+    min-width: 150%;
+    min-height: 150%;
+    background-image: conic-gradient(
+      hsl(0, 100%, 50%),
+      hsl(30, 100%, 50%),
+      hsl(60, 100%, 50%),
+      hsl(90, 100%, 50%),
+      hsl(120, 100%, 50%),
+      hsl(150, 100%, 50%),
+      hsl(180, 100%, 50%),
+      hsl(210, 100%, 50%),
+      hsl(240, 100%, 60%),
+      hsl(270, 100%, 50%),
+      hsl(300, 100%, 50%),
+      hsl(330, 100%, 50%),
+      hsl(360, 100%, 50%)
+    );
+    animation: speeen 4s linear infinite;
+    transform-origin: 0% 0%;
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  
+  @keyframes speeen {
+    from {
+      transform: rotate(0deg) translate(-50%, -50%);
+    }
+  
+    to {
+      transform: rotate(360deg) translate(-50%, -50%);
+    }
+  }
+  
+  .content {
+    position: relative;
+    padding: 14px 16px;
+  }
+  
+  
+  
+  .content div {
+    text-align: center;
+  }
+  
+  .h1-vp {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .h2-vp {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .p-vp {
+    margin-top: 80px;
+    font-size: 0.75em;
+  }
+  
+  .p-vp p {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background-color: #0003;
+    border-radius: 1em;
+  }
+  .img-vp{
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+  }

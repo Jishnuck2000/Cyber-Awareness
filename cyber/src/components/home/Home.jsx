@@ -13,7 +13,7 @@ function Home() {
           <Image src="chome.webp" className="img-h"></Image>
           <p className="p-v">Secure Your Cyberspace With Us.</p>
           <p className="p-v1">Security Awareness Training.</p>
-          <Link to={"/session"}>
+          <Link to={"/sessionlist"}>
             <input
               type="button"
               value="TO ENROLL THE SECTION"

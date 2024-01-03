@@ -7,7 +7,7 @@ function DisplayComplaint() {
   const [complaint, setComplaint] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/user/view", complaint)
+      .get("http://localhost:1111/api/user/view")
 
       .then((data) => {
         console.log(data.data);
@@ -21,8 +21,10 @@ function DisplayComplaint() {
   return (
     <div>
       <Nav />
+      <div className="display-bg">
+      <div className="bg-vc">
       <p className="p-vc">Compalint History</p>
-      {/* <div className="bg-vc"> */}
+
         <table align="center" border={20} cellPadding={15} cellSpacing={5} className="table1">
           <tr>
             <td>
@@ -58,8 +60,12 @@ function DisplayComplaint() {
             </tr>
           ))}
         </table>
+       
       </div>
-    // </div>
+      </div> <div className="container2">
+        <p className="div-p">www.sheildcybercrimeportal@gmail.com</p>
+      </div>
+     </div>
   );
 }
 

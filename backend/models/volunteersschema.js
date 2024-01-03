@@ -28,6 +28,11 @@ const volunteerschema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  status:{
+    type:String,
+    default:'pending',
+    require:true,
+  },
 });
 
 const Volunteerdata = mongoose.model("volunteer", volunteerschema);

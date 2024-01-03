@@ -32,6 +32,8 @@
     font-weight: 600;
     font-family:Georgia, 'Times New Roman', Times, serif ;
     border-radius: 10px;
+    background-image: linear-gradient(to bottom , skyblue,white);
+
     
 }
 .btn-h:hover{

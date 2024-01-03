@@ -1,0 +1,154 @@
+.body-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('/public/peakbg.jpg'); */
+    min-height: 871px;
+    background-image:linear-gradient(to bottom,grey,black);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+}
+.body-status-2{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    min-width: 800px;
+    width: 90%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.vstatus-img{
+    height: 60px;
+    width:60px;
+    border-radius: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.vs-td{
+    font-size: 20px;
+    font-weight: 800;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.table-bgvs td{
+    width: 650px;
+    /* background-color: blue; */
+
+}
+.btn-vs1{
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px greenyellow;
+    border: none;
+
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(to bottom,rgb(28, 215, 28),rgb(193, 242, 31));
+    color: aliceblue;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.btn-vs2{
+    margin-top: 20px;
+border: none;
+box-shadow: 0px 0px 10px red;
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(to bottom,blue,red);
+    color: aliceblue;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.container-vs {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    /* Add your background pattern here */
+    background: lightblue;
+    background: radial-gradient(
+        circle,
+        rgb(170, 162, 162),
+        #333 30%,
+        rgba(88, 84, 84, 0.226) 0%
+      ),
+      radial-gradient(
+        circle at 40px 40px,
+        rgb(233, 228, 228),
+        #333 30%,
+        rgba(88, 84, 84, 0) 0%
+      ),
+      radial-gradient(
+        circle at 600px 200px,
+        rgb(233, 228, 228),
+        #333 10%,
+        rgba(88, 84, 84, 0) 0%
+      ),
+      radial-gradient(
+        circle at 800px 100px,
+        rgb(233, 228, 228),
+        #333 10%,
+        rgba(88, 84, 84, 0) 0%
+      ),
+      radial-gradient(
+        circle at 700px 500px,
+        rgb(233, 228, 228),
+        #333 2%,
+        rgba(88, 84, 84, 0.123) 0%
+      ),
+      radial-gradient(
+        circle at 200px 400px,
+        rgb(233, 228, 228),
+        #333 1%,
+        rgba(88, 84, 84, 0) 0%
+      ),
+      radial-gradient(
+        circle at 300px 700px,
+        rgb(233, 228, 228),
+        #333 15%,
+        rgba(88, 84, 84, 0) 0%
+      ),
+      radial-gradient(
+        circle at 900px 500px,
+        rgb(233, 228, 228),
+        #333 20%,
+        rgba(88, 84, 84, 0) 0%
+      ),
+      radial-gradient(
+        circle at 650px 400px,
+        rgb(233, 228, 228),
+        #333 10%,
+        rgba(88, 84, 84, 0) 0%
+      ),
+      radial-gradient(
+        circle at 600px 600px,
+        rgb(233, 228, 228),
+        #333 1%,
+        rgba(88, 84, 84, 0.959) 0%
+      );
+  }
+  

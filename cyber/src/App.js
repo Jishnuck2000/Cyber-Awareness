@@ -13,6 +13,12 @@ import Sessionbooking from './components/sessionbooking/Sessionbooking'
 import Viewsession from './components/viewsession/Viewsession'
 import About from './components/about/About'
 import Updatevolunteer from './components/updatevolunteer/Updatevolunteer'
+import Text from './components/test/Text'
+import Sessiondetail from './components/sessiondetails/Sessiondetail'
+import Volunteerstatus from './components/volunteerstatus/Volunteerstatus'
+import Volunteerprofile from './components/volunteerprofile/Volunteerprofile'
+import Adminsessionform from './components/adminsessionform/Adminsessionform'
+import Sessionlist from './components/sessionlist/Sessionlist'
 
 
 
@@ -37,10 +43,22 @@ function App() {
         <Route path='/vcomp'element={<VolunteerRegister/>}/>
         <Route path='/hom'element={<Home/>}/> 
         <Route path='/vvol'element={<Viewvolunteer/>}/>
-        <Route path='/session'element={<Sessionbooking/>}/>
+        <Route path='/session/:name/:time/:date'element={<Sessionbooking/>}/>
         <Route path='/viewsession'element={<Viewsession/>}/>
         <Route path='/about'element={<About/>}/>
         <Route path='/update/:id'element={<Updatevolunteer/>}/>
+        <Route path='/text'element={<Text/>}/>
+        <Route path='/sd'element={<Sessiondetail/>}/>
+        <Route path='/vs'element={<Volunteerstatus/>}/>
+        <Route path='/volunteerprofile'element={<Volunteerprofile/>}/>
+        <Route path='/adminsessionform'element={<Adminsessionform/>}/>
+        <Route path='/sessionlist'element={<Sessionlist/>}/>
+
+
+
+
+
+
 
 
 

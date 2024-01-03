@@ -16,6 +16,7 @@ function VolunteerRegister() {
   };
   const handleImage=(event)=>{
     const {name}=event.target
+
     setVolunteer({...volunteerregister,[name]:event.target.files[0]})
   }
 

@@ -1,14 +1,26 @@
-.bg-vc{
-    height: 600px;
-    width: 1710px;
-    background-color: rgba(22, 22, 74, 0.332);
-    margin-top: 50px;
-    margin-left: 100px;
-    border-radius: 10px;
-  }
+.display-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:linear-gradient(to bottom,grey,black);
+
+  /* background: url('/public/peakbg.jpg'); */
+  min-height: 865px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-color: rgb(122, 148, 134);
+}
+
+
+
   .p-vc{
     font-size: 30px;
-    margin-left: 800px;
+    margin-left: 270px;
     font-weight: 800;
     color: rgb(13, 13, 57);
     margin-top: 70px;
@@ -66,7 +78,7 @@
   .tr-vc{
     font-size: 15px;
     font-weight: 600;
-    color:rgb(12, 97, 12);
+    color:rgb(234, 241, 234);
     
      
   }
@@ -77,5 +89,6 @@
   .table1{
     background-color: rgba(11, 8, 69, 0.25);
     border-radius: 10px;
+    margin-bottom: 40px;
   }
   
