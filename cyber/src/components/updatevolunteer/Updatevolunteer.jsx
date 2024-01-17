@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Updatevolunteer.css'
-import Nav from '../Nav/Nav'
 import axios from 'axios'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ToastContainer, toast } from "react-toastify";
@@ -65,7 +64,6 @@ console.log(id)
   const navigate = useNavigate();
   return (
     <div>
-<Nav/>
 <div className='update-vbg'>
 
 <ToastContainer/>

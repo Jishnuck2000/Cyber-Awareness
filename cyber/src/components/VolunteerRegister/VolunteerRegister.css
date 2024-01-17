@@ -19,6 +19,8 @@
     width: 600px;
     background-color: aliceblue;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(29, 44, 50);    
+
 }
 .p-vr{
     font-size: 20px;
@@ -32,6 +34,7 @@
     width: 100px;
     margin-left: 50px;
     margin-top: 50px;
+    
 }
 .i-vr{
     border: none;
@@ -40,6 +43,7 @@
     margin-left: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #1b6083;    
 }
 .btn-vr{
     height: 30px;
@@ -47,7 +51,10 @@
     margin-top: 30px;
     margin-left: 60px;
     border-radius: 10px;
-    background-color: red;
+    /* background-color: red; */
+    background-image: linear-gradient(to bottom,red,red);
+    border: none;
+    box-shadow: 0px 0px 10px black;
     color: aliceblue;
     font-weight: 600;
     font-size: 12px;
@@ -59,6 +66,8 @@
     margin-left: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #1b6083;    
+
 }
 .i-vr2{
     border: none;
@@ -67,6 +76,8 @@
     margin-left: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #1b6083;    
+
 
 }
 .i-vr3{
@@ -76,6 +87,8 @@
     margin-left: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #1b6083;    
+
 
 }
 .i-vr4{
@@ -85,6 +98,8 @@
     margin-left: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #1b6083;    
+
 
 }
 .i-vr5{
@@ -95,6 +110,8 @@
     margin-left: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #1b6083;    
+
 
 }
 .i-vr6{
@@ -104,6 +121,8 @@
     margin-left: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 0px 15px 10px -15px #1b6083;    
+
 
 }
 .btn-vr1{
@@ -111,9 +130,12 @@
    width: 67px;
    border-radius: 10px;
    margin-left: 10px;
-   background-color: rgb(15, 15, 99);
+   /* background-color: rgb(15, 15, 99); */
+   background-image: linear-gradient(to bottom,rgb(44, 44, 77),rgb(44, 44, 77));
    color: aliceblue;
    font-weight: 600;
+   box-shadow: 0px 0px 10px,black;
+   border: none;
  }
  .p-vr2{
     margin-left: 60px;

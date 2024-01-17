@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./VolunteerRegister.css";
-import Nav from "../Nav/Nav";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -62,7 +61,6 @@ function VolunteerRegister() {
   const navigate = useNavigate();
   return (
     <div>
-      <Nav />
       <div className="body-vr">
         <ToastContainer />
         <div className="bg-vr">

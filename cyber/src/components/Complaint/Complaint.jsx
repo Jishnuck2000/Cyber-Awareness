@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Complaint.css";
-import Nav from "../Nav/Nav";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
@@ -46,7 +45,6 @@ function Complaint() {
   
   return (
     <div>
-      <Nav />
       <div className="body-c">
       {/* <ToastContainer /> */}
 

@@ -12,6 +12,7 @@
     color: aliceblue;
     margin-top: -300px;
     margin-left: 200px;
+    text-shadow: 0px 0px 20px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .p-v1{
@@ -20,6 +21,8 @@
     color: aliceblue;
     margin-left: 200px;
     margin-top: -30px;
+    text-shadow: 0px 0px 20px black;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .img-h{
@@ -33,11 +36,14 @@
     font-family:Georgia, 'Times New Roman', Times, serif ;
     border-radius: 10px;
     background-image: linear-gradient(to bottom , skyblue,white);
+    box-shadow: 0px 15px 10px -15px black;  
+    border: none;  
+
 
     
 }
 .btn-h:hover{
-    background-color: green;
+    background-image: linear-gradient(to bottom , rgb(25, 80, 33),white);
 }
 .p-v2{
 
@@ -46,20 +52,41 @@
     margin-left: 830px;
     font-weight: 600;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:rgb(12, 12, 12);  
+    color:rgb(12, 12, 12); 
+    text-shadow: 0px 15px 10px -15px black;    
+ 
 }
 .poster1{
     height: 300px;
     width: 300px;
     margin-left: 110px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+    
+   
+
+    
+
+    
+   
+
+}
+.poster1:hover{
+transform: scale(1.22);
 
 }
 .poster2{
     height: 300px;
     width: 300px;
     margin-left: 110px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+
     
 
+}
+.poster2:hover{
+    transform: scale(1.22);
 }
 .p-v3{
     margin-top: 80px;
@@ -70,8 +97,14 @@
     color:rgb(12, 12, 12);  
 }
 .video1{
-    height:400px;
+    height:250px;
     width: 400px;
+    box-shadow: 0px 0px 10px;
+
+}
+.video1:active{
+    transform: scale(2);
+    display: flex;
 }
 
 .div2{
@@ -118,7 +151,53 @@ width: 100%;
 
     background-color: rgb(122, 148, 134);
     width: 100%;
+    min-height: 3000px;
+    height: auto;
 
     object-fit: cover;
     
+}
+
+.home-container1{
+    margin-left: 140px;
+    margin-top: -200px;
+    
+    height: 500px;
+    width: 85%;
+    background-image: linear-gradient(to bottom,white,skyblue);
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+}
+.home-h1{
+
+    margin-left: 50PX;
+    margin-top: 100PX;
+}
+.home-p1{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 220px;
+    margin-left: -430px;
+}
+.home-p2{
+    margin-left: -400px;
+    margin-top: 260px;
+}
+.home-img1{
+    margin-left: 150px;
+    height: 500px;
+    width: auto;
+}
+.home-btn{
+    height: 50px;
+    width: 200px;
+    margin-top: 400px;
+    margin-left: -1450px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: aliceblue;
+    background-image: linear-gradient(to bottom,green,rgb(146, 184, 146),rgb(27, 137, 29));
 }

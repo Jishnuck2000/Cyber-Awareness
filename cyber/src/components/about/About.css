@@ -20,7 +20,9 @@
 .a-d3{
     display: flex;
     justify-content: center;
-    background-color: grey;
+    background-image: linear-gradient(to bottom,grey,grey);
+    box-shadow: 0px 0px 5px black;
+
     height: 400px;
     width: 840px;
     align-content: center;

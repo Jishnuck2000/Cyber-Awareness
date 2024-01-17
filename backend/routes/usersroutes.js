@@ -293,4 +293,37 @@ usersroutes.get("/viewadminsessionform",(req, res) => {
 
 
 
+
+
+
+
+usersroutes.get("/viewusersbookedsession",checkauth,(req, res) => {
+    
+  sessionbooking.find({login_id:req.userData.userId})
+  .then((data) => {
+    res.status(201).json({
+        success:true,
+        error:false,
+        data:data,
+        message:"data fetched successfully"
+
+
+    });
+  })
+  .catch((err) => {
+    res.status(400).json({
+        success:false,
+        error:true,
+        data:data,
+        message:"failed"
+  });
+});
+});
+
+
+
+
+
+
+
 module.exports = usersroutes;

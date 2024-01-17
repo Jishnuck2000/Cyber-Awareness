@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Volunteerstatus.css'
-import Nav from '../Nav/Nav'
 import axios from 'axios';
 import Image from "react-bootstrap/Image";
 
@@ -71,7 +70,6 @@ function Volunteerstatus() {
 
   return (
     <div>
-        <Nav/>
         <div className='body-status'>
 
             <div  className='container-vs'>

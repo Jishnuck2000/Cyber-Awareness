@@ -87,6 +87,7 @@ box-shadow: 0px 0px 10px red;
 .container-vs {
     width: 90%;
     height: auto;
+    box-shadow: 0px 0px 10px;
     border-radius: 10px;
     /* Add your background pattern here */
     background: lightblue;

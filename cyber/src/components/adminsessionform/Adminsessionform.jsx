@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Nav from '../Nav/Nav'
 import './Adminsessionform.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -34,7 +33,6 @@ const navigate = useNavigate();
 
   return (
     <div>
-        <Nav/>
         <div className='body-asf'>
            <div> <p className='p-asf'>ADD SESSIONS,</p></div>
             <div className='body-asf1'>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Nav from "../Nav/Nav";
 import "./Viewsession.css";
 import axios from "axios";
 
@@ -28,7 +27,6 @@ function Viewsession() {
 
   return (
     <div>
-      <Nav />
       <div className="vs-bg">
 
 

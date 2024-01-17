@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Image from "react-bootstrap/Image";
-import Nav from "../Nav/Nav";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import swal from 'sweetalert';
+
 
 function Login() {
   const [login, setLogin] = useState({});
@@ -20,6 +21,8 @@ function Login() {
   console.log(login);
   const handleSubmit = (event) => {
     event.preventDefault();
+    swal("Login Successfull!", "You clicked the button!", "success");
+
     axios
       .post("http://localhost:1111/api/login/", login)
       .then((data) => {
@@ -47,7 +50,6 @@ function Login() {
 
   return (
     <div>
-      <Nav />
       <div className="body">
         <Image src="team.png" className="team"></Image>
         <Image src="user.png" className="user"></Image>

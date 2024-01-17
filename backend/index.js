@@ -7,6 +7,8 @@ const loginroutes = require('./routes/loginroutes')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const volunteerroutes = require('./routes/volunteerroutes')
+const productsroutes = require('./routes/productsroutes')
+const cartroutes = require('./routes/cartroutes')
 server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
@@ -31,6 +33,9 @@ server.use('/api/admin', adminroutes)
 server.use('/api/register', registerroutes)
 server.use('/api/volunteer', volunteerroutes)
 server.use('/api/login', loginroutes)
+server.use('/api/product',productsroutes)
+server.use('/api/cart',cartroutes)
+
 
 
 

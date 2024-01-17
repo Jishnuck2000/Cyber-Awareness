@@ -1,13 +1,12 @@
 import React from 'react'
 import './About.css'
-import Nav from '../Nav/Nav'
 import Image from 'react-bootstrap/Image';
 
 
 function About() {
   return (
     <div>
-        <Nav/>
+        
         <div className='allabout'>
 <div className='a-d'>
 <p className='p-ab'>About Us,</p>

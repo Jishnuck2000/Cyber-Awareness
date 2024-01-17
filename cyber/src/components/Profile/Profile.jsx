@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import './Profile.css'
-import Nav from '../Nav/Nav'
 import Image from 'react-bootstrap/Image';
 import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 function Profile() {
+
+
+  const redux = useSelector((state)=>state.user.name)
+  console.log(redux)
 
   const token = localStorage.getItem("Token");
   console.log("Token:", token);
@@ -34,7 +38,6 @@ function Profile() {
  
   return (
     <div>
-<Nav/>
 <div class="container">
 {/* {profileview.map((item)=>( */}
 <div id="content">

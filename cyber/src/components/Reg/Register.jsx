@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Register.css";
 import Image from "react-bootstrap/Image";
 import { Link, useNavigate } from "react-router-dom";
-import Nav from "../Nav/Nav";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -42,7 +41,6 @@ function Register() {
 
   return (
     <div>
-      <Nav />
       
       <div className="body-r">
       <ToastContainer />

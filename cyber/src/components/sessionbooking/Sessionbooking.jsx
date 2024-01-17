@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Sessionbooking.css";
-import Nav from "../Nav/Nav";
 import axios from "axios";
 import { Link, useNavigate, useParams, } from "react-router-dom";
 
@@ -52,7 +51,7 @@ function Sessionbooking() {
   const navigate = useNavigate();
   return (
     <div>
-      <Nav />
+
       <div className="sb-bg">
         <div className="sb-bg2">
           <p className="sessionb">Book Here,</p>

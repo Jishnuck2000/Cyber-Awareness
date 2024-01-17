@@ -44,7 +44,7 @@
 
 a{
     text-decoration: none;
-    color :aliceblue
+    color :aliceblue;
 
 }
 
@@ -68,6 +68,26 @@ a{
    font-weight: 800;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 
    
@@ -75,14 +95,14 @@ a{
     
     .fullnav{
              /* visibility: hidden; */
-               margin-left: -300px;
+               margin-left: 200px;
     }
     .p-nav{
         font-size: 30px;
         margin-left: 80px;
         margin-top: -55px;
         font-weight: 800;
-        color: rgb(245, 244, 242);
+        color: rgb(252, 252, 250);
         font-family: cursive;
     }
     .cs{
@@ -91,6 +111,11 @@ a{
         margin-left: 10px;
         margin-top: 10px;
     }
+    a{
+      text-decoration: none;
+      color :rgb(14, 15, 15);
+  
+  }
   }
 
   @media only screen and (max-width: 700px) {

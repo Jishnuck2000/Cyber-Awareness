@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Nav from '../Nav/Nav'
 import './Volunteerprofile.css'
 import axios from 'axios';
 // import Image from "react-bootstrap/Image";
@@ -30,7 +29,6 @@ useEffect(()=>{
 
   return (
     <div>
-        <Nav/>
         <div className='body-vp'>
 
 

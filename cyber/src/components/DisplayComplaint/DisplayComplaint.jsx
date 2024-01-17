@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./DisplayCom.css";
-import Nav from "../Nav/Nav";
 import axios from "axios";
 
 function DisplayComplaint() {
@@ -20,7 +19,6 @@ function DisplayComplaint() {
 
   return (
     <div>
-      <Nav />
       <div className="display-bg">
       <div className="bg-vc">
       <p className="p-vc">Compalint History</p>

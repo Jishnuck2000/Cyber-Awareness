@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Nav.css";
 import Image from "react-bootstrap/Image";
 import { Link, useNavigate } from "react-router-dom";
@@ -10,6 +10,9 @@ function Nav() {
   console.log(Token);
   console.log(Role);
 
+
+
+
   // console.log(alogin);
 
   const logout = () => {
@@ -19,6 +22,16 @@ function Nav() {
     Navigate("/hom")
     window.location.reload();
   };
+  useEffect(()=>{
+// console.log("+626525626526525");
+    if(Token!==null){
+// console.log("tesrtinggg");
+      setTimeout(logout,3540000)
+
+  }
+   
+},[])
+
   return (
     <div>
       <nav className="container1">
@@ -26,6 +39,12 @@ function Nav() {
         <p className="p-nav">SHIELD</p>
 
         <div className="fullnav">
+
+
+
+
+
+        
           <Link to={"/hom"}>
             <p className="p2-nav">Home</p>
           </Link>
@@ -56,6 +75,10 @@ function Nav() {
                 <p className="p45-nav">Sessionbooking Details</p>
               </Link>
 
+              <Link to={"/addproductsadmin"}>
+                <p className="p111-nav">Add Products</p>
+              </Link>
+
               <Link to={"/profile"}>
                 <p className="p11-nav">Profile</p>
               </Link>
@@ -68,8 +91,8 @@ function Nav() {
 
           {Role == 2 ? (
             <>
-              <Link to={"/sd"}>
-                <p className="p45-nav">Sessionbooking Details</p>
+              <Link to={"/bookedsessions"}>
+                <p className="p45-nav">Booked Sessions</p>
               </Link>
 
               <Link to={"/profile"}>
@@ -115,6 +138,14 @@ function Nav() {
           )}
 
           {/* <p className="p9-nav">Click</p> */}
+
+
+
+
+        
+
+
+
         </div>
 
         {/* {
@@ -124,6 +155,11 @@ function Nav() {
 </div>:
 <div>dfgdfg</div>
   } */}
+
+
+
+
+
       </nav>
     </div>
   );

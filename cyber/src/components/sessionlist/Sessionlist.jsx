@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Nav from '../Nav/Nav'
 import './Sessionlist.css'
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
@@ -28,7 +27,6 @@ const navigate = useNavigate()
 
   return (
     <div>
-        <Nav/>
         <div className='body-sl'>
             <div>
             <h1 className='p-sl1'>BOOK YOUR SESSIONS</h1>

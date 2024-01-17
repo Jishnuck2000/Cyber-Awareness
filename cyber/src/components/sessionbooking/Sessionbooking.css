@@ -18,6 +18,7 @@
     width: 700px;
     background-color: aliceblue;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
 }
 .sb-i1{
     height: 30px;
@@ -25,6 +26,9 @@
     margin-left: 170px;
     margin-top: 40px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
+
 }
 .sb-i2{
     height: 30px;
@@ -32,6 +36,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i3{
     height: 30px;
@@ -39,6 +45,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i4{
     height: 30px;
@@ -46,6 +54,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i5{
     height: 30px;
@@ -53,6 +63,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i6{
     height: 30px;
@@ -60,6 +72,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i7{
     height: 30px;
@@ -67,6 +81,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i8{
     height: 30px;
@@ -74,6 +90,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i9{
     height: 30px;
@@ -81,6 +99,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .btn-sb{
     height: 30px;
@@ -105,6 +125,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 .sb-i11{
     height: 30px;
@@ -112,6 +134,8 @@
     margin-left: 170px;
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    border: none;
 }
 
 

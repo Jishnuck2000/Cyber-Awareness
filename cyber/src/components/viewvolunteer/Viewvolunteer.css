@@ -24,9 +24,10 @@ align-items: center;
     margin-top: 20px;
     display: flex;
     row-gap: 30px;
-    background: url('/public/bg.jpg');
+    /* background: url('/public/bg.jpg'); */
+    background-image: linear-gradient(to bottom,grey,white);
+    box-shadow:0px 0px 10px ;
 
-    background-color: rgb(206, 199, 199);
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
@@ -92,6 +93,7 @@ width: 100%;
     background: var(--bg-color);
     margin-top: 60px;
     margin-bottom: 60px;
+    box-shadow: 0px 0px 10px black;
   }
   
   .card__img {

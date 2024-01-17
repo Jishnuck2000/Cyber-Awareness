@@ -19,6 +19,13 @@ import Volunteerstatus from './components/volunteerstatus/Volunteerstatus'
 import Volunteerprofile from './components/volunteerprofile/Volunteerprofile'
 import Adminsessionform from './components/adminsessionform/Adminsessionform'
 import Sessionlist from './components/sessionlist/Sessionlist'
+import Bookedsessions from './components/bookedsessions/Bookedsessions'
+import Addproductsadmin from './components/addproductsadmin/Addproductsadmin'
+import Cart from './components/cart/Cart'
+import Updatecart from './components/updatecart/Updatecart'
+import Addtocart from './components/addtocart/Addtocart'
+import Purchase from './components/purchase/Purchase'
+import Addaddressform from './components/addaddressform/Addaddressform'
 
 
 
@@ -30,9 +37,8 @@ function App() {
     <>
 
     <Router>
-      
+    <Nav />
       <Routes>
-      <Route path='/'element={<Nav/>}/>
       <Route path='/profile'element={<Profile/>}/>
 
 
@@ -53,6 +59,20 @@ function App() {
         <Route path='/volunteerprofile'element={<Volunteerprofile/>}/>
         <Route path='/adminsessionform'element={<Adminsessionform/>}/>
         <Route path='/sessionlist'element={<Sessionlist/>}/>
+        <Route path='/bookedsessions'element={<Bookedsessions/>}/>
+        <Route path='/addproductsadmin'element={<Addproductsadmin/>}/>
+        <Route path='/cart'element={<Cart/>}/>
+        <Route path='/updatecart/:id'element={<Updatecart/>}/>
+        <Route path='/addtocart'element={<Addtocart/>}/>
+        <Route path='/purchase'element={<Purchase/>}/>
+        <Route path='/addaddressform'element={<Addaddressform/>}/>
+
+
+
+
+
+
+
 
 
 

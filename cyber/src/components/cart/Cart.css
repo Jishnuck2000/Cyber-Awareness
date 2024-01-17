@@ -1,0 +1,122 @@
+.cart-bg{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: url('/public/peakbg.jpg'); */
+    min-height: 830px;
+
+    /* background-color: rgb(0, 255, 119); */
+    background-image:linear-gradient(to bottom,rgb(28, 27, 27),rgba(54, 53, 53, 0.914));
+height: auto;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    /* display: flex; */
+justify-content:center;
+align-items: center;
+    flex-wrap:nowrap;
+}
+.cart-bg1{
+    height: auto;
+    min-height: 700px;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.cart-card{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom,white,grey);
+
+}
+.av1{
+    height: 110px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.cart-hr{
+    height: 2px;
+    width: 85%;
+    background-color: black;
+    margin-top: 150px;
+    margin-left: -175px;
+  }
+  .cart-h2{
+    margin-left: 5px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.515);
+    color: aliceblue;
+    height: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .cart-p1{
+    margin-left: -100px;
+    margin-top: 50px;
+    font-weight: 600;
+  }
+  .cart-name{
+    font-weight: 600;
+  }
+  .cart-dis{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -10px;
+  }
+  .cart-val{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -10px;
+  }
+  .cart-price{
+    margin-top: -10px;
+  }
+  .cart-btn{
+    font-weight: 600;
+    color: white;
+    height: 25px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom ,rgb(130, 41, 41),rgb(108, 69, 69));
+  }
+
+  .cart-btn1{
+    font-weight: 600px;
+    margin-left: 40px;
+    color: azure;
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,rgb(37, 78, 191),rgb(84, 164, 233));
+  }
+
+  .cart-btn2{
+    font-weight: 600px;
+    margin-left: 10px;
+    color: azure;
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,rgb(191, 91, 37),rgb(233, 213, 84));
+  }
+
+  

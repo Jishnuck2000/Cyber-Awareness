@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Viewvolunteer.css";
-import Nav from "../Nav/Nav";
 import Image from "react-bootstrap/Image";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -63,7 +62,6 @@ const handleUpdate = (_id)=>{
 
   return (
     <div>
-      <Nav />
 
      
       <div className="body-vv">

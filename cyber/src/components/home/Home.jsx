@@ -1,13 +1,11 @@
 import React from "react";
 import "./Home.css";
-import Nav from "../Nav/Nav";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div  className="home-bg">
-      <Nav />
       <div className="div">
         <div>
           <Image src="chome.webp" className="img-h"></Image>
@@ -16,7 +14,7 @@ function Home() {
           <Link to={"/sessionlist"}>
             <input
               type="button"
-              value="TO ENROLL THE SECTION"
+              value="TO ENROLL THE SESSION"
               className="btn-h"
             ></input>
           </Link>
@@ -151,6 +149,34 @@ function Home() {
             </tr>
           </table>
         </div>
+
+
+        <div className="home-container1">
+          <h1 className="home-h1">
+            BEST ANTIVIRUS SOFTWARE<br></br>
+            PROTECTION - 2024
+          </h1>
+          <p className="home-p1">
+            High quality security solutions reviewed
+          </p>
+          <p className="home-p2">
+            The content is written by industry professinals and you will have a good insight into<br></br>
+            what solutions offer the best security and which ones can be adapted or adjusted to<br></br>
+            your own needs.We encourage you to read onward as you try to find the best <br></br>
+            security options that suit your needs in the long run. 
+          </p>
+          <img src="TitleImg.svg" className="home-img1"></img>
+          <Link to={'/cart'}>
+          <button className="home-btn">Choose Your Security</button></Link>
+        </div>
+
+
+
+
+
+
+
+
       </div>
       <div className="container2">
         <p className="div-p">www.sheildcybercrimeportal@gmail.com</p>
