@@ -6,7 +6,7 @@
     min-height: 830px;
 
     /* background-color: rgb(0, 255, 119); */
-    background-image:linear-gradient(to bottom,rgb(28, 27, 27),rgba(54, 53, 53, 0.914));
+    background-image:linear-gradient(to bottom,rgb(63, 144, 201),rgba(177, 225, 244, 0.914));
 height: auto;
     width: 100%;
     /* background-position: center; */
@@ -36,14 +36,16 @@ align-items: center;
     width: 300px;
     position: relative;
     margin-top: 20px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-image: linear-gradient(to bottom,white,grey);
+    background: url('/public/bluenav.jpg');
+
+    /* background-image: linear-gradient(to bottom,white,grey); */
 
 }
 .av1{

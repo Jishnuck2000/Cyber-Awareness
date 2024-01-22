@@ -6,7 +6,7 @@
     min-height: 830px;
 
     /* background-color: rgb(0, 255, 119); */
-    background-image:linear-gradient(to bottom,rgb(28, 27, 27),rgba(54, 53, 53, 0.914));
+    /* background-image:linear-gradient(to bottom,rgb(28, 27, 27),rgba(54, 53, 53, 0.914)); */
      height: auto;
     width: 100%;
     /* background-position: center; */
@@ -26,7 +26,9 @@ align-items: center;
     margin-bottom: 40px;
     justify-content: center;
     width: 60%;
-    background-image: linear-gradient(to bottom,rgb(227, 222, 222),grey);
+    background: url('/public/bluenav.jpg');
+
+    /* background-image: linear-gradient(to bottom,rgb(227, 222, 222),grey); */
     border-radius: 10px;
     flex-wrap: wrap;
 }

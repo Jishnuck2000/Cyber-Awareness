@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:linear-gradient(to bottom,grey,black);
+    background-image:linear-gradient(to bottom,rgb(133, 222, 242),rgb(178, 221, 231));
 
-    /* background: url('/public/peakbg.jpg'); */
+    /* background: url('/public/bluebg.jpg'); */
     min-height: 865px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -13,16 +13,20 @@
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
-    background-color: rgb(122, 148, 134);
+    /* background-color: rgb(122, 148, 134); */
 
 }
 .bg-c{
     height: 700px;
     width: 600px;
+    /* background: url('/public/bluebg.jpg'); */
+       background-image: url('/public/bluenav.jpg');
+
+
     /* background-color: rgba(240, 248, 255, 0.712); */
-    background-image: radial-gradient(white,rgb(69, 32, 136),rgb(128, 12, 12),rgb(255, 255, 255),rgb(125, 19, 19));
+    /* background-image: linear-gradient(to bottom,grey,rgb(202, 199, 199)); */
     border-radius: 10px;
-    margin-left: -200px;
+    margin-left: 100px;
 
 }
 .p-c1{
@@ -96,7 +100,7 @@ margin-left: 200px;
 margin-top: 600px;
 }
 .captainamarica{
-    height: 600px;
-    width:500px;
-    margin-left: 400px;
+    height: 800px;
+    width:1000px;
+    margin-left: 200px;
 }

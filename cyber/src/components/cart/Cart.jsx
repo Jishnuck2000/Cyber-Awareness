@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Cart.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import {ColorRing} from 'react-loader-spinner'
+
 
 
 
@@ -46,6 +48,8 @@ const handleItem= (item) =>{
    } )
 }
 
+
+
   const handleUpdate = (_id)=>{
     console.log(_id)
   
@@ -70,6 +74,7 @@ const handleItem= (item) =>{
           .then((response) => {
             console.log("responsefromapi", response);
             setViewcart(response.data.data);
+  
           })
           .catch((err) => {
             console.log(err);
@@ -84,16 +89,29 @@ const handleItem= (item) =>{
 
 
   return (
+   
     <div>
         <div className='cart-bg'>
 
             <div className='cart-bg1'>
+          
             {viewcart.map((item)=>(
-
+  <>
+  {viewcart.length!==0 ?(
+<>
 <div className='card-cartdiv'>
                 <div className='cart-card'>
-
-                    <img src={`/upload/${item.image}`} className='av1'></img>
+ 
+                    <img src={`/upload/${item.image}`} onError={(e)=>{e.target.src = '/eye.png'}} className='av1'></img>
+                    {/* <img
+  src={`/upload/${item.image}`}
+  alt={'hi'}
+  onError={(e) => {
+    e.target.onerror = null
+    e.target.src = 'eye.png'
+  }}
+className='av1'/> */}
+                   
                     <h2 className='cart-h2'>{item.usage}</h2>
                     <p className='cart-p1'>{item.validity}</p>
                     <div className='cart-hr'>
@@ -117,7 +135,23 @@ const handleItem= (item) =>{
                     </div>
 
                 </div></div>
+
+                </>
+    ):(<>
+     <ColorRing
+  visible={true}
+  height="80"
+  width="80"
+  ariaLabel="color-ring-loading"
+  wrapperStyle={{}}
+  wrapperClass="color-ring-wrapper"
+  colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+  />
+    </>)}
+    </>
+
 ))}
+
             </div>
 
 

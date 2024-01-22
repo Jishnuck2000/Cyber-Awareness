@@ -8,19 +8,23 @@
     width: 1920px;
 }
 .a-d2{
-    background-color: black ;
+    /* background-color: black ; */
+    background: url('/public/bluebg.jpg');
+
     height: 290px;
     width: 1920px;
 }
 .a-d4{
     height: 75px;
     width: 1920px;
-    background-color: rgb(113, 113, 113);
+    background-color: rgb(14, 88, 141);
 }
 .a-d3{
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to bottom,grey,grey);
+    background: url('/public/bluenav.jpg');
+
+    /* background-image: linear-gradient(to bottom,grey,grey); */
     box-shadow: 0px 0px 5px black;
 
     height: 400px;

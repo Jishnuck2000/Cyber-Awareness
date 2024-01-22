@@ -106,7 +106,7 @@ function Complaint() {
           
            <img src='file.png' className='csf' id="complaint-image" alt="" />
            </Link>
-           <Image src='captainamerica.png' className="captainamarica"></Image>
+           <Image src='vector3.png' className="captainamarica"></Image>
 
       </div>
       <div className="container2">

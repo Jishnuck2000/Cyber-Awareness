@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:linear-gradient(to bottom,grey,black);
+  /* background-image:linear-gradient(to bottom,grey,black); */
 
   /* background: url('/public/peakbg.jpg'); */
   min-height: 865px;
@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-  background-color: rgb(122, 148, 134);
+  /* background-color: rgb(122, 148, 134); */
 }
 
 
@@ -87,7 +87,9 @@
     text-align: center;
   }
   .table1{
-    background-color: rgba(11, 8, 69, 0.25);
+    /* background-color: rgba(11, 8, 69, 0.25); */
+    background: url('/public/bluenav.jpg');
+
     border-radius: 10px;
     margin-bottom: 40px;
   }

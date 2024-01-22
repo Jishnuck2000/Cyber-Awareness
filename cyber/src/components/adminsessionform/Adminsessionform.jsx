@@ -35,11 +35,11 @@ const navigate = useNavigate();
     <div>
         <div className='body-asf'>
            <div> <p className='p-asf'>ADD SESSIONS,</p></div>
-            <div className='body-asf1'>
-                <input type ='date' className='i-asf1' name='date' onChange={inputChange}></input><br></br>
-                <textarea  placeholder=' about session...' className='i-asf2' name='about' onChange={inputChange}></textarea>
-                <input type ='time' className='i-asf3' name='time' onChange={inputChange}></input><br></br>
-                <button className='btn-asf'           onClick={(event) => handleSubmit(event)}
+            <div className='body-asff'>
+                <input type ='date' className='i-asf11' name='date' onChange={inputChange}></input><br></br>
+                <textarea  placeholder=' about session...' className='i-asf22' name='about' onChange={inputChange}></textarea>
+                <input type ='time' className='i-asf33' name='time' onChange={inputChange}></input><br></br>
+                <button className='btn-asfb'           onClick={(event) => handleSubmit(event)}
 >ADD</button>
 
 

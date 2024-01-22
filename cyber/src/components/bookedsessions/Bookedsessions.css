@@ -4,8 +4,10 @@
     align-items: center;
     /* background-color: rgb(216, 137, 17); */
     /* background: url('/public/peakbg.jpg'); */
-    background-image: linear-gradient(to bottom,grey,black);
-    min-height: 871px;
+    /* background-image: linear-gradient(to bottom,grey,black); */
+    background: url('/public/bluenav.jpg');
+
+    min-height: 831px;
     overflow-y: hidden;
     overflow-x: hidden;
     
@@ -21,5 +23,5 @@
     height: 400px;
     width: 400px;
     border-radius: 10px;
-box-shadow:0px 0px 30px slategray;
+box-shadow:0px 0px 20px rgb(235, 236, 236);
 }

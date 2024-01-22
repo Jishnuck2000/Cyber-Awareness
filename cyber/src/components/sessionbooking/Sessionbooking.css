@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/public/peakbg.jpg');
-    background-color: rgb(122, 148, 134);
+    /* background: url('/public/bluenav.jpg'); */
+    /* background-color: rgb(122, 148, 134); */
     min-height: 1071px;
     
     width: 100%;
@@ -16,6 +16,8 @@
 .sb-bg2{
     height: 950px;
     width: 700px;
+    background: url('/public/bluenav.jpg');
+
     background-color: aliceblue;
     border-radius: 10px;
     box-shadow: 0px 0px 10px;

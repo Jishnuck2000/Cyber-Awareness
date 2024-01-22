@@ -1,4 +1,4 @@
-.body-asf{
+.body-up{
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
@@ -6,7 +6,7 @@
     min-height: 830px;
 
     /* background-color: rgb(0, 255, 119); */
-    background-image:linear-gradient(to bottom,grey,black);
+    /* background-image:linear-gradient(to bottom,grey,black); */
 height: auto;
     width: 100%;
     /* background-position: center; */

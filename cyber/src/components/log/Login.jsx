@@ -21,7 +21,6 @@ function Login() {
   console.log(login);
   const handleSubmit = (event) => {
     event.preventDefault();
-    swal("Login Successfull!", "You clicked the button!", "success");
 
     axios
       .post("http://localhost:1111/api/login/", login)
@@ -29,6 +28,8 @@ function Login() {
         localStorage.setItem("Token", data.data.token);
         localStorage.setItem("Role", data.data.userRole);
         console.log(data);
+        swal("Login Successfull!", "You clicked the button!", "success");
+
 
         navigate("/hom");
       })
@@ -51,6 +52,7 @@ function Login() {
   return (
     <div>
       <div className="body">
+        <div className="login-body">
         <Image src="team.png" className="team"></Image>
         <Image src="user.png" className="user"></Image>
 
@@ -87,6 +89,7 @@ function Login() {
           className="btn1"
           onClick={(event) => handleSubmit(event)}
         ></input>
+      </div>
       </div>
       <ToastContainer />
     </div>

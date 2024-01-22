@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/public/peakbg.jpg');
-    min-height: 871px;
+    background: url('/public/bluenav.jpg');
+    min-height: 831px;
     
     width: 100%;
     background-position: center;
@@ -13,23 +13,23 @@
 }
 .team{
    
-   margin-top: -500px;
+   /* margin-top: -500px; */
    height: 250px;
    width: 250px;
-   margin-left: -50px;
+   margin-left: -70px;
 
 }
 .user{
     height: 30px;
     width: 30px;
-    margin-left: -375px;
-    margin-top: -100px;
+    margin-left: -355px;
+    margin-top: 265px;
     
 }
 .n1{
     height: 50px;
     width: 400px;
-    margin-top: -100px;
+    margin-top: 250px;
     border-radius: 30px;
     margin-left: 20px;
     font-size: 20px;
@@ -39,8 +39,8 @@
 .pass{
     height: 30px;
     width: 30px;
-    margin-left: -457px;
-    margin-top: 50px;
+    margin-left: -460px;
+    margin-top: 350px;
     
 
 }
@@ -48,22 +48,22 @@
 .n2{
     height: 50px;
     width: 400px;
-    margin-top: 50px;
+    margin-top: 335px;
     border-radius: 30px;
     margin-left: 20px;
     font-size: 20px;
 
 }
 .box{
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: -370px;
 }
 .p11{
-    margin-top: 162px;
+    margin-top: 412px;
     margin-left: 5px;
 }
 .p22{
-    margin-top: 162px;
+    margin-top: 412px;
     margin-left: 80px;
 }
 .p22:hover{
@@ -72,14 +72,25 @@
 
 }
 .btn1{
-    margin-top: 260px;
+    margin-top: 480px;
     height: 35px;
     width: 100px;
-    margin-left: -215px;
+    margin-left: -225px;
     border-radius: 10px;
     font-weight: 600;
+    background-image: linear-gradient(to bottom,rgb(0, 241, 80),rgb(0, 255, 17));
     
 }
 .btn1:hover{
     background-color: green;
+}
+.login-body{
+    height: 600px;
+    width: 600px;
+    background-color: rgba(240, 248, 255, 0.278);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px;
 }

@@ -26,6 +26,9 @@ import Updatecart from './components/updatecart/Updatecart'
 import Addtocart from './components/addtocart/Addtocart'
 import Purchase from './components/purchase/Purchase'
 import Addaddressform from './components/addaddressform/Addaddressform'
+import Updateaddress from './components/editaddress/Updateaddress'
+import Ordersummary from './components/ordersummery/Ordersummary'
+import Payment from './components/payments/Payment'
 
 
 
@@ -43,7 +46,7 @@ function App() {
 
 
         <Route path='/log'element={<Login/>}/>
-        <Route path='/reg'element={<Register/>}/> 
+        <Route path='/'element={<Register/>}/> 
         <Route path='/comp'element={<Complaint/>}/>
         <Route path='/dis'element={<DisplayComplaint/>}/>
         <Route path='/vcomp'element={<VolunteerRegister/>}/>
@@ -66,6 +69,13 @@ function App() {
         <Route path='/addtocart'element={<Addtocart/>}/>
         <Route path='/purchase'element={<Purchase/>}/>
         <Route path='/addaddressform'element={<Addaddressform/>}/>
+        <Route path='/updateaddress/:id'element={<Updateaddress/>}/>
+        <Route path='/ordersummary'element={<Ordersummary/>}/>
+        <Route path='/payment'element={<Payment/>}/>
+
+
+
+
 
 
 

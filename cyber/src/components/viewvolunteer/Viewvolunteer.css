@@ -6,7 +6,7 @@
     min-height: 865px;
 
     /* background-color: rgb(0, 255, 119); */
-    background-image:linear-gradient(to bottom,grey,black);
+    /* background-image:linear-gradient(to bottom,grey,black); */
 height: auto;
     width: 100%;
     /* background-position: center; */
@@ -24,8 +24,8 @@ align-items: center;
     margin-top: 20px;
     display: flex;
     row-gap: 30px;
-    /* background: url('/public/bg.jpg'); */
-    background-image: linear-gradient(to bottom,grey,white);
+    background: url('/public/bluenav.jpg');
+    /* background-image: linear-gradient(to bottom,grey,white); */
     box-shadow:0px 0px 10px ;
 
     justify-content: space-evenly;

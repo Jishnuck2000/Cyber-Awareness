@@ -18,10 +18,12 @@ align-items: center;
     flex-wrap:nowrap;
 }
 .aar-bg1{
-    background-image: linear-gradient(to bottom,grey,rgb(189, 188, 188));
+    /* background-image: linear-gradient(to bottom,grey,rgb(189, 188, 188)); */
     height: 600px;
     width: 70%;
     border-radius: 10px;
+    background: url('/public/bluenav.jpg');
+
     box-shadow: 0px 0px 10px rgb(95, 93, 93);
     display: flex;
     justify-content: center;

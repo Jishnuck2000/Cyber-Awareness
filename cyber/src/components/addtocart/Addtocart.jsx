@@ -3,11 +3,30 @@ import "./Addtocart.css";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { cartView } from "../../redux/reducer/Cardslice";
+import { Link } from "react-router-dom";
+import {ColorRing} from 'react-loader-spinner'
+
 
 function Addtocart() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
   const [addtocart, setAddtocart] = useState([]);
   const dispatch = useDispatch();
+
+  let total = addtocart.reduce((previousValue, currentValue) => {
+    return previousValue + currentValue.quantity * currentValue.price;
+  }, 0);
+console.log(total);
+
+
+
+
+
+
+
+
+
+
+
   // const total={...addtocart}
   // console.log('total',total);
   // const totalProductPrice = item.price*item.quantity
@@ -16,6 +35,10 @@ function Addtocart() {
   //     return total + currentItem.totalProductPrice;
   //   }, 0);
   // console.log(totalCartPrice)
+
+  const Role = localStorage.getItem("Role");
+  console.log(Role);
+
 
   const token = localStorage.getItem("Token");
   console.log("Token:", token);
@@ -46,6 +69,9 @@ function Addtocart() {
       .then((response) => {
         console.log(response.data.incre_data);
         const incrementstatus = addtocart.filter((data) => {
+
+
+          
           if (data._id == id) {
             return (data.quantity += 1);
           }
@@ -108,6 +134,7 @@ function Addtocart() {
       })
       .catch((err) => {
         console.log(err);
+
       });
   }, []);
 
@@ -120,7 +147,15 @@ function Addtocart() {
   const error = useSelector((state) => state.content.error);
 
   if (isLoading) {
-    return "loading...";
+    return  <ColorRing
+    visible={true}
+    height="80"
+    width="80"
+    ariaLabel="color-ring-loading"
+    wrapperStyle={{}}
+    wrapperClass="color-ring-wrapper"
+    colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+    />;
   }
 
   if (error) {
@@ -190,9 +225,12 @@ function Addtocart() {
                   </div>
                 ))}
 
-                <button className="place-order">Place Order</button>
+                <Link to = {'/purchase'}>
 
-                <div className="total">Total:</div>
+                <button className="place-order" >Place Order</button>
+                </Link>
+
+                <div className="total">Total: ${total.toFixed(2)}</div>
               </>
             ) : (
               <>

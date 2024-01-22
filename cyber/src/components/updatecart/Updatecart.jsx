@@ -67,7 +67,7 @@ console.log(id)
   return (
     <div>
          <div>
-      <div className="aps-bg">
+      <div className="body-up">
         <form action=""  encType="multipart/formdata">
           <div className="aps-bg1">
             <h1 className="aps-h1">UPDATE HERE...</h1>

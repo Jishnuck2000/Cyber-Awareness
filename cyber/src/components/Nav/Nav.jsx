@@ -116,7 +116,7 @@ function Nav() {
           </Link>
           {Token == null ? (
             <>
-              <Link to={"/reg"}>
+              <Link to={"/"}>
                 <p className="p6-nav">Register</p>
               </Link>
               <Link to={"/log"}>
@@ -134,6 +134,9 @@ function Nav() {
                   Logout
                 </p>
               </Link>
+              <Link to = {"/addtocart"}>
+              <img src="carts.png" className="cart-nav"></img>
+</Link>
             </>
           )}
 

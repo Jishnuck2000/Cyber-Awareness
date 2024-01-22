@@ -57,7 +57,9 @@ cartroutes.post(
 
 cartroutes.get("/viewcart", checkauth, (req, res) => {
   cart
-    .find()
+    .find({
+      login_id:req.userData.userId,
+    })
     .then((data) => {
       return res.status(200).json({
         success: true,
@@ -70,7 +72,6 @@ cartroutes.get("/viewcart", checkauth, (req, res) => {
       return res.status(400).json({
         success: false,
         error: true,
-        data: data,
         message: "Failed",
       });
     });

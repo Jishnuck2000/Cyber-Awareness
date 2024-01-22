@@ -4,7 +4,7 @@
     align-items: center;
     /* background-color: rgb(216, 137, 17); */
     /* background: url('/public/peakbg.jpg'); */
-    background-image: linear-gradient(to bottom,grey,black);
+    /* background-image: linear-gradient(to bottom,grey,black); */
     min-height: 871px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -20,7 +20,9 @@
     height: auto;
     width: 95%;
     /* background-color: rgba(240, 248, 255, 0.64); */
-    background-image: linear-gradient(to bottom,grey,white);
+    background: url('/public/bluenav.jpg');
+
+    /* background-image: linear-gradient(to bottom,grey,white); */
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -36,12 +38,13 @@
 .tr1-sd{
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
 }
 .th1-sd1{
     width: 7%;
     overflow-y: hidden;
     overflow-x: hidden;
-    color: rgb(156, 16, 16);
+    color: rgb(224, 15, 15);
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
@@ -60,8 +63,9 @@
     color: aliceblue;
     font-weight: 600;
     border-radius:10px ;
-    background-image: linear-gradient(to bottom,grey,black);
+    background-image: linear-gradient(to bottom,rgb(24, 215, 34),rgb(33, 199, 46));
 }
 .th1-7{
     width: 7%;
 }
+

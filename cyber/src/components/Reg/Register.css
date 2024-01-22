@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/public/peakbg.jpg');
-    min-height: 871px;
+    background: url('/public/bluenav.jpg');
+    min-height: 831px;
     
     width: 100%;
     background-position: center;
@@ -12,11 +12,12 @@
     background-size: cover;
 }
 .bg{
-    background-color: rgba(13, 14, 14, 0.104);
-    height: 800px;
+    background-color: rgba(242, 245, 245, 0.286);
+    height: 750px;
     width: 700px;
     border-radius: 30px;
     margin-left: -300px;
+    box-shadow: 0px 0px 10px;
     
 }
 .p1{

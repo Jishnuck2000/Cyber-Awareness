@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/public/peakbg.jpg');
+    /* background: url('/public/peakbg.jpg'); */
     min-height: 865px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -11,13 +11,16 @@
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
-    background-color: rgb(122, 148, 134);
+    background-image: linear-gradient(to bottom,rgb(140, 219, 231),rgb(47, 223, 211));
+    /* background-color: rgb(190, 225, 237); */
 
 }
 .bg-vr{
     height: 800px;
     width: 600px;
-    background-color: aliceblue;
+        background: url('/public/bluenav.jpg');
+
+    /* background-color: aliceblue; */
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(29, 44, 50);    
 

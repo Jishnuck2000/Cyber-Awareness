@@ -4,7 +4,7 @@
     align-items: center;
     /* background: url('/public/peakbg.jpg'); */
     min-height: 871px;
-    background-image:linear-gradient(to bottom,grey,black);
+    /* background-image:linear-gradient(to bottom,grey,black); */
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,67 +89,9 @@ box-shadow: 0px 0px 10px red;
     height: auto;
     box-shadow: 0px 0px 10px;
     border-radius: 10px;
-    /* Add your background pattern here */
-    background: lightblue;
-    background: radial-gradient(
-        circle,
-        rgb(170, 162, 162),
-        #333 30%,
-        rgba(88, 84, 84, 0.226) 0%
-      ),
-      radial-gradient(
-        circle at 40px 40px,
-        rgb(233, 228, 228),
-        #333 30%,
-        rgba(88, 84, 84, 0) 0%
-      ),
-      radial-gradient(
-        circle at 600px 200px,
-        rgb(233, 228, 228),
-        #333 10%,
-        rgba(88, 84, 84, 0) 0%
-      ),
-      radial-gradient(
-        circle at 800px 100px,
-        rgb(233, 228, 228),
-        #333 10%,
-        rgba(88, 84, 84, 0) 0%
-      ),
-      radial-gradient(
-        circle at 700px 500px,
-        rgb(233, 228, 228),
-        #333 2%,
-        rgba(88, 84, 84, 0.123) 0%
-      ),
-      radial-gradient(
-        circle at 200px 400px,
-        rgb(233, 228, 228),
-        #333 1%,
-        rgba(88, 84, 84, 0) 0%
-      ),
-      radial-gradient(
-        circle at 300px 700px,
-        rgb(233, 228, 228),
-        #333 15%,
-        rgba(88, 84, 84, 0) 0%
-      ),
-      radial-gradient(
-        circle at 900px 500px,
-        rgb(233, 228, 228),
-        #333 20%,
-        rgba(88, 84, 84, 0) 0%
-      ),
-      radial-gradient(
-        circle at 650px 400px,
-        rgb(233, 228, 228),
-        #333 10%,
-        rgba(88, 84, 84, 0) 0%
-      ),
-      radial-gradient(
-        circle at 600px 600px,
-        rgb(233, 228, 228),
-        #333 1%,
-        rgba(88, 84, 84, 0.959) 0%
-      );
+    
+         background: url('/public/bluenav.jpg');
+
+     
   }
   
