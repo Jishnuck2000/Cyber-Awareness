@@ -3,7 +3,6 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Complaint from './components/Complaint/Complaint'
 import Login from './components/log/Login'
 import Register from './components/Reg/Register'
-import Nav from './components/Nav/Nav'
 import DisplayComplaint from './components/DisplayComplaint/DisplayComplaint'
 import VolunteerRegister from './components/VolunteerRegister/VolunteerRegister'
 import Home from './components/home/Home'
@@ -29,6 +28,11 @@ import Addaddressform from './components/addaddressform/Addaddressform'
 import Updateaddress from './components/editaddress/Updateaddress'
 import Ordersummary from './components/ordersummery/Ordersummary'
 import Payment from './components/payments/Payment'
+import Wishlist from './components/wishlist/Wishlist'
+import Profileaddress from './components/profileaddress/Profileaddress'
+import Editprofileaddress from './components/editprofileaddress/Editprofileaddress'
+import Profileaddresslist from './components/profileaddresslist/Profileaddresslist'
+import Nav from './components/Nav/Nav'
 
 
 
@@ -40,7 +44,7 @@ function App() {
     <>
 
     <Router>
-    <Nav />
+    <Nav/>
       <Routes>
       <Route path='/profile'element={<Profile/>}/>
 
@@ -72,6 +76,17 @@ function App() {
         <Route path='/updateaddress/:id'element={<Updateaddress/>}/>
         <Route path='/ordersummary'element={<Ordersummary/>}/>
         <Route path='/payment'element={<Payment/>}/>
+        <Route path='/wishlist'element={<Wishlist/>}/>
+        <Route path='/profileaddress'element={<Profileaddress/>}/>
+        <Route path='/editprofileaddress/:id'element={<Editprofileaddress/>}/>
+        <Route path='/profileaddresslist'element={<Profileaddresslist/>}/>
+
+
+
+
+
+
+
 
 
 

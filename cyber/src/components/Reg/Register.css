@@ -71,7 +71,7 @@
 
     
 }
-.btn{
+.btn-register{
     height: 40px;
     width: 100px;
     border-radius: 10px;
@@ -81,7 +81,7 @@
     color: aliceblue;
     font-weight: 800;
 }
-.btn:hover{
+.btn-register:hover{
 
     background-color: green;
 }

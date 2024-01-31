@@ -6,12 +6,12 @@ const initialState = {
   isLoading: false,
   error: null,
 };
-const token = localStorage.getItem("Token");
-
+const Token = localStorage.getItem("Token");
+console.log("tokennn242343nnnn", Token);
 export const cartView = createAsyncThunk("content/cartview", async () => {
-  const res = await axios.get("http://localhost:1111/api/cart/viewcart", {
+  const res = await axios.get("http://localhost:1111/api/cart/viewcart",{
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${Token}`,
     },
   });
   const data = await res.data;

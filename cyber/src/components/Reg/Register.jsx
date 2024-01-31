@@ -90,7 +90,7 @@ function Register() {
 
         <input
           type="button"
-          className="btn"
+          className="btn-register"
           value="Register"
           onClick={(event) => handleSubmit(event)}
         ></input>

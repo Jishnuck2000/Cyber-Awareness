@@ -21,6 +21,7 @@ cartroutes.post(
   upload.single("image"),
   checkauth,
   async (req, res) => {
+    try{
     const Data = await new cart({
       image: req.body.image,
       name: req.body.name,
@@ -53,6 +54,15 @@ cartroutes.post(
         });
       });
   }
+  catch (err) {
+    return res.status(500).json({
+      success: false,
+      error: true,
+      Errormessage: err.message,
+      message: "Network error",
+    });
+  }
+}
 );
 
 cartroutes.get("/viewcart", checkauth, (req, res) => {

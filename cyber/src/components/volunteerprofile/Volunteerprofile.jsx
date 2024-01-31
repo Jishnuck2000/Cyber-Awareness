@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Volunteerprofile.css'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 // import Image from "react-bootstrap/Image";
 
 
@@ -72,6 +73,14 @@ useEffect(()=>{
         QUALIFICATION : {Volunteerprofile.Qualification}
       
     </div>
+    <Link to={"/profileaddress"}>
+              <div className="volunteerpro-addiv">
+
+              <img src="location-pin.png" className="location-pin">
+              </img>              <div className="profile-address-details"> Address Details
+</div>
+              </div>
+              </Link>
     <div className="p-vp">
       <p>I do human things such as exist, eat foot, and work.</p>
     </div>

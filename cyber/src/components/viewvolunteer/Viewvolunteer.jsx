@@ -68,7 +68,7 @@ const handleUpdate = (_id)=>{
         <div className="body-vvv">
       {volunteerregister.map((item)=>(
 
-      <div className="card">
+      <div className="card-vv">
   <div className="card__img">
     <svg width="100%" xmlns="http://www.w3.org/2000/svg">
       <rect height={450} width={540} fill="#ffffff" />

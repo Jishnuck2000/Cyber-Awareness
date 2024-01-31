@@ -78,6 +78,7 @@ align-items: center;
     font-weight: 600;
   }
   .cart-name{
+    margin-top: -28px;
     font-weight: 600;
   }
   .cart-dis{
@@ -119,6 +120,12 @@ align-items: center;
     width: 50px;
     border-radius: 5px;
     background-image: linear-gradient(to bottom,rgb(191, 91, 37),rgb(233, 213, 84));
+  }
+  .cart-favorite{
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 220px;
   }
 
   

@@ -16,6 +16,22 @@ function Cart() {
 
 
 
+const handleWishlist = (item) =>{
+
+  axios.post('http://localhost:1111/api/user/addwishlist',item,{
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
+  .then((response)=>{
+    console.log(response)
+   } )
+   .catch((err)=>{
+    console.log(err)
+   } )
+}
+
+
 
   const handleDelete = (_id) =>{
 
@@ -115,6 +131,9 @@ className='av1'/> */}
                     <h2 className='cart-h2'>{item.usage}</h2>
                     <p className='cart-p1'>{item.validity}</p>
                     <div className='cart-hr'>
+                      <Link to ={"/wishlist"}>
+                    <img src='favorite.png' className='cart-favorite' onClick={()=>handleWishlist(item)}></img>
+</Link>
                         <p className='cart-name'>{item.name}</p>
                         <p className='cart-dis'>Type:{item.description}</p>
                         <p className='cart-val'>Validity:{item.validity}</p>

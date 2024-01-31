@@ -8,6 +8,23 @@ const Registerdata = require("../models/registerschema");
 const { default: mongoose } = require("mongoose");
 const addadminsession = require("../models/adminaddsessionschema");
 const { updateOne } = require("../models/cartschema");
+const products = require("../models/productschema");
+const profileadd = require("../models/profileaddressschema");
+const profileimg = require("../models/profileimageschema");
+const favorites = require("../models/wishlistschema");
+const multer = require("multer");
+const { error } = require("console");
+// const checkauth = require("../middleware/checkauth");
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "../cyber/public/upload");
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+const upload = multer({ storage: storage });
 
 //add
 
@@ -332,7 +349,7 @@ usersroutes.post("/addaddress", checkauth, (req, res) => {
 
 usersroutes.get("/viewaddaddress", checkauth, (req, res) => {
   addaddress
-    .find()
+    .find({ login_id: req.userData.userId })
     .then((data) => {
       res.status(200).json({
         success: true,
@@ -351,7 +368,7 @@ usersroutes.get("/viewaddaddress", checkauth, (req, res) => {
     });
 });
 
-usersroutes.put("/updateaddresstype/:id",checkauth, async (req, res) => {
+usersroutes.put("/updateaddresstype/:id", checkauth, async (req, res) => {
   try {
     const updatePrimary = await addaddress.updateMany(
       { login_id: req.userData.userId },
@@ -505,9 +522,7 @@ usersroutes.put("/updateaddress/:id", checkauth, async (req, res) => {
   // }
 });
 
-
-
-usersroutes.delete("/deleteaddress/:id",checkauth,(req, res) => {
+usersroutes.delete("/deleteaddress/:id", checkauth, (req, res) => {
   addaddress
     .deleteOne({
       _id: req.params.id,
@@ -530,17 +545,204 @@ usersroutes.delete("/deleteaddress/:id",checkauth,(req, res) => {
     });
 });
 
-
-
-
-
-
-
 usersroutes.get("/vieworderaddress", checkauth, (req, res) => {
-  addaddress
+  try {
+    addaddress
+      .findOne({
+        login_id: req.userData.userId,
+        addresstype: "primary",
+      })
+
+      .then((data) => {
+        res.status(200).json({
+          success: true,
+          error: false,
+          data: data,
+          message: "Data fetched successfully",
+        });
+      })
+      .catch((err) => {
+        res.status(400).json({
+          success: false,
+          error: true,
+          data: data,
+          message: "Failed",
+        });
+      });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      error: true,
+      message: "error",
+      errormessage: err.message,
+    });
+  }
+});
+
+// ----------------------Wishlist--------------------------------------
+
+usersroutes.post(
+  "/addwishlist",
+  upload.single("image"),
+  checkauth,
+  async (req, res) => {
+    const Data = await new favorites({
+      image: req.body.image,
+      name: req.body.name,
+      usage: req.body.usage,
+      description: req.body.description,
+      validity: req.body.validity,
+      price: req.body.price,
+      login_id: req.userData.userId,
+    });
+
+    await Data.save()
+      .then((data) => {
+        return res.status(200).json({
+          success: true,
+          error: false,
+          data: data,
+          message: "Data successfully added",
+        });
+      })
+
+      .catch((error) => {
+        return res.status(400).json({
+          success: false,
+          error: true,
+          Errormessage: error,
+          message: "Failed",
+        });
+      });
+  }
+);
+
+usersroutes.get("/viewwishlist", checkauth, (req, res) => {
+  favorites
+    .find({
+      login_id: req.userData.userId,
+    })
+    .then((data) => {
+      return res.status(200).json({
+        success: true,
+        error: false,
+        data: data,
+        message: "Data fetched successfully",
+      });
+    })
+    .catch((err) => {
+      return res.status(400).json({
+        success: false,
+        error: true,
+        message: "Failed",
+      });
+    });
+});
+
+usersroutes.delete("/deletewishlist/:id", checkauth, (req, res) => {
+  favorites
+    .deleteOne({
+      _id: req.params.id,
+    })
+    .then((data) => {
+      return res.status(200).json({
+        success: true,
+        error: false,
+        data: data,
+        message: "Data deleted successfully",
+      });
+    })
+    .catch((err) => {
+      return res.status(400).json({
+        success: false,
+        error: true,
+        data: data,
+        message: "Failed",
+      });
+    });
+});
+
+// --------------------------profileaddress--------------------
+
+usersroutes.post("/addprofileaddress", checkauth, (req, res) => {
+  const Data = new profileadd({
+    login_id: req.userData.userId,
+    house_name: req.body.house_name,
+    street_address: req.body.street_address,
+    district: req.body.district,
+    state: req.body.state,
+    phone_no: req.body.phone_no,
+    email: req.body.email,
+  });
+
+  Data.save()
+    .then((data) => {
+      res.status(201).json({
+        success: true,
+        error: false,
+        data: data,
+        message: "Address added successfully",
+      });
+    })
+    .catch((error) => {
+      res.status(400).json({
+        success: false,
+        error: true,
+        Errormessage: error,
+        message: "failed",
+      });
+    });
+});
+
+usersroutes.get("/viewprofileaddress", checkauth, (req, res) => {
+  profileadd
+    .find({ login_id: req.userData.userId })
+    .then((data) => {
+      res.status(200).json({
+        success: true,
+        error: false,
+        data: data,
+        message: "fetched data successfully",
+      });
+    })
+    .catch((error) => {
+      res.status(400).json({
+        success: false,
+        error: true,
+        message: "failed fetching data",
+        Errormessage: error,
+      });
+    });
+});
+
+usersroutes.delete("/deleteprofileaddress/:id", checkauth, (req, res) => {
+  profileadd
+    .deleteOne({
+      _id: req.params.id,
+    })
+    .then((data) => {
+      return res.status(200).json({
+        success: true,
+        error: false,
+        data: data,
+        message: "Data deleted successfully",
+      });
+    })
+    .catch((err) => {
+      return res.status(400).json({
+        success: false,
+        error: true,
+        data: data,
+        message: "Failed",
+      });
+    });
+});
+
+usersroutes.get("/viewoneprofileaddress/:id", checkauth, (req, res) => {
+  profileadd
     .findOne({
-       login_id: req.userData.userId 
-    ,addresstype:"primary"})
+      _id: req.params.id,
+    })
 
     .then((data) => {
       return res.status(200).json({
@@ -558,7 +760,239 @@ usersroutes.get("/vieworderaddress", checkauth, (req, res) => {
         message: "Failed",
       });
     });
+});
 
-  });
+usersroutes.put(
+  "/updateprofileaddresstype/:id",
+  checkauth,
+  async (req, res) => {
+    try {
+      const updatePrimary = await profileadd.updateMany(
+        { login_id: req.userData.userId },
+        { $set: { addresstype: "" } }
+      );
+      const updateAddressType = await profileadd.updateOne(
+        { _id: req.params.id, login_id: req.userData.userId },
+        { $set: { addresstype: "primary" } }
+      );
+      if (updatePrimary && updateAddressType) {
+        res.status(200).json({
+          success: true,
+          error: false,
+          data: updateAddressType,
+          message: "updated addresstype data successfully",
+        });
+      } else {
+        res.status(400).json({
+          success: false,
+          error: true,
+          message: "updation failed",
+          Errormessage: error,
+        });
+      }
+    } catch (error) {
+      res.status(500).json({
+        success: false,
+        error: true,
+        message: "Internal server error",
+        Errormessage: error.message,
+      });
+    }
+  }
+);
+
+usersroutes.get("/viewcheckedaddress", checkauth, (req, res) => {
+  try {
+    profileadd
+      .findOne({
+        login_id: req.userData.userId,
+        addresstype: "primary",
+      })
+
+      .then((data) => {
+        res.status(200).json({
+          success: true,
+          error: false,
+          data: data,
+          message: "Data fetched successfully",
+        });
+      })
+      .catch((err) => {
+        res.status(400).json({
+          success: false,
+          error: true,
+          data: data,
+          message: "Failed",
+        });
+      });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      error: true,
+      message: "error",
+      errormessage: err.message,
+    });
+  }
+});
+
+usersroutes.put("/updateproaddress/:id", checkauth, async (req, res) => {
+  try {
+    const oldData = await profileadd.findOne({ _id: req.params.id });
+    const updateData = {
+      house_name: req.body.house_name
+        ? req.body.house_name
+        : oldData.house_name,
+      street_address: req.body.street_address
+        ? req.body.street_address
+        : oldData.street_address,
+      district: req.body.district ? req.body.district : oldData.district,
+      state: req.body.state ? req.body.state : oldData.state,
+      phone_no: req.body.phone_no ? req.body.phone_no : oldData.phone_no,
+      email: req.body.email ? req.body.email : oldData.email,
+    };
+    const updateAddress = await profileadd.updateOne(
+      { _id: req.params.id },
+      { $set: updateData }
+    );
+    if (updateAddress) {
+      return res.status(200).json({
+        success: true,
+        error: false,
+        Data: updateAddress,
+        message: "updated successfully",
+      });
+    } else {
+      return res.status(400).json({
+        success: false,
+        error: true,
+        message: "Failed",
+      });
+    }
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      error: true,
+      message: "Internal server error",
+      Errormessage: error.message,
+    });
+  }
+});
+
+// -----------------------profileimage---------------------
+
+usersroutes.post("/addproimage",
+  upload.single("image"),
+  checkauth,async(req, res) => {
+    try{
+      console.log("responsefile",req.file);
+      const Datas = {
+        login_id: req.userData.userId,
+        image:req.file.filename,
+      }
+    const Data = await profileimg(Datas).save()
+if(Data){
+  return res.status(200).json({
+    success:true,
+    error:false,
+    data:Data,
+    message:"Image added successfully"
+  })
+}
+else{
+    res.status(400).json({
+      success: false,
+      error: true,
+      message: "Data fetch failed",
+    });
+}
+   
+  }
+  catch(err){
+    return res.status(500).json(
+      {
+        success:false,
+        error:true,
+        errormessage:err.message,
+        message:"failed",
+      }
+    )
+  }
+  
+}
+);
+
+usersroutes.get("/viewproimage", checkauth, (req, res) => {
+  profileimg
+    .find({ login_id: req.userData.userId })
+    .then((data) => {
+      res.status(200).json({
+        success: true,
+        error: false,
+        data: data,
+        message: "Data fetched successfully",
+      });
+    })
+    .catch((err) => {
+      res.status(400).json({
+        success: false,
+        error: true,
+        data: data,
+        message: "Data fetch failed",
+      });
+    });
+});
+
+
+
+
+
+
+
+
+
+usersroutes.put("/updateprofileimage/:id",upload.single('image'),checkauth,(req, res) => {
+
+  try {
+    
+    profileimg
+      .findOne({
+        _id: req.params.id,
+      })
+      .then((data) => {
+
+        
+        (data.image=req.file?req.file.filename:null),
+
+       
+          data
+            .save()
+            .then((data) => {
+              res.status(200).json({
+                success: true,
+                error: false,
+                data: data,
+                message: "Updated successfully",
+              });
+              
+            })
+            .catch((err) => {
+              res.status(400).json({
+                success: false,
+                error: true,
+                data: data,
+                message: "Updating failed",
+              });
+            });
+      });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      error: true,
+      message: err.message,
+      message:"Error"
+    });
+  }
+});
+
 
 module.exports = usersroutes;

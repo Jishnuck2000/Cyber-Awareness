@@ -122,7 +122,7 @@ console.log(total);
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/cart/viewcart", {
+      .get("http://localhost:1111/api/cart/viewcart",{
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -140,6 +140,7 @@ console.log(total);
 
   useEffect(() => {
     dispatch(cartView());
+    
   }, [dispatch]);
 
   const contents = useSelector((state) => state.content.contents);
@@ -158,9 +159,9 @@ console.log(total);
     />;
   }
 
-  if (error) {
-    return error;
-  }
+  // if (error) {
+  //   return error;
+  // }
   console.log(contents);
 
   return (

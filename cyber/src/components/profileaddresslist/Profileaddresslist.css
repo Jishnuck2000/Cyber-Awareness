@@ -1,0 +1,178 @@
+.pal-bg{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: url('/public/peakbg.jpg'); */
+    min-height: 830px;
+    
+    /* background-color: rgb(0, 255, 119); */
+    /* background-image:linear-gradient(to bottom,rgb(113, 111, 111),rgba(42, 40, 40, 0.914)); */
+     height: auto;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    /* display: flex; */
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.pal-bg1{
+    min-height: 600px;
+    height: auto;
+    width: 1000px;
+    background: url('/public/bluenav.jpg');
+    display: flex;
+    justify-content: center;
+}
+.pal-bg2{
+    min-height:500px;
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 50px;
+    width: 900px;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Hide the default checkbox */
+.container-pal input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container-pal {
+    margin-top: 55px;
+    margin-left: 50px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    height: 30px;
+    /* background-color: #2196F3; */
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark-pal {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.34em;
+    width: 1.3em;
+    background-color: #ccc;
+    transition: .4s ease-in-out;
+    border-radius: 50%;
+  }
+  
+  .checkmark-pal:hover {
+    background-color: grey;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-pal input:checked ~ .checkmark-pal {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark-pal:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-pal input:checked ~ .checkmark-pal:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-pal .checkmark-pal:after {
+    left: 0.25em;
+    top: 0.29em;
+    width: 0.50em;
+    height: 0.50em;
+    border: solid white;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .pal-p1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 52px;
+    height: 20px;
+    margin-left: 10px;  
+    /* background-color: #2196F3;  */
+  }
+  .pal-p2{
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-top: 75px; */
+    /* margin-left: -220px; */
+    height: 20px;
+    margin-left: 10px;   
+
+    /* background-color: #2196F3;  */
+
+
+  }
+  .pal-p3{
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-top: 100px; */
+    /* margin-left: -168px; */
+    height: 20px;
+    margin-left: 10px;   
+
+    /* background-color: #2196F3;  */
+  
+  }
+  .pal-p4{
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-top: 125px; */
+    /* margin-left: -141px; */
+    height: 20px;
+    margin-left: 10px;   
+
+    /* background-color: #2196F3;  */
+  
+  }
+  .pal-p5{
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-top: 150px; */
+    /* margin-left: -122px; */
+    height: 20px;
+    margin-left: 10px;   
+    margin-bottom: 52px;
+
+
+    /* background-color: #2196F3;  */
+  
+  }
+  .pal-width{
+    width: 700px;
+  }
+  .pal-back{
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
+    margin-top: -20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom,rgb(20, 175, 210),rgb(20, 179, 207));
+  }

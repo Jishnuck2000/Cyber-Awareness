@@ -22,7 +22,15 @@ align-items: center;
 
 
 
-
+.volunteerpro-addiv{
+  height: 25px;
+  width: 200px;
+  margin-left: 80px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -121,7 +129,7 @@ align-items: center;
   }
   
   .p-vp p {
-    margin-top: 0.5em;
+    margin-top:-50px;
     padding: 0.5em;
     background-color: #0003;
     border-radius: 1em;
