@@ -28,7 +28,7 @@ function Sessiondetail() {
 
       <>
     <div>
-      <div className="body-sd">
+      <div className="body-sd1">
         <div className="body-sd2">
           {/* <h1 className='h1-sd'>Booking Details,</h1> */}
 

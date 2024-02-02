@@ -21,41 +21,26 @@ function Home() {
         </div>
         <div className="div2">
           <p className="p-v2">CYBER HYGIENE POSTS</p>
-          <table cellPadding={20}>
-            <tr>
-              <td>
+            <div className="home-div2">
                 <Image src="poster1.jpg" className="poster1"></Image>
-              </td>
-              <td>
+              
                 <Image src="poster2.jpg" className="poster1"></Image>
-              </td>
-              <td>
+             
                 <Image src="poster3.jpg" className="poster1"></Image>
-              </td>
-              <td>
+              
                 <Image src="poster4.jpg" className="poster1"></Image>
-              </td>
-            </tr>
-            <tr>
-              <td>
+              
                 <Image src="poster4.jpeg" className="poster2"></Image>
-              </td>
-              <td>
+             
                 <Image src="poster6.jpg" className="poster2"></Image>
-              </td>
-              <td>
+             
                 <Image src="poster7.jpeg" className="poster2"></Image>
-              </td>
-              <td>
+            
                 <Image src="poster8.jpeg" className="poster2"></Image>
-              </td>
-            </tr>
-          </table>
+                </div> 
           <p className="p-v3">CYBER AWARENESS VIDEOS</p>
 
-          <table className="tt1" cellPadding={40}>
-            <tr>
-              <td>
+           <div className="home-bg222">
                 <video
                   className="video1"
                   height={"200px"}
@@ -65,8 +50,7 @@ function Home() {
                 >
                   <source src="video1.mp4" type="video/mp4" />
                 </video>
-              </td>
-              <td>
+             
                 <video
                   className="video1"
                   height={"200px"}
@@ -76,9 +60,7 @@ function Home() {
                 >
                   <source src="video2.mp4" type="video/mp4" />
                 </video>
-              </td>
-
-              <td>
+              
                 <video
                   className="video1"
                   height={"200px"}
@@ -88,8 +70,7 @@ function Home() {
                 >
                   <source src="video3.mp4" type="video/mp4" />
                 </video>
-              </td>
-              <td>
+              
                 <video
                   className="video1"
                   height={"200px"}
@@ -99,10 +80,7 @@ function Home() {
                 >
                   <source src="video4.mp4" type="video/mp4" />
                 </video>
-              </td>
-            </tr>
-            <tr>
-              <td>
+             
                 <video
                   className="video1"
                   height={"200px"}
@@ -112,8 +90,7 @@ function Home() {
                 >
                   <source src="video5.mp4" type="video/mp4" />
                 </video>
-              </td>
-              <td>
+             
                 <video
                   className="video1"
                   height={"200px"}
@@ -123,8 +100,7 @@ function Home() {
                 >
                   <source src="video6.mp4" type="video/mp4" />
                 </video>
-              </td>
-              <td>
+              
                 <video
                   className="video1"
                   height={"200px"}
@@ -134,8 +110,7 @@ function Home() {
                 >
                   <source src="video7.mp4" type="video/mp4" />
                 </video>
-              </td>
-              <td>
+             
                 <video
                   className="video1"
                   height={"200px"}
@@ -145,9 +120,7 @@ function Home() {
                 >
                   <source src="video8.mp4" type="video/mp4" />
                 </video>
-              </td>
-            </tr>
-          </table>
+                </div>
         </div>
 
 
@@ -168,13 +141,7 @@ function Home() {
           <img src="TitleImg.svg" className="home-img1"></img>
           <Link to={'/cart'}>
           <button className="home-btn">Choose Your Security</button></Link>
-        </div>
-
-
-
-
-
-        <div className="🤚">
+          <div className="🤚">
   <div className="👉" />
   <div className="👉" />
   <div className="👉" />
@@ -182,6 +149,13 @@ function Home() {
   <div className="🌴" />
   <div className="👍" />
 </div>
+        </div>
+
+
+
+
+
+      
 <div className="home-ui">Visit to know more about from our Social Networks</div>
 
 

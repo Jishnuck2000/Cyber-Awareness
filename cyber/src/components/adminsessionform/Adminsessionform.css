@@ -26,11 +26,11 @@ align-items: center;
     /* display: flex; */
     /* justify-content: center; */
 }
-.p-asf{
+.p-as1f{
     font-size: 25px;
     font-weight: 800;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: aliceblue;
+    color:black;
     margin-top: -350px;
     margin-left: -100px;
 }
@@ -78,3 +78,184 @@ align-items: center;
     background-image: linear-gradient(to bottom,rgb(0, 191, 255),skyblue);
 
 }
+
+@media (max-width: 1000px) {
+    .body-asf{
+        display: flex;
+        min-height: 1330px;
+    
+    height: auto;
+        width: 200%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    justify-content:center;
+    align-items: center;
+        flex-wrap:nowrap;
+        
+    }
+  }
+  @media (max-width: 600px) {
+    .body-asf{
+        display: flex;
+        min-height: 2060px;
+    
+    height: auto;
+        width: 300%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    justify-content:center;
+    align-items: center;
+        flex-wrap:nowrap;
+        
+    }
+    .body-asff{
+        height: 1200px;
+        width: 1100px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        background: url('/public/bluenav.jpg');
+    
+      
+    }
+    .p-as1f{
+        font-size: 45px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(23, 23, 24);
+        margin-top: -750px;
+        margin-left: -100px;
+    }
+    .i-asf11{
+        height: 100px;
+        width: 900px;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-top: 80px;
+        border:none;
+        margin-left: 90px;
+        box-shadow: 0px 0px 10px;
+    
+    
+    }
+    .i-asf22{
+        height: 460px;
+        width: 900px;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-top: 40px;
+        border: none;
+        margin-left: 90px;
+        box-shadow: 0px 0px 10px;
+    
+    }
+    .i-asf33{
+        height: 100px;
+        width: 900px;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-top: 40px;
+        border:none;
+        margin-left: 90px;
+        box-shadow: 0px 0px 10px;
+    
+    
+    }
+    .btn-asfb{
+        height: 100px;
+        width: 300px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 40px;
+        color: aliceblue;
+        margin-left: 380px;
+        margin-top: 100px;
+        box-shadow: 0px 0px 10px;
+        background-image: linear-gradient(to bottom,rgb(0, 191, 255),skyblue);
+    
+    }
+  }
+  @media (max-width: 490px) {
+    .body-asf{
+        display: flex;
+      
+        min-height: 2700px;
+    
+        height: auto;
+        width: 300%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    justify-content:center;
+    align-items: center;
+        flex-wrap:nowrap;
+        
+    }
+    .body-asff{
+        height: 900px;
+        width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        background: url('/public/bluenav.jpg');
+        margin-left: -200px;
+    
+        
+    }
+    .p-as1f{
+        font-size: 35px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(23, 23, 24);
+        margin-top: -550px;
+        margin-left: 200px;
+    }
+    .i-asf11{
+        height: 80px;
+        width: 600px;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-top: 80px;
+        border:none;
+        margin-left: 90px;
+        box-shadow: 0px 0px 10px;
+    
+    
+    }
+    .i-asf22{
+        height: 360px;
+        width: 600px;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-top: 40px;
+        border: none;
+        margin-left: 90px;
+        box-shadow: 0px 0px 10px;
+    
+    }
+    .i-asf33{
+        height: 80px;
+        width: 600px;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-top: 40px;
+        border:none;
+        margin-left: 90px;
+        box-shadow: 0px 0px 10px;
+    
+    
+    }
+    .btn-asfb{
+        height: 80px;
+        width: 300px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 40px;
+        color: aliceblue;
+        margin-left: 280px;
+        margin-top: 100px;
+        box-shadow: 0px 0px 10px;
+        background-image: linear-gradient(to bottom,rgb(0, 191, 255),skyblue);
+    
+    }
+  }

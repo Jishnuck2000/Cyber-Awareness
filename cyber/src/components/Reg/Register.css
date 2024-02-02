@@ -121,3 +121,36 @@
     color: aliceblue;
     margin-left: 10px;
 }
+@media (max-width: 1000px) {
+
+    .body-r{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('/public/bluenav.jpg');
+        min-height: 831px;
+        height: 1500px;
+        width: 200%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    }   
+}
+@media (max-width: 600px) {
+
+    .body-r{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('/public/bluenav.jpg');
+        min-height: 831px;
+        height: 2500px;
+        width: 300%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    }   
+    
+}

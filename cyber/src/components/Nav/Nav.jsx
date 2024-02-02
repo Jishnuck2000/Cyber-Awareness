@@ -35,7 +35,7 @@ function Nav() {
 
         <div className="fullnav">
           <input type="checkbox" id="check" />
-          <label htmlFor="check">
+          <label htmlFor="check" className="label">
             <img src="/ham.png" alt="jhfgd" className="hamburger" />
           </label>
           <div className="ul">
@@ -73,7 +73,7 @@ function Nav() {
                 </Link>
 
                 <Link to={"/profile"}>
-                  <p className="p11-nav">Profile</p>
+                  <p className="p11p-nav">Profile</p>
                 </Link>
               </>
             ) : (
@@ -104,7 +104,7 @@ function Nav() {
               ""
             )}
             <Link to={"/about"}>
-              <p className="p5-nav">About</p>
+              <p className="p5a-nav">About</p>
             </Link>
             {Token == null ? (
               <>
@@ -122,7 +122,7 @@ function Nav() {
                 <p className="p11-nav">Profile</p>
               </Link> */}
                 <Link to={""}>
-                  <p className="p12-nav" onClick={logout}>
+                  <p className="p12l-nav" onClick={logout}>
                     Logout
                   </p>
                 </Link>

@@ -34,7 +34,7 @@ const navigate = useNavigate();
   return (
     <div>
         <div className='body-asf'>
-           <div> <p className='p-asf'>ADD SESSIONS,</p></div>
+           <div> <p className='p-as1f'>ADD SESSIONS,</p></div>
             <div className='body-asff'>
                 <input type ='date' className='i-asf11' name='date' onChange={inputChange}></input><br></br>
                 <textarea  placeholder=' about session...' className='i-asf22' name='about' onChange={inputChange}></textarea>
