@@ -140,3 +140,176 @@ align-items: center;
     color: aliceblue;
     background-image: linear-gradient(to bottom,rgb(18, 232, 50),rgb(139, 242, 94),rgb(18, 221, 42));
 }
+
+
+@media (max-width: 1000px) {
+    .aps-bg{
+        display: flex;
+        min-height: 2230px;
+        width: 200%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:nowrap;
+    }
+    .aps-bg1{
+        height: 1360px;
+        width: 1200px;
+        margin-top: -630px;
+        /* background-color: aliceblue; */
+        background: url('/public/bluenav.jpg');
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        display: flex;
+        justify-content:flex-start;
+        
+    }
+    .aps-img{
+        height: 200px;
+        width: 200px;
+        margin-left: -300px;
+        margin-top: 200px;
+        /* background-color: aqua; */
+    }
+    .aps-name{
+        /* background-color: aqua; */
+        margin-left: -500px;
+        margin-top: 500px;
+        height: 20px;
+        font-size: 45px;
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .aps-h1{
+        /* background-color: aqua; */
+        font-size: 60px;
+        height: 50px;
+        margin-left: 300px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .aps-i1{
+        height: 80px;
+        width: 600px;
+        margin-top: 490px;
+        margin-left: 20px;
+        font-size: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px;
+    }
+    .aps-usage{
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin-top: 680px;
+        margin-left: -790px;
+    }
+    .aps-i2{
+        height: 80px;
+        width: 600px;
+        font-size: 30px;
+
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px;
+        margin-top: 640px;
+        margin-left: 20px;
+        /* background-color: aqua; */
+    
+    }
+    .aps-description{
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin-top: 800px;
+        height: 40px;
+        margin-left: -910px;
+        /* background-color: aqua; */
+    }
+    .aps-i3{
+        height: 80px;
+        width: 600px;
+        font-size: 30px;
+
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px;
+        margin-top: 790px;
+        margin-left: 20px;
+    }
+    .aps-validity{
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin-top: 980px;
+        height: 40px;
+        margin-left: -820px;
+    
+    }
+    .aps-i4{
+        height: 80px;
+        width: 600px;
+        font-size: 30px;
+
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px;
+        margin-top: 940px;
+        margin-left: 20px;
+    }
+    .aps-price{
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin-top: 1100px;
+        height: 40px;
+        margin-left: -760px;
+    }
+    .aps-i5{
+        height: 80px;
+        width: 600px;
+        font-size: 30px;
+
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px;
+        margin-top: 1090px;
+    }
+    .aps-btn{
+        height: 65px;
+        font-size: 25px;
+        width: 230px;
+        margin-top: 1200px;
+        margin-left: -610px;
+        border-radius: 5px;
+        font-weight: 600;
+        color: aliceblue;
+        background-image: linear-gradient(to bottom,rgb(18, 232, 50),rgb(139, 242, 94),rgb(18, 221, 42));
+    }
+    
+}
+@media (max-width: 600px) {
+    .aps-bg{
+        display: flex;
+        min-height: 2730px;
+        width: 300%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:nowrap;
+    }
+}
+@media (max-width: 490px) {
+    .aps-bg{
+        display: flex;
+        min-height: 3030px;
+        width: 400%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:nowrap;
+    }
+}
+

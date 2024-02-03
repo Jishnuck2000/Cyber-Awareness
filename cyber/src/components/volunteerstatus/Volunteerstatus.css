@@ -95,3 +95,177 @@ box-shadow: 0px 0px 10px red;
      
   }
   
+
+  @media (max-width: 1000px) {
+    .body-status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 1311px;
+        /* background-image:linear-gradient(to bottom,grey,black); */
+        width: 200%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+    }
+  }
+  @media (max-width: 600px) {
+    .body-status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 2051px;
+        /* background-image:linear-gradient(to bottom,grey,black); */
+        width: 300%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+    }
+    .container-vs {
+        width: 120%;
+        height: auto;
+        box-shadow: 0px 0px 10px;
+        border-radius: 10px;
+        
+             background: url('/public/bluenav.jpg');
+    
+         
+      }
+      .vstatus-img{
+        height: 120px;
+        width:120px;
+        border-radius: 80px;
+        margin-left: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+    }
+    
+    .vs-td{
+        font-size: 40px;
+        font-weight: 800;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .vstatus-img{
+        height: 60px;
+        width:60px;
+        border-radius: 80px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .vs-td{
+        font-size: 20px;
+        font-weight: 800;
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn-vs1{
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px greenyellow;
+        border: none;
+    
+        width: 150px;
+        height: 80px;
+        background-image: linear-gradient(to bottom,rgb(28, 215, 28),rgb(193, 242, 31));
+        color: aliceblue;
+        border-radius: 10px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .btn-vs2{
+        margin-top: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px red;
+        width: 150px;
+        height: 80px;
+        background-image: linear-gradient(to bottom,blue,red);
+        color: aliceblue;
+        border-radius: 10px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}@media (max-width: 490px) {
+    .body-status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 2751px;
+        /* background-image:linear-gradient(to bottom,grey,black); */
+        width: 400%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+    }
+    
+    .container-vs {
+        width: auto;
+        height: auto;
+        box-shadow: 0px 0px 10px;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        
+             background: url('/public/bluenav.jpg');
+    
+         
+      }
+      .btn-vs1{
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px greenyellow;
+        border: none;
+    
+        width: 100px;
+        height: 50px;
+        background-image: linear-gradient(to bottom,rgb(28, 215, 28),rgb(193, 242, 31));
+        color: aliceblue;
+        border-radius: 10px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .btn-vs2{
+        margin-top: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px red;
+        width: 100px;
+        height: 50px;
+        background-image: linear-gradient(to bottom,blue,red);
+        color: aliceblue;
+        border-radius: 10px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    }
