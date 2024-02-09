@@ -243,7 +243,7 @@
   font-size: 3em;
   font-family: 'Caveat', cursive;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .container-pro {
     width: 200%;
     height: 1300px;

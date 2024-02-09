@@ -140,8 +140,204 @@
     border: none;
 }
 
+@media (max-width: 1200px) {
+    .sb-bg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/bluenav.jpg'); */
+        /* background-color: rgb(122, 148, 134); */
+        min-height: 1371px;
+        
+        width: 200%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    }
+}
 
-
+@media (max-width: 600px) {
+    .sb-bg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/bluenav.jpg'); */
+        /* background-color: rgb(122, 148, 134); */
+        min-height: 2071px;
+        
+        width: 300%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    }
+    .sb-bg2{
+        height: 1550px;
+        width: 1300px;
+        background: url('/public/bluenav.jpg');
+    
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+    }
+    .sb-i1{
+        height: 80px;
+        font-size: 40px;
+        width: 900px;
+        margin-left: 170px;
+        margin-top: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    
+    }
+    .sb-i2{
+        height: 80px;
+        width: 900px;
+        margin-left: 170px;
+        margin-top: 30px;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i3{
+        height: 80px;
+        width: 900px;
+        margin-left: 170px;
+        margin-top: 30px;
+        font-size: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i4{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i5{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i6{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i7{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i8{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i9{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .btn-sb{
+        height: 70px;
+        width: 200px;
+        font-size: 30px;
+        margin-top: 60px;
+        margin-left: 500px;
+        border-radius: 10px;
+        background-color: rgb(18, 42, 18);
+        color: aliceblue;
+        font-weight: 600;
+    }
+    .sessionb{
+        font-size: 50px;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 30px;
+    }
+    
+    .sb-i10{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+    .sb-i11{
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 170px;
+        margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+    }
+}
+@media (max-width: 490px) {
+    .sb-bg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/bluenav.jpg'); */
+        /* background-color: rgb(122, 148, 134); */
+        min-height: 2771px;
+        
+        width: 400%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    }
+}
+@media (max-width: 330px) {
+    .sb-bg2{
+        height: 1550px;
+        width: 1200px;
+        background: url('/public/bluenav.jpg');
+    
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+    }
+}
 
 
 

@@ -106,8 +106,9 @@ function Complaint() {
           
            <img src='file.png' className='csf' id="complaint-image" alt="" />
            </Link>
+           <div className="complaint-flux">
            <Image src='vector3.png' className="captainamarica"></Image>
-
+           </div>
       </div>
       <div className="container2">
         <p className="div-p">www.sheildcybercrimeportal@gmail.com</p>

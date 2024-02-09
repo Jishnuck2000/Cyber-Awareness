@@ -737,7 +737,7 @@ width: 100%;
   }
 
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     .div{
       background-color:rgb(31, 18, 2);
           /* background: url('/public/bluenav.jpg'); */
@@ -1137,4 +1137,14 @@ margin-top: 50px;
   font-weight: 700;
   color:white;
 }
+  }
+
+  @media (max-width: 490px) {
+    .home-bg{
+      height: auto;
+      width: 400%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    
+    }
   }

@@ -147,3 +147,201 @@
  }
  
  
+
+ @media (max-width: 1200px) {
+    .body-vr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 1365px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 200%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        background-image: linear-gradient(to bottom,rgb(140, 219, 231),rgb(47, 223, 211));
+        /* background-color: rgb(190, 225, 237); */
+    
+    } 
+ }
+ @media (max-width: 600px) {
+    .body-vr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 2095px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 300%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        background-image: linear-gradient(to bottom,rgb(140, 219, 231),rgb(47, 223, 211));
+        /* background-color: rgb(190, 225, 237); */
+    
+    } 
+    .bg-vr{
+        height: 1500px;
+        width: 1300px;
+            background: url('/public/bluenav.jpg');
+    
+        /* background-color: aliceblue; */
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(29, 44, 50);    
+    
+    }
+    .p-vr{
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 20px;
+    
+    }
+    #pro{
+        height: 300px;
+        width: 300px;
+        margin-left: 50px;
+        margin-top: 50px;
+        
+    }
+    .i-vr{
+        border: none;
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 10px -15px #1b6083;    
+    }
+    .i-vr1{
+        border: none;
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 10px -15px #1b6083;    
+    
+    }
+    .i-vr2{
+        border: none;
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 10px -15px #1b6083;    
+    
+    
+    }
+    .i-vr3{
+        border: none;
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 10px -15px #1b6083;    
+    
+    
+    }
+    .i-vr4{
+        border: none;
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 10px -15px #1b6083;    
+    
+    
+    }
+    .i-vr5{
+     
+        border: none;
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 10px -15px #1b6083;    
+    
+    
+    }
+    .i-vr6{
+        border: none;
+        height: 80px;
+        width: 900px;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 15px 10px -15px #1b6083;    
+    
+    
+    }
+    .btn-vr1{
+        height: 60px;
+        width: 157px;
+        font-size: 30px;
+        border-radius: 10px;
+        margin-left: 10px;
+        /* background-color: rgb(15, 15, 99); */
+        background-image: linear-gradient(to bottom,rgb(44, 44, 77),rgb(44, 44, 77));
+        color: aliceblue;
+        font-weight: 600;
+        box-shadow: 0px 0px 10px,black;
+        border: none;
+      }
+      .btn-vr{
+        height: 60px;
+        width: 157px;
+        margin-top: 30px;
+        margin-left: 60px;
+        border-radius: 10px;
+        /* background-color: red; */
+        background-image: linear-gradient(to bottom,red,red);
+        border: none;
+        box-shadow: 0px 0px 10px black;
+        color: aliceblue;
+        font-weight: 600;
+        font-size: 30px;
+     }
+      .p-vr2{
+         margin-left: 60px;
+         margin-top: 20px;
+         font-size: 25px;
+      }
+ }
+
+ @media (max-width: 490px) {
+    .body-vr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 2695px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 400%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        background-image: linear-gradient(to bottom,rgb(140, 219, 231),rgb(47, 223, 211));
+        /* background-color: rgb(190, 225, 237); */
+    
+    } 
+
+ }

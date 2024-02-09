@@ -29,8 +29,8 @@ const navigate = useNavigate()
     <div>
         <div className='body-sl'>
             <div>
-            <h1 className='p-sl1'>BOOK YOUR SESSIONS</h1>
-
+          <div> <h1 className='p-sl1'>BOOK YOUR SESSIONS</h1>
+          </div> 
             {sessionview.map((item) => (
 
             <div className='body-sl2'>

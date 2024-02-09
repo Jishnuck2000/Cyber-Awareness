@@ -121,7 +121,7 @@
     color: aliceblue;
     margin-left: 10px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 
     .body-r{
         display: flex;
@@ -129,7 +129,7 @@
         align-items: center;
         background: url('/public/bluenav.jpg');
         min-height: 831px;
-        height: 1500px;
+        height: 1560px;
         width: 200%;
         background-position: center;
         background-repeat: no-repeat;

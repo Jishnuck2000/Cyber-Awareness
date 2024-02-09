@@ -2,21 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     background-color: white;
     height: 500px;
-    width: 1920px;
+    width: 100%;
 }
 .a-d2{
-    /* background-color: black ; */
     background: url('/public/bluebg.jpg');
 
     height: 290px;
-    width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .a-d4{
     height: 75px;
-    width: 1920px;
+    width: 100%;
     background-color: rgb(14, 88, 141);
 }
 .a-d3{
@@ -24,11 +26,11 @@
     justify-content: center;
     background: url('/public/bluenav.jpg');
 
-    /* background-image: linear-gradient(to bottom,grey,grey); */
     box-shadow: 0px 0px 5px black;
 
     height: 400px;
     width: 840px;
+    flex-wrap: wrap;
     align-content: center;
     border-radius: 10px;
 
@@ -75,127 +77,146 @@
 }
 .a-h2{
     font-family: cursive;
-    margin-left: 50px;
+    margin-left: -85px;
     color: aliceblue;
-    margin-top: -1px;
+    margin-top: 200px;
+    font-weight: 600;
+
 }
 .a-h3{
-    margin-left: 800px;
-    margin-top: -200px;
+    
     font-size: 15px;
     color: aliceblue;
+    font-weight: 600;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h31{
-    margin-left: 800px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h32{
-    margin-left: 800px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h33{
-    margin-left: 800px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h34{
-    margin-left: 800px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h35{
-    margin-left: 800px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 .a-h36{
-    margin-left: 1100px;
     font-size: 15px;
-    margin-top: -170px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h37{
-    margin-left: 1100px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h38{
-    margin-left: 1100px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h39{
-    margin-left: 1100px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h310{
-    margin-left: 1100px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h311{
-    margin-left: 1100px;
     font-size: 15px;
     margin-top: -5px;
+    font-weight: 600;
+
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .a-h312{
-    margin-left: 1300px;
+    margin-left: 200px;
+    margin-top: 80px;
     font-size: 18px;
-    margin-top: -170px;
+    font-weight: 600;
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .face-ab{
     height: 40px;
     width: 40px;
-    margin-left: 1420px;
+    
 }
 .face-ab1{
     height: 40px;
+   
+
     width: 40px;
 }
 .face-ab2{
     height: 40px;
     width: 40px;
+   
 }
 .face-ab3{
     height: 40px;
     width: 40px;
+   
 }
 .face-ab4{
     height: 40px;
     width: 40px;
+   
 }
 .face-ab5{
     height: 40px;
     width: 40px;
+   
 }
 .p-abd1{
     color: aliceblue;
@@ -205,4 +226,433 @@
 .allabout{
     overflow-y: hidden;
     overflow-x: hidden;
+}
+.about-shield{
+height: 200px;
+display: flex;
+flex-wrap: wrap;
+width: 180px;
+margin-left: 700px;
+margin-top: 80px;
+background-color: rgba(255, 255, 255, 0);
+}
+
+.contact-us{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    }
+
+.newdiv{
+    height: 80px;
+    width: 300px;
+    margin-top: -150px;
+    display: flex;
+    margin-left: 1450px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(250, 235, 215, 0);
+}    
+@media (max-width: 1530px) {
+    .a-d2{
+        background: url('/public/bluebg.jpg');
+    
+        height: 290px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-shield{
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 180px;
+        margin-left: 100px;
+        margin-top: 80px;
+        background-color: rgba(255, 255, 255, 0);
+        }
+        
+        .contact-us{
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100px;
+            margin-top: 80px;
+            margin-left: 50px;
+            background-color: rgba(255, 255, 255, 0);
+            }
+        
+        .newdiv{
+            height: 80px;
+            width: 300px;
+            margin-top: -150px;
+            display: flex;
+            margin-left: 650px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: rgba(250, 235, 215, 0);
+        }  
+        .a-h312{
+            margin-left: 100px;
+            margin-top: 80px;
+            font-size: 18px;
+            font-weight: 600;
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }  
+}
+@media (max-width: 1200px) {
+    .a-d2{
+        background: url('/public/bluebg.jpg');
+    
+        height: 590px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .a-d{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        background-color: white;
+        height: 900px;
+        width: 100%;
+    }
+
+    .a-d4{
+        height: 75px;
+        width: 100%;
+        background-color: rgb(14, 88, 141);
+    }
+    .allabout{
+        width: 200%;
+        height: auto;
+    }
+    .newdiv{
+        height: 80px;
+        width: 300px;
+        margin-top: 150px;
+        display: flex;
+        margin-left: -100px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgba(250, 235, 215, 0);
+    }   
+}
+@media (max-width: 600px) {
+    .allabout{
+        width: 300%;
+        height: auto;
+    }   
+    .a-d2{
+        background: url('/public/bluebg.jpg');
+    
+        height: 690px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .a-d{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        background-color: white;
+        height: 1600px;
+        width: 100%;
+    }
+    .a-d3{
+        display: flex;
+        justify-content: center;
+        background: url('/public/bluenav.jpg');
+    
+        box-shadow: 0px 0px 5px black;
+    
+        height: 800px;
+        width: 1240px;
+        flex-wrap: wrap;
+        align-content: center;
+        border-radius: 10px;
+    
+    }
+    .p-ab{
+        margin-top: -820px;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(18, 18, 19);
+        display: flex;
+        justify-content:center;
+    }
+    .p-ab3{
+        font-size: 30px;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    
+    }
+    .a-d1{
+        margin-top: 40px;
+        margin-left: 50px;
+        font-weight: 600;
+        font-size: 30px;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .shield4{
+        height: 80px;
+        width: 80px;
+        margin-left: 530px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .a-d4{
+        height: 105px;
+        width: 100%;
+        font-size: 30px;
+        background-color: rgb(14, 88, 141);
+    }
+    .newdiv{
+        height: 80px;
+        width: 300px;
+        margin-top: 250px;
+        display: flex;
+        margin-left: -100px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgba(250, 235, 215, 0);
+    }  
+    
+    
+    .a-shield{
+        height: 200px;
+        width: 200px;
+        margin-top: 240px;
+        margin-left: 50px;
+    }
+    .a-h2{
+        font-family: cursive;
+        margin-left: -185px;
+        color: aliceblue;
+        margin-top: 450px;
+        font-size: 50px;
+        font-weight: 600;
+    
+    }
+    .a-h3{
+        
+        font-size: 35px;
+        color: aliceblue;
+        font-weight: 600;
+    
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h31{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h32{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h33{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h34{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h35{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    
+    .a-h36{
+        font-size: 35px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h37{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h38{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h39{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h310{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .a-h311{
+        font-size: 35px;
+        margin-top: -5px;
+        font-weight: 600;
+    
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .contact-us{
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100px;
+        margin-top: 180px;
+        margin-left: 50px;
+        background-color: rgba(255, 255, 255, 0);
+        }
+    
+    .a-h312{
+        margin-left: 200px;
+        margin-top: 180px;
+        font-size: 38px;
+        font-weight: 600;
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .face-ab{
+        height: 80px;
+        width: 80px;
+        
+    }
+    .face-ab1{
+        height: 80px;
+       
+    
+        width: 80px;
+    }
+    .face-ab2{
+        height: 80px;
+        width: 80px;
+       
+    }
+    .face-ab3{
+        height: 80px;
+        width: 80px;
+       
+    }
+    .face-ab4{
+        height: 80px;
+        width: 80px;
+       
+    }
+    .face-ab5{
+        height: 80px;
+        width: 80px;
+       
+    }
+    .p-abd1{
+        color: aliceblue;
+        text-align: center;
+        padding: 25px;
+    }
+    .about-shield{
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 280px;
+        margin-left: 200px;
+        margin-top: 180px;
+        background-color: rgba(255, 255, 255, 0);
+        }
+}
+
+@media (max-width: 490px) {
+    .allabout{
+        width: 400%;
+        height: auto;
+    }   
+    .a-d2{
+        background: url('/public/bluebg.jpg');
+    
+        height: 1090px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .a-d{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        background-color: white;
+        height: 2000px;
+        width: 100%;
+    }
+    .a-d3{
+        display: flex;
+        justify-content: center;
+        background: url('/public/bluenav.jpg');
+    
+        box-shadow: 0px 0px 5px black;
+    
+        height: 900px;
+        width: 1240px;
+        flex-wrap: wrap;
+        align-content: center;
+        border-radius: 10px;
+    
+    }
+    .a-d4{
+        height: 155px;
+        width: 100%;
+        font-size: 30px;
+        background-color: rgb(14, 88, 141);
+    }
 }

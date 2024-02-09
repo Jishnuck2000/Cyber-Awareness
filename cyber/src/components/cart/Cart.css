@@ -127,7 +127,7 @@ align-items: center;
     margin-top: 15px;
     margin-left: 220px;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     .cart-bg{
       display: flex;
      

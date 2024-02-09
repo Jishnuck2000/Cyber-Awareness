@@ -179,7 +179,7 @@ width: 100%;
     color: var(--main-color);
   }
   
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     .body-vv{
       display: flex;
      
