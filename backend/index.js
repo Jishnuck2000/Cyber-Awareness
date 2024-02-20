@@ -12,9 +12,10 @@ const cartroutes = require('./routes/cartroutes')
 server.use(cors())
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
+require("dotenv").config()
 
 
-mongoose.connect('mongodb+srv://jeochirrakkal26:jishnu123@cybersecurity.bm4aee8.mongodb.net/CyberSecurity',{
+mongoose.connect(process.env.MONGO_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
@@ -43,7 +44,6 @@ server.use('/api/cart',cartroutes)
 
 
 
-const port = 1111;
-server.listen(port, () => {
-    console.log(`Server Started on ${port}`)
+server.listen(process.env.PORT, () => {
+    console.log(`Server Started on ${process.env.PORT}`)
 })

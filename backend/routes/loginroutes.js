@@ -36,7 +36,7 @@ loginroutes.post("/", async (req, res) => {
           userRole: oldUser.role,
           email_id: oldUser.email_id,
         },
-        "secret_this_should_be_longerr",
+        process.env.SECRET_KEY,
         { expiresIn: "1h" }
       );
       console.log("token", token);
