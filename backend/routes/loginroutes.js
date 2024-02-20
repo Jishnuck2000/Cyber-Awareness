@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 const loginschema = require("../models/loginschema");
 const register = require("../models/registerschema");
 const loginroutes = express.Router();
+require("dotenv").config()
 
 loginroutes.post("/", async (req, res) => {
   //   const { email_id, password } = req.body;

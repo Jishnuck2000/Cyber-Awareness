@@ -23,7 +23,7 @@ function Login() {
     event.preventDefault();
 
     axios
-      .post("https://cyber-care.onrender.com/api/login/", login)
+      .post("https://cyber-care.onrender.com/api/login", login)
       // .post("http://localhost:1111/api/login/", login)
       .then((data) => {
         localStorage.setItem("Token", data.data.token);
@@ -59,7 +59,7 @@ function Login() {
 
         <input
           type="text"
-          placeholder="     Username"
+          placeholder="     email_id"
           name="email_id"
           className="n1"
           onChange={inputChange}
