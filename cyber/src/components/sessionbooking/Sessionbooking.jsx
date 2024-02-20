@@ -30,7 +30,8 @@ function Sessionbooking() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:1111/api/user/addsession", sessionbooking, {
+      .post("https://cyber-care.onrender.com/api/user/addsession", sessionbooking, {
+      // .post("http://localhost:1111/api/user/addsession", sessionbooking, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

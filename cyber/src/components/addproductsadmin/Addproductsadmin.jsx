@@ -31,7 +31,9 @@ function Addproductsadmin() {
     formData.append("price", addproductsadmin.price);
 console.log('working')
     axios
-      .post("http://localhost:1111/api/product/addproducts", formData, {
+      // .post("http://localhost:1111/api/product/addproducts", formData, {
+        .post("https://cyber-care.onrender.com/api/product/addproducts", formData, {
+
         headers: {
           Authorization: `Bearer ${token}`,
         },

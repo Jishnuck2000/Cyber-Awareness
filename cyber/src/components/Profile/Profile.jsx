@@ -26,7 +26,8 @@ console.log(proimg);
     const formData = new FormData();
     formData.append("image", proimg.image);
     axios
-      .post("http://localhost:1111/api/user/addproimage", formData, {
+      .post("https://cyber-care.onrender.com/api/user/addproimage", formData, {
+      // .post("http://localhost:1111/api/user/addproimage", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +47,8 @@ console.log(proimg);
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/user/viewprofile", {
+      .get("https://cyber-care.onrender.com/api/user/viewprofile", {
+      // .get("http://localhost:1111/api/user/viewprofile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -63,7 +65,8 @@ console.log(proimg);
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/user/viewproimage", {
+      .get("https://cyber-care.onrender.com/api/user/viewproimage", {
+      // .get("http://localhost:1111/api/user/viewproimage", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

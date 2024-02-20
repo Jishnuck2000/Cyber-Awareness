@@ -6,14 +6,16 @@ function Sessiondetail() {
   const [sessiondetail, setSessiondetail] = useState([]);
 
   const handleDelete = (_id) => {
-    axios.delete(`http://localhost:1111/api/admin/deleteadminsession/${_id}`);
+    axios.delete(`https://cyber-care.onrender.com/api/admin/deleteadminsession/${_id}`);
+    // axios.delete(`http://localhost:1111/api/admin/deleteadminsession/${_id}`);
 
     window.location.reload();
   };
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/admin/viewadminsession")
+      .get("https://cyber-care.onrender.com/api/admin/viewadminsession")
+      // .get("http://localhost:1111/api/admin/viewadminsession")
       .then((data) => {
         console.log(data.data.data);
         setSessiondetail(data.data.data);

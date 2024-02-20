@@ -34,7 +34,8 @@ function Updatecart() {
         formData.append("validity", updatecart.validity);
         formData.append("price", updatecart.price);
         axios
-          .put(`http://localhost:1111/api/product/updateproducts/${id}`, formData, {
+          .put(`https://cyber-care.onrender.com/api/product/updateproducts/${id}`, formData, {
+          // .put(`http://localhost:1111/api/product/updateproducts/${id}`, formData, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -52,7 +53,8 @@ function Updatecart() {
       const {id}=useParams()
 console.log(id)
   useEffect(()=>{
-    axios.get(`http://localhost:1111/api/product/viewoneproduct/${id}`)
+    axios.get(`https://cyber-care.onrender.com/api/product/viewoneproduct/${id}`)
+    // axios.get(`http://localhost:1111/api/product/viewoneproduct/${id}`)
     .then((response)=>{
       console.log(response.data)
       setUpdatecart(response.data.data)

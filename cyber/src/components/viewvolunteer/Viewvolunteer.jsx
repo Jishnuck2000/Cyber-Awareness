@@ -21,7 +21,8 @@ function Viewvolunteer() {
     
 
     axios
-    .delete(`http://localhost:1111/api/volunteer/volunteerdelete/${_id}`)
+    .delete(`https://cyber-care.onrender.com/api/volunteer/volunteerdelete/${_id}`)
+    // .delete(`http://localhost:1111/api/volunteer/volunteerdelete/${_id}`)
     .then((response)=>{
       console.log(response)
      } )
@@ -31,14 +32,16 @@ const handleUpdate = (_id)=>{
   console.log(_id)
 
   axios
-  .get("http://localhost:1111/api/volunteer/viewvolunteers")
+  .get("https://cyber-care.onrender.com/api/volunteer/viewvolunteers")
+  // .get("http://localhost:1111/api/volunteer/viewvolunteers")
 }
 
 
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/volunteer/viewvolunteers/approved", {
+      .get("https://cyber-care.onrender.com/api/volunteer/viewvolunteers/approved", {
+      // .get("http://localhost:1111/api/volunteer/viewvolunteers/approved", {
         // headers: {
         //   Authorization: `Bearer ${token}`,
         // },

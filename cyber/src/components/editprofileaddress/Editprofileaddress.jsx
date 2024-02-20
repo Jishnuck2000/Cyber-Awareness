@@ -17,7 +17,8 @@ function Editprofileaddress() {
     const handleSubmit = (event) => {
       event.preventDefault();
       axios
-        .put(`http://localhost:1111/api/user/updateproaddress/${id}`, editproaddress, {
+        .put(`https://cyber-care.onrender.com/api/user/updateproaddress/${id}`, editproaddress, {
+        // .put(`http://localhost:1111/api/user/updateproaddress/${id}`, editproaddress, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -36,7 +37,8 @@ function Editprofileaddress() {
   console.log(id);
   useEffect(() => {
     axios
-      .get(`http://localhost:1111/api/user/viewoneprofileaddress/${id}`, {
+      .get(`https://cyber-care.onrender.com/api/user/viewoneprofileaddress/${id}`, {
+      // .get(`http://localhost:1111/api/user/viewoneprofileaddress/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

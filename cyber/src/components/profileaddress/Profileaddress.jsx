@@ -21,7 +21,8 @@ function Profileaddress() {
 
   const handleDelete = (_id) => {
     axios
-      .delete(`http://localhost:1111/api/user/deleteprofileaddress/${_id}`, {
+      .delete(`https://cyber-care.onrender.com/api/user/deleteprofileaddress/${_id}`, {
+      // .delete(`http://localhost:1111/api/user/deleteprofileaddress/${_id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -37,7 +38,8 @@ function Profileaddress() {
     console.log(_id);
 
     axios
-      .get("http://localhost:1111/api/user/viewprofileaddress", {
+      .get("https://cyber-care.onrender.com/api/user/viewprofileaddress", {
+      // .get("http://localhost:1111/api/user/viewprofileaddress", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -54,7 +56,8 @@ function Profileaddress() {
     event.preventDefault();
 
     axios
-      .post("http://localhost:1111/api/user/addprofileaddress", proaddress, {
+      .post("https://cyber-care.onrender.com/api/user/addprofileaddress", proaddress, {
+      // .post("http://localhost:1111/api/user/addprofileaddress", proaddress, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -71,7 +74,8 @@ function Profileaddress() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/user/viewcheckedaddress", {
+      .get("https://cyber-care.onrender.com/api/user/viewcheckedaddress", {
+      // .get("http://localhost:1111/api/user/viewcheckedaddress", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

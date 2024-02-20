@@ -27,7 +27,8 @@ console.log(sum);
     console.log(_id);
 
     axios
-      .get("http://localhost:1111/api/user/viewaddaddress", {
+      .get("https://cyber-care.onrender.com/api/user/viewaddaddress", {
+      // .get("http://localhost:1111/api/user/viewaddaddress", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -45,7 +46,8 @@ console.log(sum);
 
     axios
       .put(
-        `http://localhost:1111/api/user/updateaddresstype/${id}`,
+        `https://cyber-care.onrender.com/api/user/updateaddresstype/${id}`,
+        // `http://localhost:1111/api/user/updateaddresstype/${id}`,
         {},
         {
           headers: {
@@ -76,7 +78,8 @@ console.log(sum);
 
   const handleDelete = (_id) =>{
 
-    axios.delete(`http://localhost:1111/api/user/deleteaddress/${_id}`,{
+    axios.delete(`https://cyber-care.onrender.com/api/user/deleteaddress/${_id}`,{
+    // axios.delete(`http://localhost:1111/api/user/deleteaddress/${_id}`,{
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -91,7 +94,8 @@ console.log(sum);
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/user/viewaddaddress", {
+      .get("https://cyber-care.onrender.com/api/user/viewaddaddress", {
+      // .get("http://localhost:1111/api/user/viewaddaddress", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -107,7 +111,8 @@ console.log(sum);
 
 
       axios
-      .get("http://localhost:1111/api/cart/viewcart", {
+      .get("https://cyber-care.onrender.com/api/cart/viewcart", {
+      // .get("http://localhost:1111/api/cart/viewcart", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

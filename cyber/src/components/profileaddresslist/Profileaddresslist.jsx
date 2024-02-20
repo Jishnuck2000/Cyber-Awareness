@@ -10,7 +10,8 @@ function Profileaddresslist() {
 
     const handleDelete = (_id) =>{
 
-      axios.delete(`http://localhost:1111/api/user/deleteprofileaddress/${_id}`,{
+      axios.delete(`https://cyber-care.onrender.com/api/user/deleteprofileaddress/${_id}`,{
+      // axios.delete(`http://localhost:1111/api/user/deleteprofileaddress/${_id}`,{
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -30,7 +31,8 @@ function Profileaddresslist() {
     
         axios
           .put(
-            `http://localhost:1111/api/user/updateprofileaddresstype/${id}`,
+            `https://cyber-care.onrender.com/api/user/updateprofileaddresstype/${id}`,
+            // `http://localhost:1111/api/user/updateprofileaddresstype/${id}`,
             {},
             {
               headers: {
@@ -61,7 +63,8 @@ function Profileaddresslist() {
       
     useEffect(() => {
         axios
-          .get("http://localhost:1111/api/user/viewprofileaddress", {
+          .get("https://cyber-care.onrender.com/api/user/viewprofileaddress", {
+          // .get("http://localhost:1111/api/user/viewprofileaddress", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

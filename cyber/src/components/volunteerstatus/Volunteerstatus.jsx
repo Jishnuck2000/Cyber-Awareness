@@ -12,7 +12,8 @@ function Volunteerstatus() {
 
     const handlesubmit=(_id)=>{
 
-        axios.put(`http://localhost:1111/api/volunteer/updatevolunteers/approved/${_id}`)
+        axios.put(`https://cyber-care.onrender.com/api/volunteer/updatevolunteers/approved/${_id}`)
+        // axios.put(`http://localhost:1111/api/volunteer/updatevolunteers/approved/${_id}`)
 
         .then((response)=>{
             console.log(response)
@@ -32,7 +33,8 @@ function Volunteerstatus() {
 
     const handleReject=(_id)=>{
 
-        axios.put(`http://localhost:1111/api/volunteer/updatevolunteers/rejected/${_id}`)
+        axios.put(`https://cyber-care.onrender.com/api/volunteer/updatevolunteers/rejected/${_id}`)
+        // axios.put(`http://localhost:1111/api/volunteer/updatevolunteers/rejected/${_id}`)
 
         .then((response)=>{
             console.log(response)
@@ -51,7 +53,8 @@ function Volunteerstatus() {
     }
 
     useEffect(()=>{
-        axios.get("http://localhost:1111/api/volunteer/viewvolunteers")
+        axios.get("https://cyber-care.onrender.com/api/volunteer/viewvolunteers")
+        // axios.get("http://localhost:1111/api/volunteer/viewvolunteers")
 
         .then((response)=>{
             console.log(response)

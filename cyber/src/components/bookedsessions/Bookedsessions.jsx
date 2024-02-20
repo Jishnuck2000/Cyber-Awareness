@@ -9,14 +9,16 @@ function Bookedsessions() {
   const [bookedsessions, setBookedsessions] = useState([]);
 
   const handleDelete = (_id) => {
-    axios.delete(`http://localhost:1111/api/admin/deleteadminsession/${_id}`);
+    axios.delete(`https://cyber-care.onrender.com/api/admin/deleteadminsession/${_id}`);
+    // axios.delete(`http://localhost:1111/api/admin/deleteadminsession/${_id}`);
 
     window.location.reload();
   };
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/user/viewusersbookedsession", {
+      .get("https://cyber-care.onrender.com/api/user/viewusersbookedsession", {
+      // .get("http://localhost:1111/api/user/viewusersbookedsession", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

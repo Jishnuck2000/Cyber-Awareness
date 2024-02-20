@@ -9,7 +9,8 @@ const[sessionview,setSessionview] = useState([]);
 
 
 useEffect(()=>{
-    axios.get("http://localhost:1111/api/user/viewadminsessionform")
+    axios.get("https://cyber-care.onrender.com/api/user/viewadminsessionform")
+    // axios.get("http://localhost:1111/api/user/viewadminsessionform")
 
     .then((data) => {
         console.log(data.data.data);

@@ -45,7 +45,9 @@ console.log(total);
 
   const handleDelete = (_id) => {
     axios
-      .delete(`http://localhost:1111/api/cart/deletecartitems/${_id}`, {})
+      // .delete(`http://localhost:1111/api/cart/deletecartitems/${_id}`, {})
+      .delete(`https://cyber-care.onrender.com/api/cart/deletecartitems/${_id}`, {})
+
 
       .then((response) => {
         console.log(response);
@@ -57,7 +59,8 @@ console.log(total);
     console.log(id);
     axios
       .put(
-        `http://localhost:1111/api/cart/addquantity/${id}`,
+        `https://cyber-care.onrender.com/api/cart/addquantity/${id}`,
+        // `http://localhost:1111/api/cart/addquantity/${id}`,
         {},
         {
           headers: {
@@ -94,7 +97,8 @@ console.log(total);
   const decrement = (id) => {
     axios
       .put(
-        `http://localhost:1111/api/cart/decrementquantity/${id}`,
+        // `http://localhost:1111/api/cart/decrementquantity/${id}`,
+        `https://cyber-care.onrender.com/api/cart/decrementquantity/${id}`,
         {},
         {
           headers: {
@@ -122,7 +126,8 @@ console.log(total);
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/cart/viewcart",{
+      .get("https://cyber-care.onrender.com/api/cart/viewcart",{
+      // .get("http://localhost:1111/api/cart/viewcart",{
         headers: {
           Authorization: `Bearer ${token}`,
         },

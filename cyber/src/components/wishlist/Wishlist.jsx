@@ -12,7 +12,8 @@ function Wishlist() {
 
     const handleDelete = (_id) => {
         axios
-          .delete(`http://localhost:1111/api/user/deletewishlist/${_id}`,{
+          .delete(`https://cyber-care.onrender.com/api/user/deletewishlist/${_id}`,{
+          // .delete(`http://localhost:1111/api/user/deletewishlist/${_id}`,{
             headers: {
                 Authorization: `Bearer ${token}`,
               },
@@ -27,7 +28,8 @@ function Wishlist() {
 
     useEffect(() => {
         axios
-          .get("http://localhost:1111/api/user/viewwishlist", {
+          .get("https://cyber-care.onrender.com/api/user/viewwishlist", {
+          // .get("http://localhost:1111/api/user/viewwishlist", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

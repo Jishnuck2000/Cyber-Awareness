@@ -34,7 +34,8 @@ const handleSubmit = (event)=>{
 
 
   axios
-  .put(`http://localhost:1111/api/volunteer/volunteerupdate/${id}`,formData)
+  .put(`https://cyber-care.onrender.com/api/volunteer/volunteerupdate/${id}`,formData)
+  // .put(`http://localhost:1111/api/volunteer/volunteerupdate/${id}`,formData)
   .then((data)=>{
     console.log(data)
     toast.error(data, {
@@ -54,7 +55,8 @@ const handleSubmit = (event)=>{
 const {id}=useParams()
 console.log(id)
   useEffect(()=>{
-    axios.get(`http://localhost:1111/api/volunteer/viewvolunteer/${id}`)
+    axios.get(`https://cyber-care.onrender.com/api/volunteer/viewvolunteer/${id}`)
+    // axios.get(`http://localhost:1111/api/volunteer/viewvolunteer/${id}`)
     .then((response)=>{
       console.log(response.data)
       setUpdate(response.data.data)

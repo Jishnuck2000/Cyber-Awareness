@@ -18,7 +18,9 @@ console.log(address)
 const handleSubmit = (event) => {
   event.preventDefault();
 
-  axios.post('http://localhost:1111/api/user/addaddress',address,
+  // axios.post('http://localhost:1111/api/user/addaddress',address,
+  axios.post('https://cyber-care.onrender.com/api/user/addaddress',address,
+
   {
     headers: {
       Authorization: `Bearer ${token}`,

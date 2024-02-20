@@ -6,7 +6,8 @@ function DisplayComplaint() {
   const [complaint, setComplaint] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/user/view")
+      .get("https://cyber-care.onrender.com/api/user/view")
+      // .get("http://localhost:1111/api/user/view")
 
       .then((data) => {
         console.log(data.data);

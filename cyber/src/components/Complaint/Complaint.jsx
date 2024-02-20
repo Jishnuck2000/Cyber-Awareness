@@ -21,7 +21,8 @@ function Complaint() {
   console.log(complaint);
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:1111/api/admin/addcomplaint',complaint)
+    axios.post('https://cyber-care.onrender.com/api/admin/addcomplaint',complaint)
+    // axios.post('http://localhost:1111/api/admin/addcomplaint',complaint)
     .then((data)=>{
         console.log(data.data);
         navigate('/dis')

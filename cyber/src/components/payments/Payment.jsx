@@ -15,7 +15,8 @@ console.log(total);
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/cart/viewcart", {
+      .get("https://cyber-care.onrender.com/api/cart/viewcart", {
+      // .get("http://localhost:1111/api/cart/viewcart", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

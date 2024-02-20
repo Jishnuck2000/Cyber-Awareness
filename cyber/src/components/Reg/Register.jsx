@@ -17,7 +17,8 @@ function Register() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:1111/api/register/reg", register)
+      .post("https://cyber-care.onrender.com/api/register/reg", register)
+      // .post("http://localhost:1111/api/register/reg", register)
       .then((data) => {
         console.log(data);
 
