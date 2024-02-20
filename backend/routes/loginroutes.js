@@ -51,6 +51,7 @@ loginroutes.post("/", async (req, res) => {
         userRole: oldUser.role,
         email_id: oldUser.email_id,
       });
+      console.log();
     } else {
       return res.status(400).json({
         success: false,
