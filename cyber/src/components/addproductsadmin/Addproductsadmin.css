@@ -1,21 +1,13 @@
 .aps-bg{
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* background: url('/public/peakbg.jpg'); */
     min-height: 830px;
-
-    /* background-color: rgb(0, 255, 119); */
-    /* background-image:linear-gradient(to bottom,grey,rgba(252, 247, 247, 0.914)); */
-height: auto;
+    height: auto;
     width: 100%;
-    /* background-position: center; */
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
-    /* display: flex; */
-justify-content:center;
-align-items: center;
+    justify-content:center;
+    align-items: center;
     flex-wrap:nowrap;
 }
 
@@ -23,9 +15,7 @@ align-items: center;
     height: 760px;
     width: 600px;
     margin-top: -30px;
-    /* background-color: aliceblue; */
     background: url('/public/bluenav.jpg');
-
     border-radius: 10px;
     box-shadow: 0px 0px 10px;
     display: flex;
@@ -36,11 +26,9 @@ align-items: center;
     width: 100px;
     margin-left: -180px;
     margin-top: 100px;
-    /* background-color: aqua; */
 }
 .aps-name{
     margin-top: 200px;
-    /* background-color: aqua; */
     margin-left: -350px;
     margin-top: 255px;
     height: 20px;
@@ -49,7 +37,6 @@ align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .aps-h1{
-    /* background-color: aqua; */
     height: 50px;
     margin-left: 160px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -76,8 +63,6 @@ align-items: center;
     box-shadow: 0px 0px 10px;
     margin-top: 345px;
     margin-left: 20px;
-    /* background-color: aqua; */
-
 }
 .aps-description{
     font-size: 25px;
@@ -86,7 +71,6 @@ align-items: center;
     margin-top: 440px;
     height: 40px;
     margin-left: -486px;
-    /* background-color: aqua; */
 }
 .aps-i3{
     height: 40px;
@@ -158,9 +142,7 @@ align-items: center;
         height: 1360px;
         width: 1200px;
         margin-top: -630px;
-        /* background-color: aliceblue; */
         background: url('/public/bluenav.jpg');
-    
         border-radius: 10px;
         box-shadow: 0px 0px 10px;
         display: flex;
@@ -172,10 +154,8 @@ align-items: center;
         width: 200px;
         margin-left: -300px;
         margin-top: 200px;
-        /* background-color: aqua; */
     }
     .aps-name{
-        /* background-color: aqua; */
         margin-left: -500px;
         margin-top: 500px;
         height: 20px;
@@ -184,7 +164,6 @@ align-items: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .aps-h1{
-        /* background-color: aqua; */
         font-size: 60px;
         height: 50px;
         margin-left: 300px;
@@ -210,12 +189,10 @@ align-items: center;
         height: 80px;
         width: 600px;
         font-size: 30px;
-
         border-radius: 5px;
         box-shadow: 0px 0px 10px;
         margin-top: 640px;
         margin-left: 20px;
-        /* background-color: aqua; */
     
     }
     .aps-description{
@@ -225,13 +202,11 @@ align-items: center;
         margin-top: 800px;
         height: 40px;
         margin-left: -910px;
-        /* background-color: aqua; */
     }
     .aps-i3{
         height: 80px;
         width: 600px;
         font-size: 30px;
-
         border-radius: 5px;
         box-shadow: 0px 0px 10px;
         margin-top: 790px;
@@ -250,7 +225,6 @@ align-items: center;
         height: 80px;
         width: 600px;
         font-size: 30px;
-
         border-radius: 5px;
         box-shadow: 0px 0px 10px;
         margin-top: 940px;
@@ -268,7 +242,6 @@ align-items: center;
         height: 80px;
         width: 600px;
         font-size: 30px;
-
         border-radius: 5px;
         box-shadow: 0px 0px 10px;
         margin-top: 1090px;

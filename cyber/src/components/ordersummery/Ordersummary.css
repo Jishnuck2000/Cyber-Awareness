@@ -1,19 +1,11 @@
 .order-bg1{
-    display: flex;
-/* justify-content: center; */
-/* align-items: center; */
-/* background: url('/public/peakbg.jpg'); */
+display: flex;
 min-height: 830px;
-
-/* background-color: rgb(0, 255, 119); */
-/* background-image:linear-gradient(to bottom,rgb(113, 111, 111),rgba(42, 40, 40, 0.914)); */
- height: auto;
+height: auto;
 width: 100%;
-/* background-position: center; */
 background-repeat: no-repeat;
 object-fit: cover;
 background-size: cover;
-/* display: flex; */
 justify-content:center;
 align-items: center;
 flex-wrap:nowrap;
@@ -24,11 +16,8 @@ flex-wrap:nowrap;
     margin-bottom: 30px;
     height: auto;
     min-height: 700px;
-    /* background: url('/public/bluewhale.png'); */
     width: 65%;
     background: url('/public/bluenav.jpg');
-
-    /* background-image: linear-gradient(to bottom,grey,black); */
     display: flex;
     justify-content: center;
 }
@@ -36,7 +25,6 @@ flex-wrap:nowrap;
     margin-top: 20px;
     font-size: 40px;
     font-weight: 700;
-    /* background-color: aqua; */
     height: 50px;
     width: 400px;
     margin-left: 400px;
@@ -53,26 +41,18 @@ flex-wrap:nowrap;
     flex-wrap: wrap;
     justify-content: start;
     align-items: start;
-    box-shadow: 0px opx 10px;
+    box-shadow: 0px 0px 10px;
 }
 .order-p2{
-    /* margin-top: 20px; */
-    /* margin-left:50px; */
-    /* background-color: aqua; */
     height: 20px;
     font-weight: 700;
 }
 .order-p3{
-    /* margin-left: -70px; */
-    /* margin-top: 40px; */
     height: 20px;
     font-weight: 700;
 
-    /* background-color: aqua; */
 }
 .order-p4{
-    /* margin-top: 60px; */
-    /* margin-left: -115px; */
     height: 20px;
     font-weight: 700;
 
@@ -80,16 +60,10 @@ flex-wrap:nowrap;
 }
 .order-p5{
     height: 20px;
-    /* margin-left: -200px; */
-    /* margin-top: 80px; */
     font-weight: 700;
-
-    /* background-color: aqua; */
 }
 .order-p6{
     height: 20px;
-    /* margin-left: -215px; */
-    /* margin-top: 100px; */
     font-weight: 700;
 
 }
@@ -98,7 +72,6 @@ flex-wrap:nowrap;
     height: auto;
     min-height: 300px;
     width: 90%;
-    /* background-color: aqua; */
     margin-top: 50px;
     margin-left: 55px;
     box-shadow: 0px 0px 2px black;
@@ -127,7 +100,6 @@ flex-wrap:nowrap;
 .order-div{
     margin-top: 30px;
     margin-left: 55px;
-    /* background-color: aqua; */
 }
 
 .order-btn1{
@@ -145,4 +117,491 @@ flex-wrap:nowrap;
     margin-left: -125px;
     font-weight: 700;
     
+}
+@media only screen and (max-width: 1860px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 70%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1730px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 75%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1614px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 80%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1514px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 85%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1424px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 90%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1346px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 95%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1274px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 100%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 55%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+    .order-bg1{
+        display: flex;
+        min-height: 1330px;
+        height: auto;
+        width: 200%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:nowrap;
+        }
+        
+}
+@media only screen and (max-width: 1100px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 60%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1010px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 65%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 932px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 70%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 866px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 75%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 810px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 80%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 758px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 85%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 712px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 90%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 674px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 95%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 638px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 700px;
+        width: 100%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 75%;
+        background: url('/public/bluenav.jpg');
+            display: flex;
+        justify-content: center;
+    }
+    .order-bg1{
+        display: flex;
+        min-height: 2030px;
+        height: auto;
+        width: 300%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:nowrap;
+        }
+        .order-p1{
+            margin-top: 20px;
+            font-size: 50px;
+            font-weight: 700;
+            height: 50px;
+            width: 400px;
+            margin-left: 400px;
+        }
+        .order-bg3{
+            min-height: 500px;
+            height: auto;
+            width: 90%;
+            background-color: white;
+            margin-top: 110px;
+            margin-bottom: 110px;
+            margin-left: -800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+            box-shadow: 0px 0px 10px;
+        }
+        .order-p2{
+            font-size: 30px;
+            height: 20px;
+            font-weight: 700;
+        }
+        .order-p3{
+            font-size: 30px;
+            height: 20px;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .order-p4{
+            font-size: 30px;
+            height: 20px;
+            margin-top: 10px;
+            font-weight: 700;
+        
+        
+        }
+        .order-p5{
+            margin-top: 10px;
+            font-size: 30px;
+            height: 20px;
+            font-weight: 700;        
+        }
+        .order-p6{
+            font-size: 30px;
+            height: 20px;
+            margin-top: 10px;
+            font-weight: 700;  
+        }
+        
+        .order-bg4{
+            height: auto;
+            min-height: 300px;
+            width: 90%;
+            margin-top: 50px;
+            margin-left: 55px;
+            box-shadow: 0px 0px 2px black;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: start;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        
+        }
+        .order-img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            height: 100px;
+            width: 100px;
+            border-radius: 40px;
+        }
+        .order-p7{
+            margin-top: 40px;
+            font-weight: 600;
+            width: 180px;
+            font-size: 30px;
+        
+        
+        }
+        .order-div{
+            margin-top: 30px;
+            margin-left: 55px;
+        }
+        
+        .order-btn1{
+            color: aliceblue;
+            font-weight: 700;
+            margin-bottom: 30px;
+            margin-left: 450px;
+            height: 80px;
+            width: 250px;
+            font-size: 35px;
+            border-radius: 5px;
+            background-image: linear-gradient(to bottom,rgb(110, 110, 110),rgb(55, 54, 54));
+        }
+        .order-p8{
+            margin-top: -40px;
+            margin-left: -210px;
+            font-weight: 700;
+            font-size: 35px;
+            
+        }
+}
+
+@media only screen and (max-width: 574px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 80%;
+        background: url('/public/bluenav.jpg');
+            display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 536px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 85%;
+        background: url('/public/bluenav.jpg');
+            display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 506px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 90%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 70%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+    .order-bg1{
+        display: flex;
+        min-height: 2730px;
+        height: auto;
+        width: 400%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:nowrap;
+        }
+}
+@media only screen and (max-width: 460px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 75%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 428px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 80%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 402px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 85%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 378px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 90%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 358px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 95%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+    .order-bg2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: auto;
+        min-height: 1600px;
+        width: 100%;
+        background: url('/public/bluenav.jpg');
+        display: flex;
+        justify-content: center;
+    }
 }

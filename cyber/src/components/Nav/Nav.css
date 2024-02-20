@@ -10,6 +10,8 @@
     display: flex;
     justify-content: space-evenly;
     width: 1400px;
+    text-align: center;
+
 }
 .cs {
   height: 60px;
@@ -197,6 +199,26 @@ a {
     width: 200%;
     background: url("/public/bluebg.jpg");
   }
+  .fullnav {
+    display: flex;
+    margin-top: -55px;
+    margin-left: 500px;
+    flex-wrap: wrap;
+    /* width: 150px; */
+    justify-content: space-evenly;
+    word-wrap: break-word;
+    word-spacing: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1800px;
+    text-align: center;
+}
 }
 
 
