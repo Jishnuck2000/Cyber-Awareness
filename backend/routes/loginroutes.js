@@ -59,7 +59,11 @@ loginroutes.post("/", async (req, res) => {
       });
     }
   } catch (error) {
-    res.status(500).json({ message: "Something went wrong" });
+    res.status(500).json({ 
+      errorMessage:error,
+      errorM:error.message,
+      message: "Something went wrong" 
+    });
   }
 });
 
