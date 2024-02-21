@@ -43,33 +43,33 @@ function Nav() {
               <p className="p2-nav">Home</p>
             </Link>
 
-            <Link to={"/comp"}>
+            {/* <Link to={"/comp"}>
               <p className="p4-nav">Complaint Registration</p>
-            </Link>
+            </Link> */}
 
             <Link to={"/vcomp"}>
-              <p className="p3-nav">Volunteer Registration</p>
+              <p className="p3-nav">Volunteer-Registration</p>
             </Link>
 
             {Role == 1 ? (
               <>
                 <Link to={"/vvol"}>
-                  <p className="p10-nav">View Volunteers</p>
+                  <p className="p10-nav">View-Volunteers</p>
                 </Link>
 
                 <Link to={"/vs"}>
-                  <p className="p44-nav">Volunteer Request</p>
+                  <p className="p44-nav">Volunteer-Request</p>
                 </Link>
                 <Link to={"/adminsessionform"}>
-                  <p className="p11-nav">Add Sessions</p>
+                  <p className="p11-nav">Add-Sessions</p>
                 </Link>
 
                 <Link to={"/sd"}>
-                  <p className="p45-nav">Sessionbooking Details</p>
+                  <p className="p45-nav">Sessionbooking-Details</p>
                 </Link>
 
                 <Link to={"/addproductsadmin"}>
-                  <p className="p111-nav">Add Products</p>
+                  <p className="p111-nav">Add-Products</p>
                 </Link>
 
                 <Link to={"/profile"}>
@@ -83,8 +83,12 @@ function Nav() {
             {Role == 2 ? (
               <>
                 <Link to={"/bookedsessions"}>
-                  <p className="p45-nav">Booked Sessions</p>
+                  <p className="p45-nav">Booked-Sessions</p>
                 </Link>
+                
+            <Link to={"/comp"}>
+              <p className="p4-nav">Complaint-Registration</p>
+            </Link>
 
                 <Link to={"/profile"}>
                   <p className="p11-nav">Profile</p>
