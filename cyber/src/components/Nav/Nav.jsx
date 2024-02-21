@@ -67,7 +67,9 @@ function Nav() {
                 <Link to={"/sd"}>
                   <p className="p45-nav">Sessionbooking-Details</p>
                 </Link>
-
+                <Link to={"/comp"}>
+              <p className="p4-nav">Complaint-Registration</p>
+            </Link>
                 <Link to={"/addproductsadmin"}>
                   <p className="p111-nav">Add-Products</p>
                 </Link>
@@ -75,6 +77,7 @@ function Nav() {
                 <Link to={"/profile"}>
                   <p className="p11p-nav">Profile</p>
                 </Link>
+                
               </>
             ) : (
               ""
