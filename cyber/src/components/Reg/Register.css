@@ -154,3 +154,20 @@
     }   
     
 }
+@media (max-width: 490px) {
+
+    .body-r{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('/public/bluenav.jpg');
+        min-height: 831px;
+        height: 2500px;
+        width: 400%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+    }   
+    
+}
