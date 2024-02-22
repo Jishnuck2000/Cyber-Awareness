@@ -40,7 +40,8 @@ cartroutes.post(
   async (req, res) => {
     try{
     const Data = await new cart({
-      image: req.body.image,
+      // image: req.body.image,
+      image: req.file ? req.file.path : null,
       name: req.body.name,
       usage: req.body.usage,
       description: req.body.description,
