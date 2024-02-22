@@ -22,19 +22,19 @@ function Home() {
         <div className="div2">
           <p className="p-v2">CYBER HYGIENE POSTS</p>
             <div className="home-div2">
-                <Image src="poster1.jpg" className="poster1"></Image>
+                <Image src="https://res.cloudinary.com/dbjpzctk5/image/upload/v1708582598/Cyber_Awareness/w5yzizguk2zzwff0izxq.jpg" className="poster1"></Image>
               
-                <Image src="poster2.jpg" className="poster1"></Image>
+                <Image src="https://res.cloudinary.com/dbjpzctk5/image/upload/v1708583595/Cyber_Awareness/mnnxry7h1f9lflj21xip.jpg" className="poster1"></Image>
              
-                <Image src="poster3.jpg" className="poster1"></Image>
+                <Image src="https://res.cloudinary.com/dbjpzctk5/image/upload/v1708583595/Cyber_Awareness/nous8wkqrkauruhn6j4d.jpg" className="poster1"></Image>
               
-                <Image src="poster4.jpg" className="poster1"></Image>
+                <Image src="https://res.cloudinary.com/dbjpzctk5/image/upload/v1708583595/Cyber_Awareness/roqakjsc9fg6utspjiwq.jpg" className="poster1"></Image>
               
-                <Image src="poster4.jpeg" className="poster2"></Image>
+                <Image src="https://res.cloudinary.com/dbjpzctk5/image/upload/v1708583595/Cyber_Awareness/mt6kzxpyfxq0rjgepcqt.jpg" className="poster2"></Image>
              
-                <Image src="poster6.jpg" className="poster2"></Image>
+                <Image src="https://res.cloudinary.com/dbjpzctk5/image/upload/v1708583596/Cyber_Awareness/wszakz5os1n2csvryzlu.jpg" className="poster2"></Image>
              
-                <Image src="poster7.jpeg" className="poster2"></Image>
+                <Image src="https://res.cloudinary.com/dbjpzctk5/image/upload/v1708583884/Cyber_Awareness/eimx97yrqvqhkzorxkv8.jpg" className="poster2"></Image>
             
                 <Image src="poster8.jpeg" className="poster2"></Image>
                 </div> 
@@ -48,7 +48,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video1.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583182/Cyber_Awareness/jz6q4e6srobdi5wpuxws.mp4" type="video/mp4" />
                 </video>
              
                 <video
@@ -58,7 +58,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video2.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583174/Cyber_Awareness/hczophdsyw8hafrnu2og.mp4" type="video/mp4" />
                 </video>
               
                 <video
@@ -68,7 +68,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video3.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583159/Cyber_Awareness/abatpij8rvgwadbvtsv6.mp4" type="video/mp4" />
                 </video>
               
                 <video
@@ -78,7 +78,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video4.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583146/Cyber_Awareness/k6jhjlprp69ymm4wipgr.mp4" type="video/mp4" />
                 </video>
              
                 <video
@@ -88,7 +88,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video5.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583070/Cyber_Awareness/ikrvfxrrr7hj1kl8xyk9.mp4" type="video/mp4" />
                 </video>
              
                 <video
@@ -98,7 +98,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video6.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583055/Cyber_Awareness/lmqvsaj4gykst35oxerv.mp4" type="video/mp4" />
                 </video>
               
                 <video
@@ -108,7 +108,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video7.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583042/Cyber_Awareness/umgwexhelazhovcwmtrm.mp4" type="video/mp4" />
                 </video>
              
                 <video
@@ -118,7 +118,7 @@ function Home() {
                   autoPlay
                   muted
                 >
-                  <source src="video8.mp4" type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbjpzctk5/video/upload/v1708583007/Cyber_Awareness/qognmhy95ar4trvwvvc5.mp4" type="video/mp4" />
                 </video>
                 </div>
         </div>

@@ -1,6 +1,8 @@
 const express = require("express");
 const cartroutes = express.Router();
 const cart = require("../models/cartschema");
+require("dotenv").config()
+
 
 const multer = require("multer");
 const checkauth = require("../middleware/checkauth");

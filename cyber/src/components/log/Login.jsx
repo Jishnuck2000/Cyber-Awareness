@@ -25,7 +25,7 @@ function Login() {
     event.preventDefault();
 
     axios
-      .post(`${BASE_URL}/api/login, login`)
+      .post(`${BASE_URL}/api/login`, login)
       // .post("http://localhost:1111/api/login/", login)
       .then((data) => {
         localStorage.setItem("Token", data.data.token);

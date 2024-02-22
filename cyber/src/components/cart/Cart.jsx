@@ -125,7 +125,7 @@ const handleItem= (item) =>{
 <div className='card-cartdiv'>
                 <div className='cart-card'>
  
-                    <img src={`/upload/${item.image}`} onError={(e)=>{e.target.src = '/eye.png'}} className='av1'></img>
+                    <img src={`${item.image}`} onError={(e)=>{e.target.src = '/eye.png'}} className='av1'></img>
                     {/* <img
   src={`/upload/${item.image}`}
   alt={'hi'}

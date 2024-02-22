@@ -1,6 +1,8 @@
 const express = require("express");
 const productsroutes = express.Router();
 const products = require("../models/productschema");
+require("dotenv").config()
+
 
 const multer = require("multer");
 const checkauth = require("../middleware/checkauth");
@@ -118,7 +120,7 @@ productsroutes.put(
         _id: req.params.id,
       });
       const productData = {
-        image: req.file.filename ? req.file.filename : data.image,
+        image: req.file.path ? req.file.path : data.image,
         name: req.body.name ? req.body.name : data.name,
         usage: req.body.usage ? req.body.usage : data.usage,
         description: req.body.description
