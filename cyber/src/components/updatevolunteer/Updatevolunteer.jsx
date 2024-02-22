@@ -4,6 +4,7 @@ import axios from 'axios'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BASE_URL from '../const/const';
 
 
 function Updatevolunteer() {
@@ -34,7 +35,7 @@ const handleSubmit = (event)=>{
 
 
   axios
-  .put(`https://cyber-care.onrender.com/api/volunteer/volunteerupdate/${id}`,formData)
+  .put(`${BASE_URL}/api/volunteer/volunteerupdate/${id}`,formData)
   // .put(`http://localhost:1111/api/volunteer/volunteerupdate/${id}`,formData)
   .then((data)=>{
     console.log(data)
@@ -55,7 +56,7 @@ const handleSubmit = (event)=>{
 const {id}=useParams()
 console.log(id)
   useEffect(()=>{
-    axios.get(`https://cyber-care.onrender.com/api/volunteer/viewvolunteer/${id}`)
+    axios.get(`${BASE_URL}/api/volunteer/viewvolunteer/${id}`)
     // axios.get(`http://localhost:1111/api/volunteer/viewvolunteer/${id}`)
     .then((response)=>{
       console.log(response.data)

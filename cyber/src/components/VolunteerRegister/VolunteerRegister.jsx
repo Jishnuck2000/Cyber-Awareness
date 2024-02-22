@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BASE_URL from "../const/const";
 
 function VolunteerRegister() {
   // const token = localStorage.getItem("Token");
@@ -34,7 +35,7 @@ function VolunteerRegister() {
     formData.append("password",volunteerregister.password);
 
     axios
-      .post("https://cyber-care.onrender.com/api/register/volunteerregister", formData
+      .post(`${BASE_URL}/api/register/volunteerregister`, formData
       // .post("http://localhost:1111/api/register/volunteerregister", formData
         // headers: {
         //   Authorization: `Bearer ${token}`,

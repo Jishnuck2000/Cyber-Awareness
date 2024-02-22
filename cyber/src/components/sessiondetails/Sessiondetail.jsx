@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Sessiondetails.css";
 import axios from "axios";
+import BASE_URL from "../const/const";
 
 function Sessiondetail() {
   const [sessiondetail, setSessiondetail] = useState([]);
 
   const handleDelete = (_id) => {
-    axios.delete(`https://cyber-care.onrender.com/api/admin/deleteadminsession/${_id}`);
+    axios.delete(`${BASE_URL}/api/admin/deleteadminsession/${_id}`);
     // axios.delete(`http://localhost:1111/api/admin/deleteadminsession/${_id}`);
 
     window.location.reload();
@@ -14,7 +15,7 @@ function Sessiondetail() {
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/admin/viewadminsession")
+      .get(`${BASE_URL}/api/admin/viewadminsession`)
       // .get("http://localhost:1111/api/admin/viewadminsession")
       .then((data) => {
         console.log(data.data.data);

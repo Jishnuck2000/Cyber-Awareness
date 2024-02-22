@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Sessionbooking.css";
 import axios from "axios";
 import { Link, useNavigate, useParams, } from "react-router-dom";
+import BASE_URL from "../const/const";
 
 
 function Sessionbooking() {
@@ -30,7 +31,7 @@ function Sessionbooking() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("https://cyber-care.onrender.com/api/user/addsession", sessionbooking, {
+      .post(`${BASE_URL}/api/user/addsession`, sessionbooking, {
       // .post("http://localhost:1111/api/user/addsession", sessionbooking, {
         headers: {
           Authorization: `Bearer ${token}`,

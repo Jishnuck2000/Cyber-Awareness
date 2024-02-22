@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./DisplayCom.css";
 import axios from "axios";
+import BASE_URL from "../const/const";
+
 
 function DisplayComplaint() {
   const [complaint, setComplaint] = useState([]);
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/user/view")
+      .get(`${BASE_URL}/api/user/view`)
       // .get("http://localhost:1111/api/user/view")
 
       .then((data) => {

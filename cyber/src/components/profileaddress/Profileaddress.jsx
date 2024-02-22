@@ -3,6 +3,8 @@ import "./Profileaddress.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import Sessiondetail from "../sessiondetails/Sessiondetail";
+import BASE_URL from "../const/const";
+
 
 function Profileaddress() {
   const navigate = useNavigate();
@@ -21,7 +23,7 @@ function Profileaddress() {
 
   const handleDelete = (_id) => {
     axios
-      .delete(`https://cyber-care.onrender.com/api/user/deleteprofileaddress/${_id}`, {
+      .delete(`${BASE_URL}/api/user/deleteprofileaddress/${_id}`, {
       // .delete(`http://localhost:1111/api/user/deleteprofileaddress/${_id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -38,7 +40,7 @@ function Profileaddress() {
     console.log(_id);
 
     axios
-      .get("https://cyber-care.onrender.com/api/user/viewprofileaddress", {
+      .get(`${BASE_URL}/api/user/viewprofileaddress`, {
       // .get("http://localhost:1111/api/user/viewprofileaddress", {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -56,7 +58,7 @@ function Profileaddress() {
     event.preventDefault();
 
     axios
-      .post("https://cyber-care.onrender.com/api/user/addprofileaddress", proaddress, {
+      .post(`${BASE_URL}/api/user/addprofileaddress`, proaddress, {
       // .post("http://localhost:1111/api/user/addprofileaddress", proaddress, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -74,7 +76,7 @@ function Profileaddress() {
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/user/viewcheckedaddress", {
+      .get(`${BASE_URL}/api/user/viewcheckedaddress`, {
       // .get("http://localhost:1111/api/user/viewcheckedaddress", {
         headers: {
           Authorization: `Bearer ${token}`,

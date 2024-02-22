@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Addproductsadmin.css";
 import axios from "axios";
+import BASE_URL from "../const/const";
+
 
 function Addproductsadmin() {
   const token = localStorage.getItem("Token");
@@ -32,7 +34,7 @@ function Addproductsadmin() {
 console.log('working')
     axios
       // .post("http://localhost:1111/api/product/addproducts", formData, {
-        .post("https://cyber-care.onrender.com/api/product/addproducts", formData, {
+        .post(`${BASE_URL}/api/product/addproducts`, formData, {
 
         headers: {
           Authorization: `Bearer ${token}`,

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Editprofileaddress.css'
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
+import BASE_URL from "../const/const";
+
 
 
 function Editprofileaddress() {
@@ -17,7 +19,7 @@ function Editprofileaddress() {
     const handleSubmit = (event) => {
       event.preventDefault();
       axios
-        .put(`https://cyber-care.onrender.com/api/user/updateproaddress/${id}`, editproaddress, {
+        .put(`${BASE_URL}/api/user/updateproaddress/${id}`, editproaddress, {
         // .put(`http://localhost:1111/api/user/updateproaddress/${id}`, editproaddress, {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -37,7 +39,7 @@ function Editprofileaddress() {
   console.log(id);
   useEffect(() => {
     axios
-      .get(`https://cyber-care.onrender.com/api/user/viewoneprofileaddress/${id}`, {
+      .get(`${BASE_URL}/api/user/viewoneprofileaddress/${id}`, {
       // .get(`http://localhost:1111/api/user/viewoneprofileaddress/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,

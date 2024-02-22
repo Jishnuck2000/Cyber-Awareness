@@ -3,6 +3,8 @@ import './Cart.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import {ColorRing} from 'react-loader-spinner'
+import BASE_URL from "../const/const";
+
 
 
 
@@ -18,7 +20,7 @@ function Cart() {
 
 const handleWishlist = (item) =>{
 
-  axios.post('https://cyber-care.onrender.com/api/user/addwishlist',item,{
+  axios.post(`${BASE_URL}/api/user/addwishlist`,item,{
   // axios.post('http://localhost:1111/api/user/addwishlist',item,{
     headers: {
       Authorization: `Bearer ${token}`,
@@ -36,7 +38,7 @@ const handleWishlist = (item) =>{
 
   const handleDelete = (_id) =>{
 
-    axios.delete(`https://cyber-care.onrender.com/api/product/deleteproducts/${_id}`,{
+    axios.delete(`${BASE_URL}/api/product/deleteproducts/${_id}`,{
     // axios.delete(`http://localhost:1111/api/product/deleteproducts/${_id}`,{
       headers: {
         Authorization: `Bearer ${token}`,
@@ -52,7 +54,7 @@ const handleWishlist = (item) =>{
   
 const handleItem= (item) =>{
 
-  axios.post('https://cyber-care.onrender.com/api/cart/addcart',item,{
+  axios.post(`${BASE_URL}/api/cart/addcart`,item,{
   // axios.post('http://localhost:1111/api/cart/addcart',item,{
     headers: {
       Authorization: `Bearer ${token}`,
@@ -73,7 +75,7 @@ const handleItem= (item) =>{
     console.log(_id)
   
     axios
-    .get("https://cyber-care.onrender.com/api/product/viewproducts")
+    .get(`${BASE_URL}/api/product/viewproducts`)
     // .get("http://localhost:1111/api/product/viewproducts")
   }
 
@@ -82,7 +84,7 @@ const handleItem= (item) =>{
 
     useEffect(() => {
         axios
-          .get("https://cyber-care.onrender.com/api/product/viewproducts", {
+          .get(`${BASE_URL}/api/product/viewproducts`, {
           // .get("http://localhost:1111/api/product/viewproducts", {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Volunteerprofile.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import BASE_URL from '../const/const';
 // import Image from "react-bootstrap/Image";
 
 
@@ -13,7 +14,7 @@ function Volunteerprofile() {
 const [Volunteerprofile,setVolunteerprofile] = useState([]);
 useEffect(()=>{
     axios
-    .get('https://cyber-care.onrender.com/api/volunteer/volunteerprofile',{
+    .get(`${BASE_URL}/api/volunteer/volunteerprofile`,{
     // .get('http://localhost:1111/api/volunteer/volunteerprofile',{
         headers:{
             Authorization:`Bearer ${token}`,

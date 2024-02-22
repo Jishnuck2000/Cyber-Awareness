@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Bookedsessions.css";
 import axios from "axios";
+import BASE_URL from "../const/const";
+
 
 function Bookedsessions() {
   const token = localStorage.getItem("Token");
@@ -9,7 +11,7 @@ function Bookedsessions() {
   const [bookedsessions, setBookedsessions] = useState([]);
 
   const handleDelete = (_id) => {
-    axios.delete(`https://cyber-care.onrender.com/api/admin/deleteadminsession/${_id}`);
+    axios.delete(`${BASE_URL}/api/admin/deleteadminsession/${_id}`);
     // axios.delete(`http://localhost:1111/api/admin/deleteadminsession/${_id}`);
 
     window.location.reload();
@@ -17,7 +19,7 @@ function Bookedsessions() {
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/user/viewusersbookedsession", {
+      .get(`${BASE_URL}/api/user/viewusersbookedsession`, {
       // .get("http://localhost:1111/api/user/viewusersbookedsession", {
         headers: {
           Authorization: `Bearer ${token}`,

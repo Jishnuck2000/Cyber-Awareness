@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Viewsession.css";
 import axios from "axios";
+import BASE_URL from "../const/const";
 
 function Viewsession() {
   const token = localStorage.getItem("Token");
@@ -9,7 +10,7 @@ function Viewsession() {
   const [sessionbooking, setSession] = useState([]);
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/user/user-viewsession", {
+      .get(`${BASE_URL}/api/user/user-viewsession`, {
       // .get("http://localhost:1111/api/user/user-viewsession", {
         headers: {
           Authorization: `Bearer ${token}`,

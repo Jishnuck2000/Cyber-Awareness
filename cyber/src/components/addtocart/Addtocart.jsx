@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { cartView } from "../../redux/reducer/Cardslice";
 import { Link } from "react-router-dom";
 import {ColorRing} from 'react-loader-spinner'
+import BASE_URL from "../const/const";
+
 
 
 function Addtocart() {
@@ -46,7 +48,7 @@ console.log(total);
   const handleDelete = (_id) => {
     axios
       // .delete(`http://localhost:1111/api/cart/deletecartitems/${_id}`, {})
-      .delete(`https://cyber-care.onrender.com/api/cart/deletecartitems/${_id}`, {})
+      .delete(`${BASE_URL}/api/cart/deletecartitems/${_id}`, {})
 
 
       .then((response) => {
@@ -59,7 +61,7 @@ console.log(total);
     console.log(id);
     axios
       .put(
-        `https://cyber-care.onrender.com/api/cart/addquantity/${id}`,
+        `${BASE_URL}/api/cart/addquantity/${id}`,
         // `http://localhost:1111/api/cart/addquantity/${id}`,
         {},
         {
@@ -98,7 +100,7 @@ console.log(total);
     axios
       .put(
         // `http://localhost:1111/api/cart/decrementquantity/${id}`,
-        `https://cyber-care.onrender.com/api/cart/decrementquantity/${id}`,
+        `${BASE_URL}/api/cart/decrementquantity/${id}`,
         {},
         {
           headers: {
@@ -126,7 +128,7 @@ console.log(total);
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/cart/viewcart",{
+      .get(`${BASE_URL}/api/cart/viewcart`,{
       // .get("http://localhost:1111/api/cart/viewcart",{
         headers: {
           Authorization: `Bearer ${token}`,

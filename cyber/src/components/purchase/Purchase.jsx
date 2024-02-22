@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Purchase.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import BASE_URL from "../const/const";
 
 function Purchase() {
   const [purchase, setPurchase] = useState([]);
@@ -27,7 +28,7 @@ console.log(sum);
     console.log(_id);
 
     axios
-      .get("https://cyber-care.onrender.com/api/user/viewaddaddress", {
+      .get(`${BASE_URL}/api/user/viewaddaddress`, {
       // .get("http://localhost:1111/api/user/viewaddaddress", {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -46,7 +47,7 @@ console.log(sum);
 
     axios
       .put(
-        `https://cyber-care.onrender.com/api/user/updateaddresstype/${id}`,
+        `${BASE_URL}/api/user/updateaddresstype/${id}`,
         // `http://localhost:1111/api/user/updateaddresstype/${id}`,
         {},
         {
@@ -78,7 +79,7 @@ console.log(sum);
 
   const handleDelete = (_id) =>{
 
-    axios.delete(`https://cyber-care.onrender.com/api/user/deleteaddress/${_id}`,{
+    axios.delete(`${BASE_URL}/api/user/deleteaddress/${_id}`,{
     // axios.delete(`http://localhost:1111/api/user/deleteaddress/${_id}`,{
       headers: {
         Authorization: `Bearer ${token}`,
@@ -94,7 +95,7 @@ console.log(sum);
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/user/viewaddaddress", {
+      .get(`${BASE_URL}/api/user/viewaddaddress`, {
       // .get("http://localhost:1111/api/user/viewaddaddress", {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -111,7 +112,7 @@ console.log(sum);
 
 
       axios
-      .get("https://cyber-care.onrender.com/api/cart/viewcart", {
+      .get(`${BASE_URL}/api/cart/viewcart`, {
       // .get("http://localhost:1111/api/cart/viewcart", {
         headers: {
           Authorization: `Bearer ${token}`,

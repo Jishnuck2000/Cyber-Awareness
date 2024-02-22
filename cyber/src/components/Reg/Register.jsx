@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import BASE_URL from "../const/const";
 
 function Register() {
   const [register, setRegister] = useState({});
@@ -17,7 +18,7 @@ function Register() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("https://cyber-care.onrender.com/api/register/reg", register)
+      .post(`${BASE_URL}/api/register/reg`, register)
       // .post("http://localhost:1111/api/register/reg", register)
       .then((data) => {
         console.log(data);

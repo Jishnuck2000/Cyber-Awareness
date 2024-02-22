@@ -4,6 +4,8 @@ import Image from "react-bootstrap/Image";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import BASE_URL from "../const/const";
+
 
 function Profile() {
   const redux = useSelector((state) => state.user.name);
@@ -26,7 +28,7 @@ console.log(proimg);
     const formData = new FormData();
     formData.append("image", proimg.image);
     axios
-      .post("https://cyber-care.onrender.com/api/user/addproimage", formData, {
+      .post(`${BASE_URL}/api/user/addproimage`, formData, {
       // .post("http://localhost:1111/api/user/addproimage", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -47,7 +49,7 @@ console.log(proimg);
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/user/viewprofile", {
+      .get(`${BASE_URL}/api/user/viewprofile`, {
       // .get("http://localhost:1111/api/user/viewprofile", {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -65,7 +67,7 @@ console.log(proimg);
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/user/viewproimage", {
+      .get(`${BASE_URL}/api/user/viewproimage`, {
       // .get("http://localhost:1111/api/user/viewproimage", {
         headers: {
           Authorization: `Bearer ${token}`,

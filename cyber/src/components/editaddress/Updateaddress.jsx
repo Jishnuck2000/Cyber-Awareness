@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Updateaddress.css";
 import { Link,useNavigate,useParams } from "react-router-dom";
 import axios from "axios";
+import BASE_URL from "../const/const";
+
 
 function Updateaddress() {
   const [editaddress, setEditaddress] = useState([]);
@@ -15,7 +17,7 @@ function Updateaddress() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .put(`https://cyber-care.onrender.com/api/user/updateaddress/${id}`, editaddress, {
+      .put(`${BASE_URL}/api/user/updateaddress/${id}`, editaddress, {
       // .put(`http://localhost:1111/api/user/updateaddress/${id}`, editaddress, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -34,7 +36,7 @@ function Updateaddress() {
   console.log(id);
   useEffect(() => {
     axios
-      .get(`https://cyber-care.onrender.com/api/user/viewoneaddress/${id}`, {
+      .get(`${BASE_URL}/api/user/viewoneaddress/${id}`, {
       // .get(`http://localhost:1111/api/user/viewoneaddress/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Sessionlist.css'
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import BASE_URL from '../const/const';
 
 function Sessionlist() {
 const[sessionview,setSessionview] = useState([]);
@@ -9,7 +10,7 @@ const[sessionview,setSessionview] = useState([]);
 
 
 useEffect(()=>{
-    axios.get("https://cyber-care.onrender.com/api/user/viewadminsessionform")
+    axios.get(`${BASE_URL}/api/user/viewadminsessionform`)
     // axios.get("http://localhost:1111/api/user/viewadminsessionform")
 
     .then((data) => {

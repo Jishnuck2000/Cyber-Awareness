@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Updatecart.css'
 import axios from 'axios';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import BASE_URL from '../const/const';
 
 
 function Updatecart() {
@@ -34,7 +35,7 @@ function Updatecart() {
         formData.append("validity", updatecart.validity);
         formData.append("price", updatecart.price);
         axios
-          .put(`https://cyber-care.onrender.com/api/product/updateproducts/${id}`, formData, {
+          .put(`${BASE_URL}/api/product/updateproducts/${id}`, formData, {
           // .put(`http://localhost:1111/api/product/updateproducts/${id}`, formData, {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -53,7 +54,7 @@ function Updatecart() {
       const {id}=useParams()
 console.log(id)
   useEffect(()=>{
-    axios.get(`https://cyber-care.onrender.com/api/product/viewoneproduct/${id}`)
+    axios.get(`${BASE_URL}/api/product/viewoneproduct/${id}`)
     // axios.get(`http://localhost:1111/api/product/viewoneproduct/${id}`)
     .then((response)=>{
       console.log(response.data)

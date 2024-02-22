@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import "./Ordersummary.css"
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import BASE_URL from "../const/const";
+
 
 
 function Ordersummary() {
@@ -18,7 +20,7 @@ console.log(total);
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/cart/viewcart", {
+      .get(`${BASE_URL}/api/cart/viewcart`, {
       // .get("http://localhost:1111/api/cart/viewcart", {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -35,7 +37,7 @@ console.log(total);
 
 
       axios
-      .get("https://cyber-care.onrender.com/api/user/vieworderaddress", {
+      .get(`${BASE_URL}/api/user/vieworderaddress`, {
       // .get("http://localhost:1111/api/user/vieworderaddress", {
         headers: {
           Authorization: `Bearer ${token}`,

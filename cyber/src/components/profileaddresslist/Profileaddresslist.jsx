@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Profileaddresslist.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import BASE_URL from '../const/const';
 
 
 function Profileaddresslist() {
@@ -10,7 +11,7 @@ function Profileaddresslist() {
 
     const handleDelete = (_id) =>{
 
-      axios.delete(`https://cyber-care.onrender.com/api/user/deleteprofileaddress/${_id}`,{
+      axios.delete(`${BASE_URL}/api/user/deleteprofileaddress/${_id}`,{
       // axios.delete(`http://localhost:1111/api/user/deleteprofileaddress/${_id}`,{
         headers: {
           Authorization: `Bearer ${token}`,
@@ -31,7 +32,7 @@ function Profileaddresslist() {
     
         axios
           .put(
-            `https://cyber-care.onrender.com/api/user/updateprofileaddresstype/${id}`,
+            `${BASE_URL}/api/user/updateprofileaddresstype/${id}`,
             // `http://localhost:1111/api/user/updateprofileaddresstype/${id}`,
             {},
             {
@@ -63,7 +64,7 @@ function Profileaddresslist() {
       
     useEffect(() => {
         axios
-          .get("https://cyber-care.onrender.com/api/user/viewprofileaddress", {
+          .get(`${BASE_URL}/api/user/viewprofileaddress`, {
           // .get("http://localhost:1111/api/user/viewprofileaddress", {
             headers: {
               Authorization: `Bearer ${token}`,

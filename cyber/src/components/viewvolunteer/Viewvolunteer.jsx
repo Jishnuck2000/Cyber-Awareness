@@ -3,6 +3,7 @@ import "./Viewvolunteer.css";
 import Image from "react-bootstrap/Image";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import BASE_URL from "../const/const";
 
 
 function Viewvolunteer() {
@@ -21,7 +22,7 @@ function Viewvolunteer() {
     
 
     axios
-    .delete(`https://cyber-care.onrender.com/api/volunteer/volunteerdelete/${_id}`)
+    .delete(`${BASE_URL}/api/volunteer/volunteerdelete/${_id}`)
     // .delete(`http://localhost:1111/api/volunteer/volunteerdelete/${_id}`)
     .then((response)=>{
       console.log(response)
@@ -32,7 +33,7 @@ const handleUpdate = (_id)=>{
   console.log(_id)
 
   axios
-  .get("https://cyber-care.onrender.com/api/volunteer/viewvolunteers")
+  .get(`${BASE_URL}/api/volunteer/viewvolunteers`)
   // .get("http://localhost:1111/api/volunteer/viewvolunteers")
 }
 
@@ -40,7 +41,7 @@ const handleUpdate = (_id)=>{
 
   useEffect(() => {
     axios
-      .get("https://cyber-care.onrender.com/api/volunteer/viewvolunteers/approved", {
+      .get(`${BASE_URL}/api/volunteer/viewvolunteers/approved`, {
       // .get("http://localhost:1111/api/volunteer/viewvolunteers/approved", {
         // headers: {
         //   Authorization: `Bearer ${token}`,

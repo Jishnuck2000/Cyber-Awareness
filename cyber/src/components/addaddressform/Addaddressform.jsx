@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Addaddressform.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from "../const/const";
+
 
 function Addaddressform() {
 
@@ -19,7 +21,7 @@ const handleSubmit = (event) => {
   event.preventDefault();
 
   // axios.post('http://localhost:1111/api/user/addaddress',address,
-  axios.post('https://cyber-care.onrender.com/api/user/addaddress',address,
+  axios.post(`${BASE_URL}/api/user/addaddress`,address,
 
   {
     headers: {

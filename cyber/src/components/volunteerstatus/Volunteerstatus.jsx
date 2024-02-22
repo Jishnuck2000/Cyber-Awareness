@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Volunteerstatus.css'
 import axios from 'axios';
 import Image from "react-bootstrap/Image";
+import BASE_URL from '../const/const';
 
 
 
@@ -12,7 +13,7 @@ function Volunteerstatus() {
 
     const handlesubmit=(_id)=>{
 
-        axios.put(`https://cyber-care.onrender.com/api/volunteer/updatevolunteers/approved/${_id}`)
+        axios.put(`${BASE_URL}/api/volunteer/updatevolunteers/approved/${_id}`)
         // axios.put(`http://localhost:1111/api/volunteer/updatevolunteers/approved/${_id}`)
 
         .then((response)=>{
@@ -33,7 +34,7 @@ function Volunteerstatus() {
 
     const handleReject=(_id)=>{
 
-        axios.put(`https://cyber-care.onrender.com/api/volunteer/updatevolunteers/rejected/${_id}`)
+        axios.put(`${BASE_URL}/api/volunteer/updatevolunteers/rejected/${_id}`)
         // axios.put(`http://localhost:1111/api/volunteer/updatevolunteers/rejected/${_id}`)
 
         .then((response)=>{
@@ -53,7 +54,7 @@ function Volunteerstatus() {
     }
 
     useEffect(()=>{
-        axios.get("https://cyber-care.onrender.com/api/volunteer/viewvolunteers")
+        axios.get(`${BASE_URL}/api/volunteer/viewvolunteers`)
         // axios.get("http://localhost:1111/api/volunteer/viewvolunteers")
 
         .then((response)=>{

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Adminsessionform.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from '../const/const';
 
 
 function Adminsessionform() {
@@ -17,7 +18,7 @@ console.log(adminsessionform)
 const handleSubmit = (event) => {
   event.preventDefault();
 
-  axios.post('https://cyber-care.onrender.com/api/admin/adminsessionform',adminsessionform)
+  axios.post(`${BASE_URL}/api/admin/adminsessionform`,adminsessionform)
   // axios.post('http://localhost:1111/api/admin/adminsessionform',adminsessionform)
 
 

@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import swal from 'sweetalert';
+import BASE_URL from "../const/const";
+
 
 
 function Login() {
@@ -23,7 +25,7 @@ function Login() {
     event.preventDefault();
 
     axios
-      .post("https://cyber-care.onrender.com/api/login", login)
+      .post(`${BASE_URL}/api/login, login`)
       // .post("http://localhost:1111/api/login/", login)
       .then((data) => {
         localStorage.setItem("Token", data.data.token);

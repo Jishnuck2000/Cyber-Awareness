@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Wishlist.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import BASE_URL from '../const/const';
 
 
 function Wishlist() {
@@ -12,7 +13,7 @@ function Wishlist() {
 
     const handleDelete = (_id) => {
         axios
-          .delete(`https://cyber-care.onrender.com/api/user/deletewishlist/${_id}`,{
+          .delete(`${BASE_URL}/api/user/deletewishlist/${_id}`,{
           // .delete(`http://localhost:1111/api/user/deletewishlist/${_id}`,{
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -28,7 +29,7 @@ function Wishlist() {
 
     useEffect(() => {
         axios
-          .get("https://cyber-care.onrender.com/api/user/viewwishlist", {
+          .get(`${BASE_URL}/api/user/viewwishlist`, {
           // .get("http://localhost:1111/api/user/viewwishlist", {
             headers: {
               Authorization: `Bearer ${token}`,

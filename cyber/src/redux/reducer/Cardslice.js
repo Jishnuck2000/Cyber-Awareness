@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+import BASE_URL from "../../components/const/const";
 
 const initialState = {
   contents: [],
@@ -9,7 +10,7 @@ const initialState = {
 const Token = localStorage.getItem("Token");
 console.log("tokennn242343nnnn", Token);
 export const cartView = createAsyncThunk("content/cartview", async () => {
-  const res = await axios.get("https://cyber-care.onrender.com/api/cart/viewcart",{
+  const res = await axios.get(`${BASE_URL}/api/cart/viewcart`,{
   // const res = await axios.get("http://localhost:1111/api/cart/viewcart",{
     headers: {
       Authorization: `Bearer ${Token}`,

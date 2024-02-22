@@ -3,6 +3,7 @@ import "./Complaint.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
+import BASE_URL from "../const/const";
 // import "react-toastify/dist/ReactToastify.css";
 // import { ToastContainer, toast } from "react-toastify";
 
@@ -21,7 +22,7 @@ function Complaint() {
   console.log(complaint);
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://cyber-care.onrender.com/api/admin/addcomplaint',complaint)
+    axios.post(`${BASE_URL}/api/admin/addcomplaint`,complaint)
     // axios.post('http://localhost:1111/api/admin/addcomplaint',complaint)
     .then((data)=>{
         console.log(data.data);
