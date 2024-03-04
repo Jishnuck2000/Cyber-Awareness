@@ -95,7 +95,7 @@ align-items: center;
         
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 728px) {
     .body-asf{
         display: flex;
         min-height: 2060px;
@@ -176,7 +176,7 @@ align-items: center;
     
     }
   }
-  @media (max-width: 490px) {
+  @media (max-width: 586px) {
     .body-asf{
         display: flex;
       

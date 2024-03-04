@@ -112,7 +112,7 @@
       /* background-color: rgb(122, 148, 134); */
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 728px) {
     .display-bg{
       display: flex;
       justify-content: center;
@@ -131,7 +131,7 @@
       /* background-color: rgb(122, 148, 134); */
     }
   }
-  @media (max-width: 490px) {
+  @media (max-width: 586px) {
     .display-bg{
       display: flex;
       justify-content: center;

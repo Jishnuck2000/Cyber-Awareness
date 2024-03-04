@@ -144,7 +144,7 @@ align-items: center;
       flex-wrap:nowrap;
   } 
   }
-  @media (max-width: 600px) {
+  @media (max-width: 728px) {
     .cart-bg{
       display: flex;
      
@@ -271,7 +271,7 @@ align-items: center;
 }
 
   }
-  @media (max-width: 600px) {
+  @media (max-width: 586px) {
     .cart-bg{
       display: flex;
       

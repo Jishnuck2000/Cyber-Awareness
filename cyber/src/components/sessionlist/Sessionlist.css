@@ -86,7 +86,7 @@
             
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 728px) {
         .body-sl{
     
             display: flex;
@@ -152,7 +152,7 @@
         }
     }
 
-    @media (max-width: 490px) {
+    @media (max-width: 586px) {
         .body-sl{
     
             display: flex;

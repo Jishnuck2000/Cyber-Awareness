@@ -851,7 +851,7 @@ align-items: center;
     background-image: linear-gradient(to bottom,orange,rgb(176, 61, 15));
 }
 }
-@media (max-width: 600px) {
+@media (max-width: 728px) {
     .atc-bg{
     display: flex;
     /* justify-content: center; */
@@ -888,7 +888,7 @@ align-items: center;
 }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 586px) {
     .atc-bg{
     display: flex;
     /* justify-content: center; */

@@ -137,7 +137,7 @@
         background-size: cover;
     }   
 }
-@media (max-width: 600px) {
+@media (max-width: 728px) {
 
     .body-r{
         display: flex;
@@ -154,7 +154,7 @@
     }   
     
 }
-@media (max-width: 490px) {
+@media (max-width: 586px) {
 
     .body-r{
         display: flex;

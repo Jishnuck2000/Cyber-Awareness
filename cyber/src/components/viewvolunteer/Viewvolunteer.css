@@ -201,7 +201,7 @@ width: 100%;
    background-image: url('/public/bluebg.jpg');
   }
   }   
-  @media (max-width: 600px) {
+  @media (max-width: 738px) {
     .body-vv{
       display: flex;
       
@@ -239,7 +239,7 @@ width: 100%;
     margin-bottom: 20px;
 }
   }   
-  @media (max-width: 490px) {
+  @media (max-width: 586px) {
     .body-vv{
       display: flex;
      

@@ -259,7 +259,7 @@
     }
     
 }
-@media (max-width: 600px) {
+@media (max-width: 728px) {
     .aps-bg{
         display: flex;
         min-height: 2730px;
@@ -272,7 +272,7 @@
         flex-wrap:nowrap;
     }
 }
-@media (max-width: 490px) {
+@media (max-width: 586px) {
     .aps-bg{
         display: flex;
         min-height: 3030px;

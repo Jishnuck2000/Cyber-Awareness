@@ -167,7 +167,7 @@
     
     } 
  }
- @media (max-width: 600px) {
+ @media (max-width: 728px) {
     .body-vr{
         display: flex;
         justify-content: center;
@@ -325,7 +325,7 @@
       }
  }
 
- @media (max-width: 490px) {
+ @media (max-width: 586px) {
     .body-vr{
         display: flex;
         justify-content: center;

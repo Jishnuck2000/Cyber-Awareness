@@ -157,7 +157,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 728px) {
     .sb-bg{
         display: flex;
         justify-content: center;
@@ -311,7 +311,7 @@
         border: none;
     }
 }
-@media (max-width: 490px) {
+@media (max-width: 586px) {
     .sb-bg{
         display: flex;
         justify-content: center;

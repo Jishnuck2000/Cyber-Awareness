@@ -159,7 +159,7 @@ margin-top: 600px;
     
     } 
 }
-@media (max-width: 600px) {
+@media (max-width: 728px) {
     .body-c{
         display: flex;
         justify-content: center;
@@ -285,7 +285,7 @@ margin-top: 600px;
         } 
     }
 }
-@media (max-width: 490px) {
+@media (max-width: 586px) {
     .body-c{
         display: flex;
         justify-content: center;

@@ -428,7 +428,7 @@ justify-content: center;
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 728px) {
   .container-pro {
     width: 300%;
     height: 2100px;
@@ -529,7 +529,7 @@ justify-content: center;
   margin-left: 60px;
 }
 }
-@media (max-width: 490px) {
+@media (max-width: 586px) {
   .container-pro {
     width: 400%;
     height: 2700px;

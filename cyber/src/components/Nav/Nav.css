@@ -235,7 +235,7 @@ a {
     background: url("/public/bluebg.jpg");
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 728px) {
   /* .fullnav{
                visibility: hidden;
             } */
@@ -268,7 +268,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 586px) {
   /* .fullnav{
                visibility: hidden;
             } */
@@ -283,7 +283,7 @@ a {
   .hamburger {
     height: 50px;
     width: auto;
-    margin-left: 800px;
+    margin-left: 700px;
    
   }
 }
