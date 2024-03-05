@@ -12,3 +12,59 @@
     background-size: cover;
     /* background-color: rgb(122, 148, 134); */
 }
+
+@media (max-width: 1200px) {
+
+
+.update-vbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1565px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    /* background-color: rgb(122, 148, 134); */
+}
+}
+
+@media (max-width: 728px) {
+
+
+    .update-vbg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 2065px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: 300%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        /* background-color: rgb(122, 148, 134); */
+    }
+    }
+    @media (max-width: 585px) {
+
+
+        .update-vbg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 2565px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            width: 400%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            /* background-color: rgb(122, 148, 134); */
+        }
+        }
