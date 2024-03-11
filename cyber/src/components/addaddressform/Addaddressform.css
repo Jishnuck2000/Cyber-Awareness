@@ -783,3 +783,195 @@ align-items: center;
         color: aliceblue;
     } 
 }
+@media (max-width: 433px) {
+
+    .aar-bg{
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 2030px;
+    
+        /* background-color: rgb(0, 255, 119); */
+    height: auto;
+        width: 400%;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        /* display: flex; */
+    justify-content:center;
+    align-items: center;
+        flex-wrap:nowrap;
+    }  
+    .aar-bg1{
+        /* background-image: linear-gradient(to bottom,grey,rgb(189, 188, 188)); */
+        height: 1200px;
+        width: 80%;
+        border-radius: 10px;
+        background: url('/public/bluenav.jpg');
+        margin-top: 100px;
+    
+        box-shadow: 0px 0px 10px rgb(95, 93, 93);
+        display: flex;
+        justify-content: center;
+    }
+    .aar-p1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 20px;
+        /* background-color: aqua; */
+        height: 30px;
+        margin-left: 400px;
+    }
+    .aar-bg2{
+        width: 80%;
+        height: 950px;
+        background-color: aliceblue;
+        margin-top: 100px;
+        margin-left: -800px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .aar-i1{
+        height: 80px;
+        width: 350px;
+        margin-top: 150px;
+        margin-left: 150px;
+        background-color: rgb(226, 225, 225);
+        border: none;
+        font-size: 30px;
+        border-radius: 5px;
+        
+    }
+    .aar-i2{
+        height: 80px;
+        width: 350px;
+        /* margin-top: -110px; */
+        margin-left: 150px;
+        background-color: rgb(226, 225, 225);
+        border: none;
+        font-size: 30px;
+
+        border-radius: 5px;
+    
+    }
+    .aar-i3{
+        height: 80px;
+        width: 350px;
+        margin-left: 150px;
+        background-color: rgb(226, 225, 225);
+        border: none;
+        font-size: 30px;
+
+        border-radius: 5px;
+    }
+    .aar-btn{
+        height: 70px;
+        width: 150px;
+        margin-top: 200px;
+        margin-left: -550px;
+        background-color: black;
+        font-weight: 600;
+        color: aliceblue;
+    } 
+}
+@media (max-width: 395px) {
+
+    .aar-bg{
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* background: url('/public/peakbg.jpg'); */
+        min-height: 2030px;
+    
+        /* background-color: rgb(0, 255, 119); */
+    height: auto;
+        width: 400%;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        /* display: flex; */
+    justify-content:center;
+    align-items: center;
+        flex-wrap:nowrap;
+    }  
+    .aar-bg1{
+        /* background-image: linear-gradient(to bottom,grey,rgb(189, 188, 188)); */
+        height: 1200px;
+        width: 80%;
+        border-radius: 10px;
+        background: url('/public/bluenav.jpg');
+        margin-top: 100px;
+    
+        box-shadow: 0px 0px 10px rgb(95, 93, 93);
+        display: flex;
+        justify-content: center;
+    }
+    .aar-p1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 20px;
+        /* background-color: aqua; */
+        height: 30px;
+        margin-left: 0px;
+    }
+    .aar-bg2{
+        width: 80%;
+        height: 950px;
+        background-color: aliceblue;
+        margin-top: 100px;
+        margin-left: -400px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .aar-i1{
+        height: 80px;
+        width: 300px;
+        margin-top: 150px;
+        margin-left: 50px;
+        background-color: rgb(226, 225, 225);
+        border: none;
+        font-size: 30px;
+        border-radius: 5px;
+        
+    }
+    .aar-i2{
+        height: 80px;
+        width: 300px;
+        /* margin-top: -110px; */
+        margin-left: 50px;
+        background-color: rgb(226, 225, 225);
+        border: none;
+        font-size: 30px;
+
+        border-radius: 5px;
+    
+    }
+    .aar-i3{
+        height: 80px;
+        width: 300px;
+        margin-left: 50px;
+        background-color: rgb(226, 225, 225);
+        border: none;
+        font-size: 30px;
+
+        border-radius: 5px;
+    }
+    .aar-btn{
+        height: 70px;
+        width: 150px;
+        margin-top: 200px;
+        margin-left: -400px;
+        background-color: black;
+        font-weight: 600;
+        color: aliceblue;
+    } 
+}
